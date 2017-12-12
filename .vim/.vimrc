@@ -53,6 +53,8 @@ vno <up> <Nop>
 iabbr ture true
 iabbr flase false
 
+set showcmd             " show command in bottom bar
+
 set path+=**
 
 set wildmenu
@@ -77,7 +79,8 @@ set expandtab
 " Lines
 set cursorline
 set number
-set relativenumber
+map <F3> :set relativenumber!<CR>
+map <F5> :NERDTreeToggle<CR>
 
 set showmatch           " highlight matching [{()}]
 
@@ -98,7 +101,6 @@ set background=dark
 " set termguicolors
 colorscheme material-monokai
 
-nnoremap <F5> :NERDTreeToggle<CR>
 let NERDTreeShowHidden=1
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
