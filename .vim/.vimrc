@@ -12,9 +12,11 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 
-Plugin 'itchyny/lightline.vim'
+Plugin 'vim-airline/vim-airline'
 
 Plugin 'pangloss/vim-javascript'
+
+Plugin 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
 
@@ -83,7 +85,8 @@ set expandtab
 " Lines
 set cursorline
 set number
-" map <F3> :set relativenumber!<CR>
+set relativenumber
+
 map <F4> :NERDTreeFind<CR>
 map <F5> :NERDTreeToggle<CR>
 
