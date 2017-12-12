@@ -14,16 +14,13 @@ fi
 
 ln -s $(pwd)/.vim ~
 
-if (( $(echo "$VIMVERSION < $MIN_VIMVERSION" | bc -l) ))
-then
-    echo ">>> Link .vimrc to ~ ..."
-    
-    if [[ -f ~/.vimrc ]]
-    then
-        echo ">>> Found ~/.vimrc, replace with ~/.vimrc_backup"
-        echo 
-        mv ~/.vimrc ~/.vimrc_backup
-    fi
+echo ">>> Link .vimrc to ~ ..."
 
-    ln -s $(pwd)/.vim/.vimrc ~/.vimrc
+if [[ -f ~/.vimrc ]]
+then
+    echo ">>> Found ~/.vimrc, replace with ~/.vimrc_backup"
+    echo
+    mv ~/.vimrc ~/.vimrc_backup
 fi
+
+ln -s $(pwd)/.vim/.vimrc ~/.vimrc
