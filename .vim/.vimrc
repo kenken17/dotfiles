@@ -14,6 +14,8 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'itchyny/lightline.vim'
 
+Plugin 'pangloss/vim-javascript'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -53,6 +55,8 @@ vno <up> <Nop>
 iabbr ture true
 iabbr flase false
 
+set nowrap
+
 set showcmd             " show command in bottom bar
 
 set path+=**
@@ -79,7 +83,8 @@ set expandtab
 " Lines
 set cursorline
 set number
-map <F3> :set relativenumber!<CR>
+" map <F3> :set relativenumber!<CR>
+map <F4> :NERDTreeFind<CR>
 map <F5> :NERDTreeToggle<CR>
 
 set showmatch           " highlight matching [{()}]
@@ -130,4 +135,8 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
-
+" vim-javascript setting
+augroup javascript_folding
+    au!
+    au FileType javascript setlocal foldmethod=syntax
+augroup END

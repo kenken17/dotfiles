@@ -79,6 +79,7 @@ let s:grey        = { "gui": "#3F565F", "cterm": "238" }
 let s:lightgrey   = { "gui": "#575b61", "cterm": "241" }
 let s:darkgrey    = { "gui": "#232E33", "cterm": "236" }
 let s:coolgrey    = { "gui": "#506E79", "cterm": "241" }
+let s:commentgreen= { "gui": "#234d20", "cterm": "244" }
 
 let s:pink        = { "gui": "#FC3488", "cterm": "197" }
 let s:green       = { "gui": "#A6E22E", "cterm": "148" }
@@ -183,7 +184,7 @@ call s:h("Tag",           { "fg": s:pink })
 "        Debug"
 
 call s:h("Todo",          { "fg": s:aqua,   "format": "bold,italic" })
-call s:h("Comment",       { "fg": s:coolgrey, "format": "italic" })
+call s:h("Comment",       { "fg": s:commentgreen, "format": "italic" })
 
 call s:h("Underlined",    { "fg": s:green })
 call s:h("Ignore",        {})
