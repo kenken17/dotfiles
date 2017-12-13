@@ -20,6 +20,8 @@ Plugin 'w0rp/ale'
 
 Plugin 'tpope/vim-fugitive'
 
+Plugin 'wincent/command-t' 
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -94,7 +96,6 @@ set expandtab
 " Lines
 set cursorline
 set number
-set relativenumber
 
 map <F4> :NERDTreeFind<CR>
 map <F5> :NERDTreeToggle<CR>
