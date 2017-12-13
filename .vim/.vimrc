@@ -64,8 +64,8 @@ set showcmd             " show command in bottom bar
 set path+=**
 
 set wildmenu
-+set wildignore+=**/node_modules/**
-+set wildignore+=**/coverage/**
+set wildignore+=**/node_modules/**
+set wildignore+=**/coverage/**
 
 " Enable syntax processing
 syntax enable
