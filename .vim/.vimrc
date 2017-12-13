@@ -18,6 +18,8 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'w0rp/ale'
 
+Plugin 'tpope/vim-fugitive'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -66,6 +68,7 @@ set path+=**
 set wildmenu
 set wildignore+=**/node_modules/**
 set wildignore+=**/coverage/**
+set wildignore+=**/*.swp
 
 " Enable syntax processing
 syntax enable
