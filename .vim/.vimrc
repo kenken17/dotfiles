@@ -75,12 +75,16 @@ syntax enable
 
 " Set foldable
 set foldenable          
-set foldmethod=indent   " fold based on indent level
-set foldlevelstart=10
+set foldmethod=syntax   " fold based on syntax level
+set foldlevelstart=1
 set foldnestmax=10      " 10 nested fold max
 
 " space open/closes folds
-nnoremap <space> za
+nnoremap <F12> ggzA
+nnoremap zo zo
+nnoremap zO zO
+nnoremap <space> zjzz
+nnoremap <leader><space> zkzz
 
 " Mess with tabs/spaces
 set tabstop=4
@@ -101,7 +105,7 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
 " turn off the highlight
-nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>s :nohlsearch<CR>
 
 " For showing in lightline
 set laststatus=2
