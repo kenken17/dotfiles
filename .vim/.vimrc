@@ -23,6 +23,10 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'wincent/command-t' 
 
+Plugin 'tomtom/tcomment_vim'
+
+Plugin 'raimondi/delimitmate'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -58,9 +62,17 @@ vno <left> <Nop>
 vno <right> <Nop>
 vno <up> <Nop>
 
+nnoremap <TAB> >>
+" for command mode
+nnoremap <S-Tab> <<
+" for insert mode
+inoremap <S-Tab> <C-d>
+
 " fix typos
 iabbr ture true
 iabbr flase false
+
+set autoindent
 
 set nowrap
 
@@ -85,17 +97,22 @@ nnoremap <F1> :sh<CR>
 " Set foldable
 set foldenable          
 set foldmethod=syntax   " fold based on syntax level
-set foldlevelstart=1
+set foldlevelstart=2
 set foldnestmax=10      " 10 nested fold max
 
 " space open/closes folds
 nnoremap <F12> ggzA
 nnoremap <space> zjzz
+nnoremap <leader><space> zk
 
 " Mess with tabs/spaces
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set expandtab
+set smarttab
+set autoindent
+set smartindent
 
 " Lines
 set cursorline
