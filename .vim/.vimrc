@@ -75,7 +75,8 @@ inoremap <S-Tab> <C-d>
 iabbr ture true
 iabbr flase false
 
-set autoindent
+set nobackup    "Dont create bakcup file
+set noswapfile  "Dont create the swap file
 
 set nowrap
 
@@ -116,6 +117,7 @@ set expandtab
 set smarttab
 set autoindent
 set smartindent
+set ruler
 
 " Lines
 set cursorline
