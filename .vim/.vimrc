@@ -90,10 +90,7 @@ set foldnestmax=10      " 10 nested fold max
 
 " space open/closes folds
 nnoremap <F12> ggzA
-nnoremap zo zo
-nnoremap zO zO
 nnoremap <space> zjzz
-nnoremap <leader><space> zkzz
 
 " Mess with tabs/spaces
 set tabstop=4
@@ -111,9 +108,6 @@ set showmatch           " highlight matching [{()}]
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
-
-" Diff th buffer change
-nnoremap <leader>h :w !diff % -<CR>
 
 " turn off the highlight
 nnoremap <leader>s :nohlsearch<CR>
