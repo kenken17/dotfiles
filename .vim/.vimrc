@@ -20,12 +20,15 @@ Plugin 'w0rp/ale'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-sensible'
 
-Plugin 'wincent/command-t' 
+Plugin 'wincent/command-t'
 
 Plugin 'tomtom/tcomment_vim'
 
 Plugin 'raimondi/delimitmate'
+
+Plugin 'valloric/youcompleteme'
 
 " All of your Plugins must be added before the following line
 
@@ -95,7 +98,7 @@ syntax enable
 nnoremap <F1> :sh<CR>
 
 " Set foldable
-set foldenable          
+set foldenable
 set foldmethod=syntax   " fold based on syntax level
 set foldlevelstart=2
 set foldnestmax=10      " 10 nested fold max
@@ -139,6 +142,9 @@ endif
 set background=dark
 " set termguicolors
 colorscheme material-monokai
+
+" Clear white spaces when file save
+autocmd BufWritePre * %s/\s\+$//e
 
 let NERDTreeShowHidden=1
 " autocmd VimEnter * NERDTree
