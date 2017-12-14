@@ -19,6 +19,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'w0rp/ale'
 
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 
@@ -69,9 +70,15 @@ set wildmenu
 set wildignore+=**/node_modules/**
 set wildignore+=**/coverage/**
 set wildignore+=**/*.swp
+set wildignore+=**/*.jpg
+set wildignore+=**/*.gif
+set wildignore+=**/*.png
 
 " Enable syntax processing
 syntax enable
+
+" Shell mapping
+nnoremap <F1> :sh<CR>
 
 " Set foldable
 set foldenable          
@@ -104,6 +111,9 @@ set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
+" Diff th buffer change
+nnoremap <leader>h :w !diff % -<CR>
+
 " turn off the highlight
 nnoremap <leader>s :nohlsearch<CR>
 
@@ -126,6 +136,7 @@ let NERDTreeShowHidden=1
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
 
+let g:NERDTreeWinSize=40
 let NERDTreeIgnore=['node_modules$', '\.git$', '\.DS_Store']
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
