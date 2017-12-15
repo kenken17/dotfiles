@@ -30,6 +30,10 @@ Plugin 'raimondi/delimitmate'
 
 Plugin 'valloric/youcompleteme'
 
+Plugin 'mattn/emmet-vim'
+
+Plugin 'airblade/vim-gitgutter'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -86,8 +90,10 @@ set path+=**
 
 set wildmenu
 set wildignore+=**/node_modules/**
+set wildignore+=**/build/**
 set wildignore+=**/coverage/**
 set wildignore+=**/*.swp
+set wildignore+=**/*.svg
 set wildignore+=**/*.jpg
 set wildignore+=**/*.gif
 set wildignore+=**/*.png
@@ -105,7 +111,6 @@ set foldlevelstart=2
 set foldnestmax=10      " 10 nested fold max
 
 " space open/closes folds
-nnoremap <F12> ggzA
 nnoremap <space> zjzz
 nnoremap <leader><space> zk
 
@@ -132,7 +137,7 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
 " turn off the highlight
-nnoremap <leader>s :nohlsearch<CR>
+nnoremap <leader>/ :nohlsearch<CR>
 
 " For showing in lightline
 set laststatus=2
@@ -148,6 +153,9 @@ colorscheme material-monokai
 " Clear white spaces when file save
 autocmd BufWritePre * %s/\s\+$//e
 
+" Emmet
+let g:user_emmet_mode='iv'
+
 let NERDTreeShowHidden=1
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
@@ -158,25 +166,6 @@ let NERDTreeShowHidden=1
 
 let g:NERDTreeWinSize=40
 let NERDTreeIgnore=['node_modules$', '\.git$', '\.DS_Store']
-" NERDTress File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
-call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow','#151515')
-call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
-call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
-call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
-call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 " vim-javascript setting
 augroup javascript_folding
