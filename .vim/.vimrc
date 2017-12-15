@@ -22,8 +22,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sensible'
 
-Plugin 'wincent/command-t'
-
 Plugin 'tomtom/tcomment_vim'
 
 Plugin 'raimondi/delimitmate'
@@ -33,6 +31,10 @@ Plugin 'valloric/youcompleteme'
 Plugin 'mattn/emmet-vim'
 
 Plugin 'airblade/vim-gitgutter'
+
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
+
 
 " All of your Plugins must be added before the following line
 
@@ -128,11 +130,7 @@ set ruler
 set cursorline
 set number
 
-map <F4> :NERDTreeFind<CR>
-map <F5> :NERDTreeToggle<CR>
-
 set showmatch           " highlight matching [{()}]
-
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 
@@ -156,6 +154,9 @@ autocmd BufWritePre * %s/\s\+$//e
 " Emmet
 let g:user_emmet_mode='iv'
 
+map <F4> :NERDTreeFind<CR>
+map <F5> :NERDTreeToggle<CR>
+
 let NERDTreeShowHidden=1
 " autocmd VimEnter * NERDTree
 " autocmd VimEnter * wincmd p
@@ -172,3 +173,22 @@ augroup javascript_folding
     au!
     au FileType javascript setlocal foldmethod=syntax
 augroup END
+
+" For fzf
+set rtp+=~/.fzf
+" Customize fzf colors to match color scheme
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
