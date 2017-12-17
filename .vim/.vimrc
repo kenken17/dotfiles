@@ -35,6 +35,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 
@@ -102,9 +103,6 @@ set wildignore+=**/*.png
 
 " Enable syntax processing
 syntax enable
-
-" Shell mapping
-nnoremap <F1> :sh<CR>
 
 " Set foldable
 set foldenable
