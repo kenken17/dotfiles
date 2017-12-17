@@ -78,6 +78,9 @@ nnoremap <S-Tab> <<
 " for insert mode
 inoremap <S-Tab> <C-d>
 
+" Tern def
+nnoremap <C-b> :TernDef<CR>
+
 " fix typos
 iabbr ture true
 iabbr flase false
