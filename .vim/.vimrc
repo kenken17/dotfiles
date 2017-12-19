@@ -21,8 +21,7 @@ Plugin 'w0rp/ale'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sensible'
-
-Plugin 'tomtom/tcomment_vim'
+Plugin 'tpope/vim-commentary'
 
 Plugin 'raimondi/delimitmate'
 
