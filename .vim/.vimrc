@@ -85,7 +85,7 @@ set wildignore+=**/*.jpg
 set wildignore+=**/*.gif
 set wildignore+=**/*.png
 
-nnoremap n nzOzz
+nnoremap n nzczOzz
 
 " Enable syntax processing
 syntax enable
