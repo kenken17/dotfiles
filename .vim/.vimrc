@@ -56,27 +56,9 @@ filetype plugin indent on    " required
 
 let mapleader=","       " leader is comma
 
-" Unmap the arrow keys
-no <down> ddp
-no <left> <Nop>
-no <right> <Nop>
-no <up> ddkP
-
-ino <down> <Nop>
-ino <left> <Nop>
-ino <right> <Nop>
-ino <up> <Nop>
-
-vno <down> <Nop>
-vno <left> <Nop>
-vno <right> <Nop>
-vno <up> <Nop>
-
-nnoremap <TAB> >>
 " for command mode
+nnoremap <Tab> >>
 nnoremap <S-Tab> <<
-" for insert mode
-inoremap <S-Tab> <C-d>
 
 " Tern def
 nnoremap <C-b> :TernDef<CR>
@@ -104,14 +86,18 @@ set wildignore+=**/*.jpg
 set wildignore+=**/*.gif
 set wildignore+=**/*.png
 
+nnoremap n nzz
+
 " Enable syntax processing
 syntax enable
+
+" Auto update the buffer
+set autoread
 
 " Set foldable
 set foldenable
 set foldmethod=syntax   " fold based on syntax level
-set foldlevelstart=2
-set foldnestmax=10      " 10 nested fold max
+set foldlevel=99
 
 " space open/closes folds
 nnoremap <space> zjzz
