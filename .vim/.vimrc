@@ -16,7 +16,9 @@ Plugin 'vim-airline/vim-airline'
 
 Plugin 'pangloss/vim-javascript'
 
-Plugin 'w0rp/ale'
+" Plugin 'w0rp/ale'
+
+Plugin 'vim-syntastic/syntastic'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -85,8 +87,6 @@ set wildignore+=**/*.jpg
 set wildignore+=**/*.gif
 set wildignore+=**/*.png
 
-nnoremap n nzczOzz
-
 " Enable syntax processing
 syntax enable
 
@@ -95,7 +95,7 @@ set autoread
 
 " Set foldable
 set foldenable
-set foldmethod=syntax   " fold based on syntax level
+set foldmethod=indent   " fold based on syntax level
 set foldlevel=99
 
 " space open/closes folds
@@ -148,6 +148,9 @@ let g:NERDTreeWinSize=40
 let NERDTreeIgnore=['node_modules$', '\.git$', '\.DS_Store']
 
 " vim-javascript setting
+let g:javascript_plugin_jsdoc = 1
+let g:javascript_plugin_ngdoc = 1
+
 augroup javascript_folding
     au!
     au FileType javascript setlocal foldmethod=syntax
@@ -171,3 +174,30 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+" Syntax checking
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_w = 1
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩'
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
+
+
+" For js only
+autocmd Filetype javascript map n nzOzz
