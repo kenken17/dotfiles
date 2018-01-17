@@ -139,6 +139,9 @@ autocmd BufWritePre * %s/\s\+$//e
 
 " Emmet
 let g:user_emmet_mode='iv'
+" Enable just for html/css
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 
 map <F4> :NERDTreeFind<CR>
 map <F5> :NERDTreeToggle<CR>
