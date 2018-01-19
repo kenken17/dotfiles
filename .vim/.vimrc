@@ -100,7 +100,7 @@ set foldlevel=99
 
 " space open/closes folds
 nnoremap <space> zjzz
-nnoremap <leader><space> zk
+nnoremap <leader><space> zkzz
 
 " Mess with tabs/spaces
 set tabstop=4
