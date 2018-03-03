@@ -114,6 +114,7 @@ set ruler
 
 " Lines
 set cursorline
+set cursorcolumn
 set number
 
 set showmatch           " highlight matching [{()}]
