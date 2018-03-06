@@ -116,6 +116,7 @@ set ruler
 set cursorline
 set cursorcolumn
 set number
+set relativenumber
 
 set showmatch           " highlight matching [{()}]
 set incsearch           " search as characters are entered
