@@ -124,6 +124,10 @@ autocmd QuickFixCmdPost *grep* cwindow
 " turn off the highlight
 nnoremap <leader>/ :nohlsearch<CR>
 
+" For jumping to high mid low
+nnoremap H Hzz
+nnoremap L Lzz
+
 " For showing in lightline
 set laststatus=2
 
