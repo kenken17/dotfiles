@@ -98,10 +98,6 @@ set foldenable
 set foldmethod=indent   " fold based on syntax level
 set foldlevel=99
 
-" space open/closes folds
-nnoremap <space> zjzz
-nnoremap <leader><space> zkzz
-
 " Mess with tabs/spaces
 set tabstop=4
 set softtabstop=4
