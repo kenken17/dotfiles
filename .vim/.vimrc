@@ -16,7 +16,8 @@ Plugin 'vim-airline/vim-airline'
 
 Plugin 'pangloss/vim-javascript'
 
-" Plugin 'w0rp/ale'
+Plugin 'craigemery/vim-autotag'
+Plugin 'majutsushi/tagbar'
 
 Plugin 'vim-syntastic/syntastic'
 
@@ -150,6 +151,7 @@ autocmd FileType html,css EmmetInstall
 
 map <F4> :NERDTreeFind<CR>
 map <F5> :NERDTreeToggle<CR>
+map <F8> :TagbarToggle<CR>
 
 let NERDTreeShowHidden=1
 let g:NERDTreeWinSize=40

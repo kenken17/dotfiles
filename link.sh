@@ -24,3 +24,15 @@ then
 fi
 
 ln -s $(pwd)/.vim/.vimrc ~/.vimrc
+
+echo ">>> Link .ctags to ~/.ctags ..."
+
+if [[ -f ~/.ctags ]]
+then
+    echo ">>> Found ~/.ctags, replace with ~/.ctags_backup"
+    echo
+    mv ~/.vim ~/.ctags_backup
+fi
+
+ln -s $(pwd)/.ctags ~/.ctags
+
