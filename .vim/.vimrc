@@ -99,10 +99,6 @@ set foldenable
 set foldmethod=indent   " fold based on syntax level
 set foldlevel=99
 
-" space open/closes folds
-nnoremap <space> zjzz
-nnoremap <leader><space> zkzz
-
 " Mess with tabs/spaces
 set tabstop=4
 set softtabstop=4
@@ -128,6 +124,10 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " turn off the highlight
 nnoremap <leader>/ :nohlsearch<CR>
+
+" For jumping to high mid low
+nnoremap H Hzz
+nnoremap L Lzz
 
 " For showing in lightline
 set laststatus=2
