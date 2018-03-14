@@ -109,6 +109,9 @@ set autoindent
 set smartindent
 set ruler
 
+" no map for Ctrl-i
+unmap <C-i>
+
 " Lines
 set cursorline
 set cursorcolumn
