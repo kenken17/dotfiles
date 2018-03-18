@@ -17,7 +17,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'pangloss/vim-javascript'
 
 Plugin 'craigemery/vim-autotag'
-" Plugin 'majutsushi/tagbar'
 
 Plugin 'vim-syntastic/syntastic'
 
@@ -157,7 +156,7 @@ map <F8> :TagbarToggle<CR>
 
 let NERDTreeShowHidden=1
 let g:NERDTreeWinSize=40
-let NERDTreeIgnore=['node_modules$', '\.git$', '\.DS_Store']
+let NERDTreeIgnore=['node_modules$', '\.git$', '\.DS_Store', '.\serverless', '.\nyc_output']
 
 " vim-javascript setting
 let g:javascript_plugin_jsdoc = 1
