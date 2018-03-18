@@ -36,3 +36,14 @@ fi
 
 ln -s $(pwd)/.ctags ~/.ctags
 
+
+if [[ -f ~/.gitignore_global ]]
+then
+    echo ">>> Found ~/.gitignore_global, replace with ~/.gitignore_global_backup"
+    echo
+    mv ~/.vim ~/.gitignore_global_backup
+fi
+
+ln -s $(pwd)/.gitignore_global ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
+
