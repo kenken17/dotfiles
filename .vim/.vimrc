@@ -38,6 +38,8 @@ Plugin 'junegunn/fzf.vim'
 
 Plugin 'ternjs/tern_for_vim'
 
+Plugin 'mileszs/ack.vim'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -57,6 +59,10 @@ filetype plugin indent on    " required
 
 let mapleader=","       " leader is comma
 
+" :W sudo saves the file
+" (useful for handling the permission-denied error)
+command W w !sudo tee % > /dev/null
+
 " for command mode
 nnoremap <Tab> >>
 nnoremap <S-Tab> <<
@@ -68,24 +74,23 @@ nnoremap <C-b> :TernDef<CR>
 iabbr ture true
 iabbr flase false
 
-set nobackup    "Dont create bakcup file
-set noswapfile  "Dont create the swap file
-
-set nowrap
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
 
 set showcmd             " show command in bottom bar
 
 set path+=**
 
 set wildmenu
-set wildignore+=**/node_modules/**
-set wildignore+=**/build/**
-set wildignore+=**/coverage/**
-set wildignore+=**/*.swp
-set wildignore+=**/*.svg
-set wildignore+=**/*.jpg
-set wildignore+=**/*.gif
-set wildignore+=**/*.png
+set wildignore+=.git/*,.hg/*,.svn/*
+set wildignore+=**/node_modules/**,**/build/**,**/coverage/**,**/*.swp,**/*.svg,
+set wildignore+=**/*.jpg,**/*.gif,**/*.png
+
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
 
 " Enable syntax processing
 syntax enable
@@ -97,16 +102,24 @@ set autoread
 set foldenable
 set foldmethod=indent   " fold based on syntax level
 set foldlevel=99
+set foldcolumn=1 " Add a bit extra margin to the left
+
+" Use spaces instead of tabs
+set expandtab
+
+" Be smart when using tabs ;)
+set smarttab
+
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
 
 " Mess with tabs/spaces
-set tabstop=4
 set softtabstop=4
-set shiftwidth=4
-set expandtab
-set smarttab
 set autoindent
 set smartindent
 set ruler
+set nowrap
 
 " no map for Ctrl-i
 unmap <C-i>
@@ -116,9 +129,27 @@ set cursorline
 set cursorcolumn
 set number
 
-set showmatch           " highlight matching [{()}]
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases
+set smartcase
+
+" Highlight search results
+set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch
+
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+
+" For regular expressions turn magic on
+set magic
+
+" Show matching brackets when text indicator is over them
+set showmatch
+" How many tenths of a second to blink when matching brackets
 
 "" Open log in quicklist window
 autocmd QuickFixCmdPost *grep* cwindow
@@ -126,9 +157,18 @@ autocmd QuickFixCmdPost *grep* cwindow
 " turn off the highlight
 nnoremap <leader>/ :nohlsearch<CR>
 
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
 " For jumping to high mid low
 nnoremap H Hzz
 nnoremap L Lzz
+
+" Pressing ,ss will toggle and untoggle spell checking
+map <leader>ss :setlocal spell!<cr>
 
 " For showing in lightline
 set laststatus=2
@@ -208,3 +248,5 @@ let g:syntastic_javascript_checkers = ['eslint']
 
 " For js only
 autocmd Filetype javascript map n nzOzz
+
+
