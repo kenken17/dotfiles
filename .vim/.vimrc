@@ -17,7 +17,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'pangloss/vim-javascript'
 
 Plugin 'craigemery/vim-autotag'
-Plugin 'majutsushi/tagbar'
+" Plugin 'majutsushi/tagbar'
 
 Plugin 'vim-syntastic/syntastic'
 
