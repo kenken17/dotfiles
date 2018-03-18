@@ -56,3 +56,8 @@ tags
 .idea/
 .idea
 
+# Personal  #
+#############
+.serverless/
+coverage/
+.nyc_output/
