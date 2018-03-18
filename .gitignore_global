@@ -42,7 +42,6 @@ Thumbs.db
 .codekit-config.json
 config.codekit
 
-
 # NodeJs #
 ##########
 node_modules/
@@ -50,3 +49,10 @@ node_modules/
 # Tags #
 ########
 tags
+
+# For WebStorm Settings #
+######################
+/.idea
+.idea/
+.idea
+
