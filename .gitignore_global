@@ -46,3 +46,7 @@ config.codekit
 # NodeJs #
 ##########
 node_modules/
+
+# Tags #
+########
+tags
