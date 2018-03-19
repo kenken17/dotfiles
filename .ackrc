@@ -4,6 +4,9 @@
 # follow symlinks
 --follow
 
+--color
+--sort-files
+
 --ignore-dir=coverage
 --ignore-dir=node_modules
 --ignore-dir=.serverless
@@ -12,5 +15,6 @@
 --ignore-dir=.idea
 
 # Don't search generated files
+--ignore-file=is:.gitignore
 --ignore-file=is:.tags
 --ignore-file=is:tags
