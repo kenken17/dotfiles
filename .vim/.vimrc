@@ -102,7 +102,6 @@ set autoread
 set foldenable
 set foldmethod=indent   " fold based on syntax level
 set foldlevel=99
-set foldcolumn=1 " Add a bit extra margin to the left
 
 " Use spaces instead of tabs
 set expandtab
