@@ -40,6 +40,8 @@ Plugin 'ternjs/tern_for_vim'
 
 Plugin 'mileszs/ack.vim'
 
+Plugin 'junegunn/goyo.vim'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -125,7 +127,6 @@ unmap <C-i>
 
 " Lines
 set cursorline
-set cursorcolumn
 set number
 
 " Ignore case when searching
@@ -155,6 +156,9 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " turn off the highlight
 nnoremap <leader>/ :nohlsearch<CR>
+
+" For focus mode
+map <leader>z :Goyo 160<cr>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
