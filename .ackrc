@@ -1,2 +1,5 @@
 --ignore-dir=coverage/
 --ignore-dir=node_modules/
+--ignore-dir=.serverless/
+--ignore-dir=.git/
+--ignore-dir=.nyc_output/
