@@ -1,5 +1,16 @@
---ignore-dir=coverage/
---ignore-dir=node_modules/
---ignore-dir=.serverless/
---ignore-dir=.git/
---ignore-dir=.nyc_output/
+# only search with case sensitivity if there is mixed case
+--smart-case
+
+# follow symlinks
+--follow
+
+--ignore-dir=coverage
+--ignore-dir=node_modules
+--ignore-dir=.serverless
+--ignore-dir=.git
+--ignore-dir=.nyc_output
+--ignore-dir=.idea
+
+# Don't search generated files
+--ignore-file=is:.tags
+--ignore-file=is:tags
