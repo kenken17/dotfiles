@@ -47,3 +47,13 @@ fi
 ln -s $(pwd)/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
+
+if [[ -f ~/.ackrc ]]
+then
+    echo ">>> Found ~/.ackrc, replace with ~/.ackrc_backup"
+    echo
+    mv ~/.vim ~/.ackrc_backup
+fi
+
+ln -s $(pwd)/.ackrc ~/.ackrc
+
