@@ -248,6 +248,9 @@ highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
 
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_css_checkers = ['csslint']
+let g:syntastic_scss_checkers = ['scss_lint']
+let g:syntastic_scss_scss_lint_exec = 'scss-lint'
 
 " For js only
 autocmd Filetype javascript map n nzOzz
