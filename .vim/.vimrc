@@ -257,4 +257,5 @@ let g:syntastic_scss_scss_lint_exec = 'scss-lint'
 " For js only
 autocmd Filetype javascript map n nzOzz
 
-
+" For vue highlight
+autocmd FileType vue syntax sync fromstart
