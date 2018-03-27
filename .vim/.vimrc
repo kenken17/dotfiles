@@ -42,6 +42,8 @@ Plugin 'mileszs/ack.vim'
 
 Plugin 'junegunn/goyo.vim'
 
+Plugin 'posva/vim-vue'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -248,8 +250,12 @@ highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
 
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_css_checkers = ['csslint']
+let g:syntastic_scss_checkers = ['scss_lint']
+let g:syntastic_scss_scss_lint_exec = 'scss-lint'
 
 " For js only
 autocmd Filetype javascript map n nzOzz
 
-
+" For vue highlight
+autocmd FileType vue syntax sync fromstart
