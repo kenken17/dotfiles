@@ -175,6 +175,9 @@ nnoremap L Lzz
 " Pressing ,ss will toggle and untoggle spell checking
 map <leader>ss :setlocal spell!<cr>
 
+" Map pasting in inset mode always indent correctly
+imap <C-r> <C-r><C-p>
+
 " For showing in lightline
 set laststatus=2
 
