@@ -157,6 +157,9 @@ set showmatch
 "" Open log in quicklist window
 autocmd QuickFixCmdPost *grep* cwindow
 
+" Some personal shortcut
+" "------------------------
+
 " turn off the highlight
 nnoremap <leader>/ :nohlsearch<CR>
 
@@ -181,6 +184,11 @@ imap <C-r> <C-r><C-p>
 
 " When a forward search, back to current search item
 nmap * *N
+
+" Add a , above end of line
+nmap <leader>, mpk$A,<ESC>`p
+nmap <leader>; mpk$A;<ESC>`p
+
 
 " For showing in lightline
 set laststatus=2
