@@ -18,12 +18,13 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'craigemery/vim-autotag'
 
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-repeat'
 
 Plugin 'raimondi/delimitmate'
 
@@ -177,6 +178,9 @@ map <leader>ss :setlocal spell!<cr>
 
 " Map pasting in inset mode always indent correctly
 imap <C-r> <C-r><C-p>
+
+" When a forward search, back to current search item
+nmap * *N
 
 " For showing in lightline
 set laststatus=2
