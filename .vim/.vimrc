@@ -189,6 +189,8 @@ nmap * *N
 nmap <leader>, mpk$A,<ESC>`p
 nmap <leader>; mpk$A;<ESC>`p
 
+" Add in a quick console.log
+map <leader>c Aconsole.log('>>>', );<ESC>hha
 
 " For showing in lightline
 set laststatus=2
