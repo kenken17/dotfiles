@@ -18,7 +18,7 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'craigemery/vim-autotag'
 
-" Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-syntastic/syntastic'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -26,7 +26,7 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 
-Plugin 'raimondi/delimitmate'
+Plugin 'jiangmiao/auto-pairs'
 
 Plugin 'valloric/youcompleteme'
 
