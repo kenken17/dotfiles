@@ -18,7 +18,7 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'craigemery/vim-autotag'
 
-Plugin 'vim-syntastic/syntastic'
+Plugin 'w0rp/ale'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
@@ -37,7 +37,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
-Plugin 'ternjs/tern_for_vim'
+" Plugin 'ternjs/tern_for_vim'
 
 Plugin 'mileszs/ack.vim'
 
@@ -192,6 +192,9 @@ nmap <leader>; mpk$A;<ESC>`p
 " Add in a quick console.log
 map <leader>c Aconsole.log('>>>', );<ESC>hha
 
+" When jump to next item opent he fold and center the screen
+nmap n nzOzz
+
 " For showing in lightline
 set laststatus=2
 
@@ -248,31 +251,36 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 " Syntax checking
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_error_symbol = '❌'
-let g:syntastic_style_error_symbol = '⁉️'
-let g:syntastic_warning_symbol = '⚠️'
-let g:syntastic_style_warning_symbol = '💩'
-highlight link SyntasticErrorSign SignColumn
-highlight link SyntasticWarningSign SignColumn
-highlight link SyntasticStyleErrorSign SignColumn
-highlight link SyntasticStyleWarningSign SignColumn
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 1
+" let g:syntastic_loc_list_height = 5
+" let g:syntastic_error_symbol = '❌'
+" let g:syntastic_style_error_symbol = '⁉️'
+" let g:syntastic_warning_symbol = '⚠️'
+" let g:syntastic_style_warning_symbol = '💩'
+" highlight link SyntasticErrorSign SignColumn
+" highlight link SyntasticWarningSign SignColumn
+" highlight link SyntasticStyleErrorSign SignColumn
+" highlight link SyntasticStyleWarningSign SignColumn
 
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_css_checkers = ['csslint']
-let g:syntastic_scss_checkers = ['scss_lint']
-let g:syntastic_scss_scss_lint_exec = 'scss-lint'
-
-" For js only
-autocmd Filetype javascript map n nzOzz
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_css_checkers = ['csslint']
+" let g:syntastic_scss_checkers = ['scss_lint']
+" let g:syntastic_scss_scss_lint_exec = 'scss-lint'
 
 " For vue highlight
 autocmd FileType vue syntax sync fromstart
+
+" For ALE
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_open_list = 1
+let g:ale_sign_error = '❌'
+let g:ale_sign_warning = '⚠️-'
+let g:ale_lint_on_text_changed = 'never'
