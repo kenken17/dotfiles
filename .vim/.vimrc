@@ -64,13 +64,18 @@ filetype plugin indent on    " required
 
 let mapleader=","       " leader is comma
 
+" Cancel all arrows key
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+" Quick way to edit vimrc
+:nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
 " :W sudo saves the file
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
-
-" for command mode
-nnoremap <Tab> >>
-nnoremap <S-Tab> <<
 
 " Tern def
 nnoremap <C-b> :TernDef<CR>
@@ -78,6 +83,7 @@ nnoremap <C-b> :TernDef<CR>
 " fix typos
 iabbr ture true
 iabbr flase false
+iabbr waht what
 
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
@@ -126,7 +132,7 @@ set ruler
 set nowrap
 
 " no map for Ctrl-i
-unmap <C-i>
+" unmap <C-i>
 
 " Lines
 set cursorline
@@ -157,14 +163,11 @@ set showmatch
 "" Open log in quicklist window
 autocmd QuickFixCmdPost *grep* cwindow
 
-" Some personal shortcut
-" "------------------------
+" Some personal shortcut mapping
+" ==============================
 
 " turn off the highlight
 nnoremap <leader>/ :nohlsearch<CR>
-
-" For focus mode
-map <leader>z :Goyo 160<cr>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -195,7 +198,12 @@ map <leader>c Aconsole.log('>>>', );<ESC>hha
 " When jump to next item opent he fold and center the screen
 nmap n nzOzz
 
+" For focus mode
+map <leader>z :Goyo 160<cr>
 " For showing in lightline
+
+" ==============================
+
 set laststatus=2
 
 if !has('gui_running')
@@ -208,6 +216,9 @@ colorscheme material-monokai
 
 " Clear white spaces when file save
 autocmd BufWritePre * %s/\s\+$//e
+
+" Format when save files
+:autocmd BufWritePre * :normal mpgg=G`p`zz
 
 " Emmet
 let g:user_emmet_mode='iv'
@@ -249,30 +260,6 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
-
-" Syntax checking
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 0
-" let g:syntastic_check_on_wq = 1
-" let g:syntastic_loc_list_height = 5
-" let g:syntastic_error_symbol = '❌'
-" let g:syntastic_style_error_symbol = '⁉️'
-" let g:syntastic_warning_symbol = '⚠️'
-" let g:syntastic_style_warning_symbol = '💩'
-" highlight link SyntasticErrorSign SignColumn
-" highlight link SyntasticWarningSign SignColumn
-" highlight link SyntasticStyleErrorSign SignColumn
-" highlight link SyntasticStyleWarningSign SignColumn
-
-" let g:syntastic_javascript_checkers = ['eslint']
-" let g:syntastic_css_checkers = ['csslint']
-" let g:syntastic_scss_checkers = ['scss_lint']
-" let g:syntastic_scss_scss_lint_exec = 'scss-lint'
 
 " For vue highlight
 autocmd FileType vue syntax sync fromstart
