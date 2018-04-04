@@ -11,6 +11,24 @@ map <leader>/ :nohlsearch<cr>
 nmap <leader>, mpk$A,<esc>`p
 nmap <leader>; mpk$A;<esc>`p
 
+" junegunn/goyo.vim
+map <leader>z :Goyo 160<cr>
+
+" maxbrunsfeld/vim-yankstack
+nmap <leader>p <Plug>yankstack_substitute_older_paste
+nmap <leader>P <Plug>yankstack_substitute_newer_paste
+
+" scrooloose/nerdtree
+map <F3> :NERDTreeToggle<cr>
+map <F4> :NERDTreeFind<cr>
+
+" junegunn/fzf
+map <F5> :GF<cr>
+
+" Buffer switching
+map <F7> :bp<cr>
+map <F8> :bn<cr>
+
 " Smart way to move between windows
 map <c-j> <c-W>j
 map <c-k> <c-W>k

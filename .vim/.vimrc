@@ -16,7 +16,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'craigemery/vim-autotag'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Shougo/unite.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'mileszs/ack.vim'
@@ -82,9 +81,9 @@ autocmd QuickFixCmdPost *grep* cwindow
 autocmd BufWritePre * %s/\s\+$//e
 
 
-source .vim/setup/natives.vim
-source .vim/setup/mappings.vim
-source .vim/setup/typos.vim
-source .vim/setup/types.vim
-source .vim/setup/plugins.vim
+source $HOME/.vim/setup/natives.vim
+source $HOME/.vim/setup/mappings.vim
+source $HOME/.vim/setup/typos.vim
+source $HOME/.vim/setup/types.vim
+source $HOME/.vim/setup/plugins.vim
 

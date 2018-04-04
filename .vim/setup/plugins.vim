@@ -1,23 +1,10 @@
 " For all plugins settings/mappings
 "----------------------------------
 
-" junegunn/goyo.vim
-map <leader>z :Goyo 160<cr>
-
-" maxbrunsfeld/vim-yankstack
-nmap <leader>p <Plug>yankstack_substitute_older_paste
-nmap <leader>P <Plug>yankstack_substitute_newer_paste
-
-
 " mattn/emmet-vim
 let g:user_emmet_mode='iv'
 " Enable just for html/css
 let g:user_emmet_install_global = 0
-
-" scrooloose/nerdtree
-map <F4> :NERDTreeFind<CR>
-map <F5> :NERDTreeToggle<CR>
-map <F8> :TagbarToggle<CR>
 
 let NERDTreeShowHidden=1
 let g:NERDTreeWinSize=40
@@ -56,4 +43,5 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
 
 " vim-airline/vim-airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
