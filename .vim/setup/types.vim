@@ -22,9 +22,3 @@ augroup filetype_vue
     au FileType vue map <leader>c Aconsole.log('>>>', );<esc>hha
 augroup END
 
-augroup filetype_emmet
-    au!
-    au FileType vue,html,css EmmetInstall
-augroup END
-
-
