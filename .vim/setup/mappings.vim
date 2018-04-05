@@ -29,6 +29,10 @@ nnoremap <F5> :GF<CR>
 nnoremap <F7> gT
 nnoremap <F8> gt
 
+execute "set <M-h>=\eh"
+execute "set <M-j>=\ej"
+execute "set <M-k>=\ek"
+execute "set <M-l>=\el"
 nnoremap <M-h> gT
 nnoremap <M-j> gT
 nnoremap <M-k> gt
