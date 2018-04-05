@@ -78,6 +78,10 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Clear white spaces when file save
 autocmd BufWritePre * %s/\s\+$//e
 
+" Open then nerdtree when a new file open.
+autocmd BufReadPost,BufNewFile * NERDTreeFind | wincmd p
+
+
 source $HOME/.vim/setup/natives.vim
 source $HOME/.vim/setup/mappings.vim
 source $HOME/.vim/setup/typos.vim
