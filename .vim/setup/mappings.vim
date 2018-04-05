@@ -25,9 +25,9 @@ nnoremap <F4> :NERDTreeFind<CR>
 " junegunn/fzf
 nnoremap <F5> :GF<CR>
 
-" Buffer switching
-nnoremap <F7> :bp<CR>
-nnoremap <F8> :bn<CR>
+" Tabs switching
+nnoremap <F7> gT
+nnoremap <F8> gt
 
 " Smart way to move between windows
 nnoremap <C-j> <C-W>j

@@ -41,7 +41,3 @@ let g:ale_lint_on_text_changed = 'never'
 " alvan/vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
 
-" vim-airline/vim-airline
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-
