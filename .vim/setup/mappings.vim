@@ -29,6 +29,12 @@ nnoremap <F5> :GF<CR>
 nnoremap <F7> gT
 nnoremap <F8> gt
 
+" tpope/vim-fugitive
+nnoremap <F9> :Gstatus<CR>
+nnoremap <F10> :Gdiff<CR>
+nnoremap <F11> :Gpull<CR>
+nnoremap <F12> :Gpush
+
 " Smart way to move between windows
 nnoremap <C-j> <C-W>j
 nnoremap <C-k> <C-W>k
