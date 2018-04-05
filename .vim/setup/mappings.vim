@@ -5,35 +5,35 @@
 let mapleader=","
 
 " turn off the highlight
-map <leader>/ :nohlsearch<cr>
+nnoremap <Leader>/ :nohlsearch<CR>
 
 " Add a ,/; above end of line
-nmap <leader>, mpk$A,<esc>`p
-nmap <leader>; mpk$A;<esc>`p
+nnoremap <Leader>, mpk$A,<Esc>`p
+nnoremap <Leader>; mpk$A;<Esc>`p
 
 " junegunn/goyo.vim
-map <leader>z :Goyo 160<cr>
+nnoremap <Leader>z :Goyo 160<CR>
 
 " maxbrunsfeld/vim-yankstack
-nmap <leader>p <Plug>yankstack_substitute_older_paste
-nmap <leader>P <Plug>yankstack_substitute_newer_paste
+nnoremap <Leader>p <Plug>yankstack_substitute_older_paste
+nnoremap <Leader>P <Plug>yankstack_substitute_newer_paste
 
 " scrooloose/nerdtree
-map <F3> :NERDTreeToggle<cr>
-map <F4> :NERDTreeFind<cr>
+nnoremap <F3> :NERDTreeToggle<CR>
+nnoremap <F4> :NERDTreeFind<CR>
 
 " junegunn/fzf
-map <F5> :GF<cr>
+nnoremap <F5> :GF<CR>
 
 " Buffer switching
-map <F7> :bp<cr>
-map <F8> :bn<cr>
+nnoremap <F7> :bp<CR>
+nnoremap <F8> :bn<CR>
 
 " Smart way to move between windows
-map <c-j> <c-W>j
-map <c-k> <c-W>k
-map <c-h> <c-W>h
-map <c-l> <c-W>l
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
 
 " For jumping to high mid low
 nnoremap H Hzz
@@ -41,8 +41,8 @@ nnoremap L Lzz
 nnoremap n nzOzz
 
 " Map pasting in inset mode always indent correctly
-imap <c-r> <c-r><c-p>
+imap <C-r> <C-r><C-p>
 
 " When a forward search, back to current search item
-nmap * *N
+nnoremap * *N
 
