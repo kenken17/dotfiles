@@ -78,6 +78,12 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Clear white spaces when file save
 autocmd BufWritePre * %s/\s\+$//e
 
+" for ALT key mapping
+for i in range(97,122)
+  let c = nr2char(i)
+  exec "map \e".c." <M-".c.">"
+  exec "map! \e".c." <M-".c.">"
+endfor
 
 source $HOME/.vim/setup/natives.vim
 source $HOME/.vim/setup/mappings.vim

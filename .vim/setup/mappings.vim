@@ -29,6 +29,11 @@ nnoremap <F5> :GF<CR>
 nnoremap <F7> gT
 nnoremap <F8> gt
 
+nnoremap <M-h> gT
+nnoremap <M-j> gT
+nnoremap <M-k> gt
+nnoremap <M-l> gt
+
 " tpope/vim-fugitive
 nnoremap <F9> :Gstatus<CR>
 nnoremap <F10> :Gdiff<CR>
