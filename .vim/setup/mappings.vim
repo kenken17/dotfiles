@@ -4,9 +4,6 @@
 " leader is comma
 let mapleader=","
 
-" Map the colon key
-nnoremap ; :
-
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<CR>
 
