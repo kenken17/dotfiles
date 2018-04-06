@@ -1,11 +1,7 @@
 " For all plugins settings/mappings
 "----------------------------------
 
-" mattn/emmet-vim
-let g:user_emmet_mode='iv'
-" Enable just for html/css
-let g:user_emmet_install_global = 0
-
+" scrooloose/nerdtree
 let NERDTreeShowHidden=1
 let g:NERDTreeWinSize=40
 let NERDTreeAutoDeleteBuffer = 1
@@ -17,21 +13,17 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-" NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
 call NERDTreeHighlightFile('js', '148', 'none', '#A6E22E', '#151515')
 call NERDTreeHighlightFile('vue', '148', 'none', '#A6E22E', '#151515')
-
 call NERDTreeHighlightFile('css', '208', 'none', '#FD9720', '#151515')
 call NERDTreeHighlightFile('scss', '208', 'none', '#FD9720', '#151515')
-
 call NERDTreeHighlightFile('yml', '186', 'none', '#E6DB74', '#151515')
 call NERDTreeHighlightFile('html', '186', 'none', '#E6DB74', '#151515')
-
 call NERDTreeHighlightFile('json', '81', 'none', '#82B1FF', '#151515')
 
 " pangloss/vim-javascript'

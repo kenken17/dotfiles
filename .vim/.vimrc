@@ -19,7 +19,6 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/goyo.vim'
-Plugin 'maxbrunsfeld/vim-yankstack'
 
 " For Coding & Syntaxing
 "-----------------------
@@ -79,7 +78,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 autocmd BufWritePre * %s/\s\+$//e
 
 " Open then nerdtree when a new file open.
-autocmd BufReadPost,BufNewFile * NERDTreeFind | wincmd p
+autocmd BufReadPre,FileReadPre * NERDTreeFind | wincmd p
 
 
 source $HOME/.vim/setup/natives.vim

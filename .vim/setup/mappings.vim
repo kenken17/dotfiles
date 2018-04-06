@@ -4,6 +4,9 @@
 " leader is comma
 let mapleader=","
 
+" Map the colon key
+nnoremap ; :
+
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<CR>
 
@@ -13,10 +16,6 @@ nnoremap <Leader>; mpk$A;<Esc>`p
 
 " junegunn/goyo.vim
 nnoremap <Leader>z :Goyo 160<CR>
-
-" maxbrunsfeld/vim-yankstack
-nnoremap <Leader>p <Plug>yankstack_substitute_older_paste
-nnoremap <Leader>P <Plug>yankstack_substitute_newer_paste
 
 " scrooloose/nerdtree
 nnoremap <F3> :NERDTreeToggle<CR>
@@ -28,15 +27,6 @@ nnoremap <F5> :GF<CR>
 " Tabs switching
 nnoremap <F7> gT
 nnoremap <F8> gt
-
-execute "set <M-h>=\eh"
-execute "set <M-j>=\ej"
-execute "set <M-k>=\ek"
-execute "set <M-l>=\el"
-nnoremap <M-h> gT
-nnoremap <M-j> gT
-nnoremap <M-k> gt
-nnoremap <M-l> gt
 
 " tpope/vim-fugitive
 nnoremap <F9> :Gstatus<CR>
@@ -60,4 +50,12 @@ imap <C-r> <C-r><C-p>
 
 " When a forward search, back to current search item
 nnoremap * *N
+
+" Quick yank/paste whole word into register P
+execute "set <M-y>=\ey"
+execute "set <M-t>=\et"
+vnoremap <M-y> "py
+nnoremap <M-t> "pP
+vnoremap <M-t> "pP
+inoremap <M-t> <C-o>"pP
 
