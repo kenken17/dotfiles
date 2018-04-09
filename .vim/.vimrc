@@ -28,6 +28,7 @@ Plugin 'w0rp/ale'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'valloric/youcompleteme'
 Plugin 'alvan/vim-closetag'
+Plugin 'cohama/agit.vim'
 
 " For Tim Pope
 "-------------

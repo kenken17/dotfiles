@@ -14,6 +14,8 @@ nnoremap <Leader>; mpk$A;<Esc>`p
 " junegunn/goyo.vim
 nnoremap <Leader>z :Goyo 160<CR>
 
+nnoremap <F2> :q<CR>
+
 " scrooloose/nerdtree
 nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTreeFind<CR>
@@ -28,8 +30,10 @@ nnoremap <F8> gt
 " tpope/vim-fugitive
 nnoremap <F9> :Gstatus<CR>
 nnoremap <F10> :Gdiff<CR>
-nnoremap <F11> :Gpull<CR>
-nnoremap <F12> :Gpush
+nnoremap <F11> :Gpush
+
+" cohama/agit.vim
+nnoremap <F12> :Agit<CR>
 
 " Smart way to move between windows
 nnoremap <C-j> <C-W>j
