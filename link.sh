@@ -86,3 +86,16 @@ fi
 
 ln -s $(pwd)/.ackrc ~/.ackrc
 
+
+echo ">>> Link .ackrc to ~/.tmux.conf ..."
+
+if [[ -f ~/.tmux.conf && $OVERWRITE -eq 0 ]]
+then
+    echo ">>> Found ~/.tmux.conf, replace with ~/.tmux.conf_backup"
+    echo
+    mv ~/.tmux.conf ~/.tmux.conf_backup
+else
+    rm ~/.tmux.conf
+fi
+
+ln -s $(pwd)/.tmux.conf ~/.tmux.conf
