@@ -59,11 +59,9 @@ filetype plugin indent on    " required
 "--------------------
 
 " set termguicolors
+set background=dark
+set t_Co=256
 colorscheme material-monokai
-
-if !has('gui_running')
-    set t_Co=256
-endif
 
 
 " For autocmd
