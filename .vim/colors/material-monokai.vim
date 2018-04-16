@@ -21,6 +21,14 @@ if ! exists("g:materialmonokai_italic")
     let g:materialmonokai_italic = 0
 endif
 
+if ! exists("g:materialmonokai_subtle_spell")
+    let g:materialmonokai_subtle_spell = 0
+endif
+
+if ! exists("g:materialmonokai_custom_lint_indicators")
+    let g:materialmonokai_custom_lint_indicators = 1
+endif
+
 let g:materialmonokai_termcolors = 256 " does not support 16 color term right now.
 
 set background=dark
@@ -79,7 +87,6 @@ let s:grey        = { "gui": "#3F565F", "cterm": "238" }
 let s:lightgrey   = { "gui": "#575b61", "cterm": "241" }
 let s:darkgrey    = { "gui": "#232E33", "cterm": "236" }
 let s:coolgrey    = { "gui": "#506E79", "cterm": "241" }
-let s:commentgreen= { "gui": "#234d20", "cterm": "244" }
 
 let s:pink        = { "gui": "#FC3488", "cterm": "197" }
 let s:green       = { "gui": "#A6E22E", "cterm": "148" }
@@ -102,12 +109,13 @@ let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }
 
 " editor
 call s:h("Normal",        { "fg": s:white,      "bg": s:black })
-call s:h("ColorColumn",   {                     "bg": s:lightblack })
+call s:h("ColorColumn",   {                     "bg": s:lightgrey })
 call s:h("CursorColumn",  {                     "bg": s:lightblack2 })
 call s:h("CursorLine",    {                     "bg": s:darkblack })
 call s:h("NonText",       { "fg": s:lightgrey })
-call s:h("StatusLine",    { "fg": s:coolgrey,   "bg": s:black,        "format": "reverse" })
+call s:h("StatusLine",    { "fg": s:white,      "bg": s:darkblack })
 call s:h("StatusLineNC",  { "fg": s:darkgrey,   "bg": s:coolgrey,     "format": "reverse" })
+call s:h("WildMenu",      { "fg": s:white,      "bg": s:pink })
 call s:h("TabLine",       { "fg": s:white,      "bg": s:darkblack,    "format": "reverse" })
 call s:h("Visual",        {                     "bg": s:lightgrey })
 call s:h("Search",        { "fg": s:black,      "bg": s:yellow })
@@ -118,12 +126,19 @@ call s:h("MoreMsg",       { "fg": s:yellow })
 call s:h("ErrorMsg",      { "fg": s:black,      "bg": s:red,          "format": "standout" })
 call s:h("WarningMsg",    { "fg": s:red })
 call s:h("VertSplit",     { "fg": s:grey,       "bg": s:darkgrey })
-call s:h("LineNr",        { "fg": s:white,      "bg": s:darkgrey })
+call s:h("LineNr",        { "fg": s:grey,       "bg": s:darkgrey })
 call s:h("CursorLineNr",  { "fg": s:aqua,       "bg": s:darkblack })
 call s:h("SignColumn",    {                     "bg": s:lightblack })
+call s:h("SpellCap",      {                                           "format": "underline"})
+call s:h("SpellLocal",    { "fg": s:yellow,                           "format": "underline"})
+if g:materialmonokai_subtle_spell == 1
+  call s:h("SpellBad",    {                                           "format": "underline"})
+else
+  call s:h("SpellBad",    { "fg": s:red,        "bg": s:yellow })
+endif
 
 " misc
-call s:h("SpecialKey",    { "fg": s:coolgrey })
+call s:h("SpecialKey",    { "fg": s:grey })
 call s:h("Title",         { "fg": s:yellow })
 call s:h("Directory",     { "fg": s:aqua })
 
@@ -183,12 +198,31 @@ call s:h("SpecialComment",{ "fg": s:aqua })
 call s:h("Tag",           { "fg": s:pink })
 "        Debug"
 
-call s:h("Todo",          { "fg": s:aqua,   "format": "bold,italic" })
-call s:h("Comment",       { "fg": s:commentgreen, "format": "italic" })
+call s:h("Todo",          { "fg": s:aqua,     "format": "bold,italic" })
+call s:h("Comment",       { "fg": s:coolgrey, "format": "italic" })
 
 call s:h("Underlined",    { "fg": s:green })
 call s:h("Ignore",        {})
 call s:h("Error",         { "fg": s:red, "bg": s:darkred })
+
+" ALE
+" ---
+
+if g:materialmonokai_custom_lint_indicators == 1
+  call s:h("ALEErrorSign",   { "fg": s:red,    "bg": s:darkgrey })
+  call s:h("ALEWarningSign", { "fg": s:yellow, "bg": s:darkgrey })
+
+  let g:ale_sign_error = '●'
+  let g:ale_sign_warning = '●'
+endif
+
+" Git Gutter
+" ---------
+
+call s:h("GitGutterAdd",          { "fg": s:green,  "bg": s:darkgrey})
+call s:h("GitGutterChange",       { "fg": s:yellow, "bg": s:darkgrey })
+call s:h("GitGutterDelete",       { "fg": s:red,    "bg": s:darkgrey })
+call s:h("GitGutterChangeDelete", { "fg": s:yellow, "bg": s:darkgrey })
 
 " NerdTree
 " --------
@@ -353,3 +387,16 @@ call s:h("mkdCode",                     { "fg": s:white })
 call s:h("mkdLink",                     { "fg": s:green })
 call s:h("mkdListItem",                 { "fg": s:orange })
 call s:h("mkdURL",                      { "fg": s:pink })
+
+" Jinja
+call s:h("jinjaVarBlock",               { "fg": s:orange })
+call s:h("jinjaTagBlock",               { "fg": s:pink })
+
+" Org-mode
+call s:h("org_heading2",                { "fg": s:green })
+call s:h("org_heading3",                { "fg": s:purple })
+call s:h("org_heading7",                { "fg": s:yellow })
+call s:h("org_shade_stars",             { "fg": s:grey })
+call s:h("org_list_unordered",          { "fg": s:orange })
+call s:h("org_list_ordered",            { "fg": s:orange })
+call s:h("org_timestamp",               { "fg": s:pink })
