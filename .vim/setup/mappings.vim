@@ -11,6 +11,10 @@ nnoremap <Leader>/ :nohlsearch<CR>
 nnoremap <Leader>, mpk$A,<Esc>`p
 nnoremap <Leader>; mpk$A;<Esc>`p
 
+" Map the selection of a code block
+nnoremap <Leader>b $V%
+nnoremap <Leader>B viB
+
 " junegunn/goyo.vim
 nnoremap <Leader>z :Goyo 160<CR>
 
