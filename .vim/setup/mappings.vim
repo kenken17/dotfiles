@@ -50,7 +50,7 @@ nnoremap <C-l> <C-W>l
 " For jumping to high mid low
 nnoremap H Hzz
 nnoremap L Lzz
-nnoremap n nzOzz
+nnoremap n nzz
 
 " Map pasting in inset mode always indent correctly
 imap <C-r> <C-r><C-p>
