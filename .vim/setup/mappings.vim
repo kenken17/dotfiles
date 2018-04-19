@@ -35,9 +35,11 @@ nnoremap <F8> gt
 nnoremap <F9> :Gstatus<CR>
 nnoremap <F10> :Gdiff<CR>
 nnoremap <F11> :Gpush
+nnoremap <Leader><F11> :Gpull
 
 " cohama/agit.vim
 nnoremap <F12> :Agit<CR>
+nnoremap <Leader><F12> :AgitFile<CR>
 
 " Smart way to move between windows
 nnoremap <C-j> <C-W>j
