@@ -56,5 +56,3 @@ let g:ale_lint_on_text_changed = 'never'
 
 " alvan/vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
-
-let g:ycm_min_num_of_chars_for_completion = 99
