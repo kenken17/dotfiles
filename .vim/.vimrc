@@ -26,7 +26,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
 Plugin 'w0rp/ale'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'valloric/youcompleteme'
+Plugin 'ajh17/VimCompletesMe'
 Plugin 'alvan/vim-closetag'
 Plugin 'cohama/agit.vim'
 
@@ -59,7 +59,6 @@ filetype plugin indent on    " required
 "--------------------
 
 " set termguicolors
-set background=dark
 set t_Co=256
 colorscheme material-monokai
 

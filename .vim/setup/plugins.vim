@@ -3,7 +3,7 @@
 
 " scrooloose/nerdtree
 let NERDTreeShowHidden=1
-let g:NERDTreeWinSize=40
+let g:NERDTreeWinSize=50
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
@@ -57,3 +57,4 @@ let g:ale_lint_on_text_changed = 'never'
 " alvan/vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
 
+let g:ycm_min_num_of_chars_for_completion = 99
