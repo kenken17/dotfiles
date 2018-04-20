@@ -46,4 +46,4 @@ let g:ctrlp_cmd = 'CtrlPBuffer'
 
 " 907th/vim-auto-save
 let g:auto_save = 1
-
+let g:auto_save_events = ["BufLeave"]
