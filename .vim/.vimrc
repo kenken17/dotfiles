@@ -15,10 +15,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'craigemery/vim-autotag'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/goyo.vim'
+Plugin 'kien/ctrlp.vim'
 
 " For Coding & Syntaxing
 "-----------------------

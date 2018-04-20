@@ -24,8 +24,8 @@ nnoremap <F2> :q<CR>
 nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTreeFind<CR>
 
-" junegunn/fzf
-nnoremap <F5> :GF<CR>
+" kien/ctrlp.vim
+nnoremap <F5> :CtrlP<CR>
 
 " Tabs switching
 nnoremap <F7> gT

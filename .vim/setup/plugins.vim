@@ -30,24 +30,6 @@ call NERDTreeHighlightFile('json', '81', 'none', '#82B1FF', '#151515')
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 
-" junegunn/fzf
-set rtp+=~/.fzf
-" Customize fzf colors to match color scheme
-let g:fzf_colors =
-            \ { 'fg':      ['fg', 'Normal'],
-            \ 'bg':      ['bg', 'Normal'],
-            \ 'hl':      ['fg', 'Comment'],
-            \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-            \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-            \ 'hl+':     ['fg', 'Statement'],
-            \ 'info':    ['fg', 'PreProc'],
-            \ 'border':  ['fg', 'Ignore'],
-            \ 'prompt':  ['fg', 'Conditional'],
-            \ 'pointer': ['fg', 'Exception'],
-            \ 'marker':  ['fg', 'Keyword'],
-            \ 'spinner': ['fg', 'Label'],
-            \ 'header':  ['fg', 'Comment'] }
-
 " w0rp/ale
 let g:ale_open_list = 1
 let g:ale_sign_error = '>>'
@@ -57,3 +39,7 @@ let g:ale_sign_column_always = 2
 
 " alvan/vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
+
+" kien/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlPBuffer'
