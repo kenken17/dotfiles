@@ -19,6 +19,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin '907th/vim-auto-save'
+Plugin 'terryma/vim-multiple-cursors'
 
 " For Coding & Syntaxing
 "-----------------------
