@@ -84,3 +84,4 @@ source $HOME/.vim/setup/typos.vim
 source $HOME/.vim/setup/types.vim
 source $HOME/.vim/setup/plugins.vim
 
+hi Normal guibg=NONE ctermbg=NONE
