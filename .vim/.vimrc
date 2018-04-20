@@ -18,6 +18,7 @@ Plugin 'craigemery/vim-autotag'
 Plugin 'mileszs/ack.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'kien/ctrlp.vim'
+Plugin '907th/vim-auto-save'
 
 " For Coding & Syntaxing
 "-----------------------

@@ -43,3 +43,7 @@ let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
 " kien/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPBuffer'
+
+" 907th/vim-auto-save
+let g:auto_save = 1
+
