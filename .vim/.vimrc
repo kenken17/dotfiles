@@ -30,6 +30,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'ajh17/VimCompletesMe'
 Plugin 'alvan/vim-closetag'
 Plugin 'cohama/agit.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " For Tim Pope
 "-------------
