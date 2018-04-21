@@ -47,3 +47,12 @@ let g:ctrlp_cmd = 'CtrlPBuffer'
 " 907th/vim-auto-save
 let g:auto_save = 1
 let g:auto_save_events = ["BufLeave"]
+
+" jiangmiao/auto-pairs
+let g:AutoPairsShortcutToggle = ''
+let g:AutoPairsShortcutFastWrap = ''
+let g:AutoPairsShortcutJump = ''
+
+" terryma/vim-multiple-cursors
+let g:multi_cursor_start_key = '<C-q>'
+let g:multi_cursor_select_all_key = '<C-x>'
