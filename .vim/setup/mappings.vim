@@ -55,10 +55,6 @@ nnoremap H Hzz
 nnoremap L Lzz
 nnoremap n nzz
 
-" 0 is more intuitive to me
-nnoremap 0 ^
-nnoremap ^ 0
-
 " Map pasting in inset mode always indent correctly
 imap <C-r> <C-r><C-p>
 
