@@ -60,6 +60,7 @@ imap <C-r> <C-r><C-p>
 
 " When a forward search, back to current search item
 nnoremap * *N
+nnoremap # #N
 
 " Quick yank/paste whole word into register P
 execute "set <M-y>=\ey"
