@@ -42,7 +42,7 @@ nnoremap <F12> :Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " Reset the current file
-nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
+nnoremap <Leader><Del> :Gedit<CR>
 
 " Smart way to move between windows
 nnoremap <C-j> <C-W>j
