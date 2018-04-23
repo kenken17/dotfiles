@@ -58,6 +58,6 @@ let g:multi_cursor_start_key = '<C-q>'
 let g:multi_cursor_select_all_key = '<Leader><C-x>'
 
 " SirVer/ultisnips
-let g:UltiSnipsExpandTrigger = '<C-j>'
-let g:UltiSnipsJumpForwardTrigger = '<C-l>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-h>'
+let g:UltiSnipsExpandTrigger="<C-space>"
+let g:UltiSnipsJumpForwardTrigger="<C-j>"
+let g:UltiSnipsJumpBackwardTrigger="<C-k>"
