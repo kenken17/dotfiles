@@ -24,7 +24,6 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
 Plugin 'w0rp/ale'
-" Plugin 'ajh17/VimCompletesMe'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'craigemery/vim-autotag'
 Plugin 'jiangmiao/auto-pairs'
@@ -32,6 +31,7 @@ Plugin 'alvan/vim-closetag'
 Plugin 'cohama/agit.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'sjl/splice.vim'
 
 " For Tim Pope
 "-------------
