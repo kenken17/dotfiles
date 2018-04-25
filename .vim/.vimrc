@@ -31,7 +31,6 @@ Plugin 'alvan/vim-closetag'
 Plugin 'cohama/agit.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'sjl/splice.vim'
 
 " For Tim Pope
 "-------------
