@@ -25,6 +25,4 @@ git config --global alias.gr "grep -Ii"
 
 
 # For splice.vim merge
-git config --global merge.tool splice
-git config --global mergetool.splice.cmd "vim -f \$BASE \$LOCAL \$REMOTE \$MERGED -c 'SpliceInit'"
-git config --global mergetool.splice.trustExitCode true
+git config --global merge.tool vimdiff
