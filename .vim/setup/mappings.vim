@@ -33,7 +33,9 @@ nnoremap <F8> gt
 
 " tpope/vim-fugitive
 nnoremap <F9> :Gstatus<CR>
-nnoremap <F10> :Gdiff<CR>
+nnoremap <Leader><F9> :Gwrite<CR>
+nnoremap <F10> :Gvdiff<CR>
+nnoremap <Leader><F10> :Gvdiff HEAD@{1}<CR>
 nnoremap <F11> :Gpush
 nnoremap <Leader><F11> :Gpull
 

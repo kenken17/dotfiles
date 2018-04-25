@@ -26,3 +26,4 @@ git config --global alias.gr "grep -Ii"
 
 # For splice.vim merge
 git config --global merge.tool vimdiff
+git config --global diff.tool vimdiff
