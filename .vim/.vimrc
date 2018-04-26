@@ -81,10 +81,16 @@ autocmd BufWritePre * %s/\s\+$//e
 autocmd BufReadPre,FileReadPre * NERDTreeFind | wincmd p
 
 
-source $HOME/.vim/setup/natives.vim
-source $HOME/.vim/setup/mappings.vim
-source $HOME/.vim/setup/typos.vim
-source $HOME/.vim/setup/types.vim
-source $HOME/.vim/setup/plugins.vim
+source $HOME/.config/nvim/setup/natives.vim
+source $HOME/.config/nvim/setup/mappings.vim
+source $HOME/.config/nvim/setup/typos.vim
+source $HOME/.config/nvim/setup/types.vim
+source $HOME/.config/nvim/setup/plugins.vim
+
+" source $HOME/.vim/setup/natives.vim
+" source $HOME/.vim/setup/mappings.vim
+" source $HOME/.vim/setup/typos.vim
+" source $HOME/.vim/setup/types.vim
+" source $HOME/.vim/setup/plugins.vim
 
 hi Normal guibg=NONE ctermbg=NONE

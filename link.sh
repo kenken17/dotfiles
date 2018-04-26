@@ -18,6 +18,25 @@ while getopts 'o' OPTION; do
 done
 shift "$(($OPTIND -1))"
 
+
+echo ">>> Link .vim to ~/.config/nvim ..."
+
+if [[ -d ~/.config.nvim && $OVERWRITE -eq 0 ]]
+then
+    echo ">>> Found ~/.config/nvim, replace with ~/.config/nvim_backup"
+    echo
+    mv ~/.config/nvim ~/.config/nvim_backup
+else
+    rm ~/.config/nvim
+fi
+
+mkdir ~/.config/nvim
+ln -s $(pwd)/.vim/bundle ~/.config/nvim/bundle
+ln -s $(pwd)/.vim/colors ~/.config/nvim/colors
+ln -s $(pwd)/.vim/setup ~/.config/nvim/setup
+
+
+
 echo ">>> Link .vim to ~/.vim ..."
 
 if [[ -d ~/.vim && $OVERWRITE -eq 0 ]]
@@ -30,6 +49,7 @@ else
 fi
 
 ln -s $(pwd)/.vim ~
+
 
 echo ">>> Link .vimrc to ~ ..."
 
@@ -44,6 +64,8 @@ fi
 
 ln -s $(pwd)/.vim/.vimrc ~/.vimrc
 
+
+
 echo ">>> Link .ctags to ~/.ctags ..."
 
 if [[ -f ~/.ctags && $OVERWRITE -eq 0 ]]
@@ -56,6 +78,7 @@ else
 fi
 
 ln -s $(pwd)/.ctags ~/.ctags
+
 
 
 echo ">>> Link .gitignore_global to ~/.gitignore_global ..."
@@ -73,6 +96,7 @@ ln -s $(pwd)/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 
 
+
 echo ">>> Link .ackrc to ~/.ackrc ..."
 
 if [[ -f ~/.ackrc && $OVERWRITE -eq 0 ]]
@@ -85,6 +109,7 @@ else
 fi
 
 ln -s $(pwd)/.ackrc ~/.ackrc
+
 
 
 echo ">>> Link .ackrc to ~/.tmux.conf ..."
