@@ -27,13 +27,14 @@ then
     echo
     mv ~/.config/nvim ~/.config/nvim_backup
 else
-    rm ~/.config/nvim
+    rm -rf ~/.config/nvim
 fi
 
 mkdir ~/.config/nvim
 ln -s $(pwd)/.vim/bundle ~/.config/nvim/bundle
 ln -s $(pwd)/.vim/colors ~/.config/nvim/colors
 ln -s $(pwd)/.vim/setup ~/.config/nvim/setup
+ln -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
 
 
 
