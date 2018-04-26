@@ -64,6 +64,8 @@ filetype plugin indent on    " required
 set t_Co=256
 colorscheme material-monokai
 
+" for nvim
+set guicursor=
 
 " For autocmd
 "------------
@@ -94,3 +96,5 @@ source $HOME/.config/nvim/setup/plugins.vim
 " source $HOME/.vim/setup/plugins.vim
 
 hi Normal guibg=NONE ctermbg=NONE
+
+
