@@ -5,7 +5,7 @@
 let mapleader=","
 
 " turn off the highlight
-nnoremap <Leader>/ :nohlsearch<CR>
+nnoremap <ESC> :nohlsearch<CR>
 
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
@@ -58,7 +58,7 @@ nnoremap L Lzz
 nnoremap n nzz
 
 " Map pasting in inset mode always indent correctly
-imap <C-r> <C-r><C-p>
+inoremap <C-r> <C-r><C-p>
 
 " When a forward search, back to current search item
 nnoremap * *N
