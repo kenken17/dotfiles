@@ -64,3 +64,7 @@ let g:multi_cursor_select_all_key = '<Leader><C-x>'
 let g:UltiSnipsExpandTrigger="<C-space>"
 let g:UltiSnipsJumpForwardTrigger="<C-j>"
 let g:UltiSnipsJumpBackwardTrigger="<C-k>"
+
+" ryanoasis/vim-devicons
+let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
+let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1

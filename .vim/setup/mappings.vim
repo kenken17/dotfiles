@@ -24,7 +24,7 @@ nnoremap <F2> :q<CR>
 nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :NERDTreeFind<CR>
 
-" kien/ctrlp.vim
+" ctrlpvim/ctrlp.vim
 nnoremap <F5> :CtrlP<CR>
 
 " Tabs switching

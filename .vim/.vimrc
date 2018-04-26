@@ -15,9 +15,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'mileszs/ack.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin '907th/vim-auto-save'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'ryanoasis/vim-devicons'
 
 " For Coding & Syntaxing
 "-----------------------
