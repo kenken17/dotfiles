@@ -19,25 +19,6 @@ done
 shift "$(($OPTIND -1))"
 
 
-echo ">>> Link .vim to ~/.config/nvim ..."
-
-if [[ -d ~/.config.nvim && $OVERWRITE -eq 0 ]]
-then
-    echo ">>> Found ~/.config/nvim, replace with ~/.config/nvim_backup"
-    echo
-    mv ~/.config/nvim ~/.config/nvim_backup
-else
-    rm -rf ~/.config/nvim
-fi
-
-mkdir ~/.config/nvim
-ln -s $(pwd)/.vim/bundle ~/.config/nvim/bundle
-ln -s $(pwd)/.vim/colors ~/.config/nvim/colors
-ln -s $(pwd)/.vim/setup ~/.config/nvim/setup
-ln -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
-
-
-
 echo ">>> Link .vim to ~/.vim ..."
 
 if [[ -d ~/.vim && $OVERWRITE -eq 0 ]]
@@ -110,18 +91,3 @@ else
 fi
 
 ln -s $(pwd)/.ackrc ~/.ackrc
-
-
-
-echo ">>> Link .ackrc to ~/.tmux.conf ..."
-
-if [[ -f ~/.tmux.conf && $OVERWRITE -eq 0 ]]
-then
-    echo ">>> Found ~/.tmux.conf, replace with ~/.tmux.conf_backup"
-    echo
-    mv ~/.tmux.conf ~/.tmux.conf_backup
-else
-    rm ~/.tmux.conf
-fi
-
-ln -s $(pwd)/.tmux.conf ~/.tmux.conf

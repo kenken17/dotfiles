@@ -67,9 +67,6 @@ filetype plugin indent on    " required
 set t_Co=256
 colorscheme material-monokai
 
-" for nvim
-set guicursor=
-
 " For autocmd
 "------------
 
@@ -89,10 +86,10 @@ autocmd BufReadPre,FileReadPre * NERDTreeFind | wincmd p
 autocmd BufWinLeave ?* mkview!
 autocmd BufWinEnter ?* silent loadview
 
-source $HOME/.config/nvim/setup/natives.vim
-source $HOME/.config/nvim/setup/mappings.vim
-source $HOME/.config/nvim/setup/typos.vim
-source $HOME/.config/nvim/setup/types.vim
-source $HOME/.config/nvim/setup/plugins.vim
+source $HOME/.vim/setup/natives.vim
+source $HOME/.vim/setup/mappings.vim
+source $HOME/.vim/setup/typos.vim
+source $HOME/.vim/setup/types.vim
+source $HOME/.vim/setup/plugins.vim
 
 hi Normal guibg=NONE ctermbg=NONE

@@ -5,7 +5,7 @@
 let mapleader=","
 
 " turn off the highlight
-nnoremap <ESC> :nohlsearch<CR>
+nnoremap <Leader>/ :nohlsearch<CR>
 
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
@@ -62,16 +62,13 @@ nnoremap n nzz
 vnoremap > >gv
 vnoremap < <gv
 
-" Map pasting in inset mode always indent correctly
-inoremap <C-r> <C-r><C-p>
-
 " When a forward search, back to current search item
 nnoremap * *N
 nnoremap # #N
 
 " Quick yank/paste whole word into register P
-" execute "set <M-y>=\ey"
-" execute "set <M-r>=\er"
+execute "set <M-y>=\ey"
+execute "set <M-r>=\er"
 vnoremap <M-y> "py
 nnoremap <M-r> "pP
 vnoremap <M-r> "pP
