@@ -27,12 +27,13 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
 Plugin 'w0rp/ale'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/MatchTagAlways'
 Plugin 'craigemery/vim-autotag'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'alvan/vim-closetag'
 Plugin 'cohama/agit.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'Chiel92/vim-autoformat'
 
 " For Tim Pope
 "-------------
@@ -78,8 +79,8 @@ command W w !sudo tee % > /dev/null
 "" Open log in quicklist window
 autocmd QuickFixCmdPost *grep* cwindow
 
-" Clear white spaces when file save
-autocmd BufWritePre * %s/\s\+$//e
+" Clear white spaces when file save, no need if we have autoformat installed
+" autocmd BufWritePre * %s/\s\+$//e
 
 " Open then nerdtree when a new file open.
 autocmd BufReadPre,FileReadPre * NERDTreeFind | wincmd p
@@ -90,12 +91,6 @@ source $HOME/.config/nvim/setup/mappings.vim
 source $HOME/.config/nvim/setup/typos.vim
 source $HOME/.config/nvim/setup/types.vim
 source $HOME/.config/nvim/setup/plugins.vim
-
-" source $HOME/.vim/setup/natives.vim
-" source $HOME/.vim/setup/mappings.vim
-" source $HOME/.vim/setup/typos.vim
-" source $HOME/.vim/setup/types.vim
-" source $HOME/.vim/setup/plugins.vim
 
 hi Normal guibg=NONE ctermbg=NONE
 

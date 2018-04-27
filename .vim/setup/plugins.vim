@@ -40,9 +40,6 @@ let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 let g:ale_fixers = { 'javascript': ['eslint'] }
 
-" alvan/vim-closetag
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.vue'
-
 " kien/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPBuffer'
@@ -68,3 +65,12 @@ let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 " ryanoasis/vim-devicons
 let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
+
+" Valloric/MatchTagAlways
+let g:mta_filetypes = {
+            \ 'html' : 1,
+            \ 'xhtml' : 1,
+            \ 'xml' : 1,
+            \ 'jinja' : 1,
+            \ 'vue' : 1,
+            \}

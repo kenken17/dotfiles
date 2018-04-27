@@ -1,6 +1,10 @@
 " For all filetype specific settings
 "-----------------------------------
 
+augroup filetype_all
+    au BufWrite * :Autoformat
+augroup END
+
 augroup filetype_vim
     au!
     au FileType vim setlocal foldmethod=marker
