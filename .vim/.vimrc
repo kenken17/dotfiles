@@ -33,7 +33,6 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'cohama/agit.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'Chiel92/vim-autoformat'
 
 " For Tim Pope
 "-------------
@@ -83,7 +82,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 autocmd BufReadPre,FileReadPre * NERDTreeFind | wincmd p
 
 " Rememeber all file curosr position
-autocmd BufWinLeave ?* mkview!
+autocmd BufWinLeave ?* silent mkview!
 autocmd BufWinEnter ?* silent loadview
 
 source $HOME/.vim/setup/natives.vim

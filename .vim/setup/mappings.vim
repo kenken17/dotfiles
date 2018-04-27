@@ -15,8 +15,8 @@ nnoremap <Leader>; mpk$A;<Esc>`p
 nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
 
-" junegunn/goyo.vim
-nnoremap <Leader>z :Goyo 160<CR>
+" auto indent, use mark i
+nnoremap g= migg=G'i^
 
 nnoremap <F2> :q<CR>
 
@@ -26,6 +26,7 @@ nnoremap <F4> :NERDTreeFind<CR>
 
 " ctrlpvim/ctrlp.vim
 nnoremap <F5> :CtrlP<CR>
+nnoremap <F6> :CtrlPMRU<CR>
 
 " Tabs switching
 nnoremap <F7> gT
