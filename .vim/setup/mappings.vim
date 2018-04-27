@@ -46,16 +46,21 @@ nnoremap <Leader><F12> :AgitFile<CR>
 " Reset the current file
 nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
 
-" Smart way to move between windows
-nnoremap <C-j> <C-W>j
-nnoremap <C-k> <C-W>k
-nnoremap <C-h> <C-W>h
-nnoremap <C-l> <C-W>l
+" Smart way to move between windows, no need these map if tmux-navigator is
+" insalled
+" nnoremap <C-j> <C-W>j
+" nnoremap <C-k> <C-W>k
+" nnoremap <C-h> <C-W>h
+" nnoremap <C-l> <C-W>l
 
 " For jumping to high mid low
 nnoremap H Hzz
 nnoremap L Lzz
 nnoremap n nzz
+
+" Keep the indent highlighted
+vnoremap > >gv
+vnoremap < <gv
 
 " Map pasting in inset mode always indent correctly
 inoremap <C-r> <C-r><C-p>

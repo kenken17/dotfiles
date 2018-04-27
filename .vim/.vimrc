@@ -19,6 +19,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin '907th/vim-auto-save'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " For Coding & Syntaxing
 "-----------------------
