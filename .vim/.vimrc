@@ -85,6 +85,9 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Open then nerdtree when a new file open.
 autocmd BufReadPre,FileReadPre * NERDTreeFind | wincmd p
 
+" Rememeber all file curosr position
+autocmd BufWinLeave ?* mkview!
+autocmd BufWinEnter ?* silent loadview
 
 source $HOME/.config/nvim/setup/natives.vim
 source $HOME/.config/nvim/setup/mappings.vim
@@ -93,5 +96,3 @@ source $HOME/.config/nvim/setup/types.vim
 source $HOME/.config/nvim/setup/plugins.vim
 
 hi Normal guibg=NONE ctermbg=NONE
-
-

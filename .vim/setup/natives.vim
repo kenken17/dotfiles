@@ -36,5 +36,7 @@ set showmatch
 set laststatus=2
 set background=dark
 set omnifunc=syntaxcomplete#Complete
+set viewoptions=folds,cursor
+set sessionoptions=folds
 syntax enable " Enable syntax processing
 
