@@ -44,6 +44,9 @@ nnoremap <Leader><F11> :Gpull
 nnoremap <F12> :Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
+" mileszs/ack.vim
+nnoremap <Leader>a :Ack
+
 " Reset the current file
 nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
 
