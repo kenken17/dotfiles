@@ -65,6 +65,8 @@ let g:UltiSnipsJumpBackwardTrigger="<C-k>"
 " ryanoasis/vim-devicons
 let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 " Valloric/MatchTagAlways
 let g:mta_filetypes = {
