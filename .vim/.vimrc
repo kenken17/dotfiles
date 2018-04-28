@@ -33,6 +33,8 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'cohama/agit.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " For Tim Pope
 "-------------
