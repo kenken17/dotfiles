@@ -70,11 +70,3 @@ vnoremap < <gv
 nnoremap * *N
 nnoremap # #N
 
-" Quick yank/paste whole word into register P
-execute "set <M-y>=\ey"
-execute "set <M-r>=\er"
-vnoremap <M-y> "py
-nnoremap <M-r> "pP
-vnoremap <M-r> "pP
-inoremap <M-r> <C-o>"pP
-
