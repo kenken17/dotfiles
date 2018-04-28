@@ -29,8 +29,8 @@ nnoremap <F5> :CtrlP<CR>
 nnoremap <F6> :CtrlPMRU<CR>
 
 " Tabs switching
-nnoremap <F7> gT
-nnoremap <F8> gt
+nnoremap <F7> :bp<CR>
+nnoremap <F8> :bn<CR>
 
 " tpope/vim-fugitive
 nnoremap <F9> :Gstatus<CR>
