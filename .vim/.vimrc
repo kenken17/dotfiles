@@ -94,3 +94,12 @@ source $HOME/.vim/setup/types.vim
 source $HOME/.vim/setup/plugins.vim
 
 hi Normal guibg=NONE ctermbg=NONE
+
+" Change the folder text
+set fillchars="fold: "
+function! MyFoldText()
+    let endLine = getline(v:foldend)
+    let end = substitute(endLine, '\s', '', 'g')
+    return getline(v:foldstart) .' ... ' .end
+endfunction
+set foldtext=MyFoldText()
