@@ -19,6 +19,7 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
 endfunction
 
 call NERDTreeHighlightFile('js', '148', 'none', '#A6E22E', '#151515')
+call NERDTreeHighlightFile('test\.js', '2', 'none', '#008000', '#151515')
 call NERDTreeHighlightFile('vue', '148', 'none', '#A6E22E', '#151515')
 call NERDTreeHighlightFile('css', '208', 'none', '#FD9720', '#151515')
 call NERDTreeHighlightFile('scss', '208', 'none', '#FD9720', '#151515')
