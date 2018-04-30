@@ -28,6 +28,8 @@ call NERDTreeHighlightFile('scss', '197', 'none', '#FC3488', '#151515')
 call NERDTreeHighlightFile('yml', '186', 'none', '#E6DB74', '#151515')
 call NERDTreeHighlightFile('html', '186', 'none', '#E6DB74', '#151515')
 call NERDTreeHighlightFile('json', '81', 'none', '#82B1FF', '#151515')
+call NERDTreeHighlightFile('.gitignore', '241', 'none', '#506E79', '#151515')
+call NERDTreeHighlightFile('.gitmodules', '241', 'none', '#506E79', '#151515')
 
 " pangloss/vim-javascript'
 let g:javascript_plugin_jsdoc = 1
