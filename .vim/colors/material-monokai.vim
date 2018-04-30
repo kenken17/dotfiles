@@ -104,6 +104,8 @@ let s:delbg       = { "gui": "#f75f5f", "cterm": "167" }
 let s:changefg    = { "gui": "#d7d7ff", "cterm": "189" }
 let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }
 
+let s:NERDTreeDir    = { "gui": "#A8A8A8", "cterm": "248" }
+
 " Highlighting
 " ------------
 
@@ -235,8 +237,8 @@ call s:h("NERDTreeBookmarksLeader", { "fg": s:black })
 call s:h("NERDTreeBookmarkName",    { "fg": s:yellow })
 call s:h("NERDTreeCWD",             { "fg": s:pink })
 call s:h("NERDTreeUp",              { "fg": s:white })
-call s:h("NERDTreeDirSlash",        { "fg": s:grey })
-call s:h("NERDTreeDir",             { "fg": s:coolgrey })
+call s:h("NERDTreeDirSlash",        { "fg": s:white })
+call s:h("NERDTreeDir",             { "fg": s:NERDTreeDir })
 
 " Syntastic
 " ---------

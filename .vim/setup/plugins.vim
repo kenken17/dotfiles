@@ -20,9 +20,11 @@ endfunction
 
 call NERDTreeHighlightFile('js', '148', 'none', '#A6E22E', '#151515')
 call NERDTreeHighlightFile('test\.js', '2', 'none', '#008000', '#151515')
+call NERDTreeHighlightFile('spec\.js', '2', 'none', '#008000', '#151515')
 call NERDTreeHighlightFile('vue', '148', 'none', '#A6E22E', '#151515')
 call NERDTreeHighlightFile('css', '208', 'none', '#FD9720', '#151515')
-call NERDTreeHighlightFile('scss', '208', 'none', '#FD9720', '#151515')
+call NERDTreeHighlightFile('css\.map', '241', 'none', '#506E79', '#151515')
+call NERDTreeHighlightFile('scss', '197', 'none', '#FC3488', '#151515')
 call NERDTreeHighlightFile('yml', '186', 'none', '#E6DB74', '#151515')
 call NERDTreeHighlightFile('html', '186', 'none', '#E6DB74', '#151515')
 call NERDTreeHighlightFile('json', '81', 'none', '#82B1FF', '#151515')
