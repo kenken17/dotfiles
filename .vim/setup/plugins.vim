@@ -13,25 +13,26 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-    exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+function! NERDTreeHighlightFile(extensionname, extension, fg, bg, guifg, guibg)
+    exec 'autocmd filetype nerdtree highlight ' .a:extensionname .'	 ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+    exec 'autocmd filetype nerdtree syn match ' .a:extensionname .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
-call NERDTreeHighlightFile('js', '2', 'none', '#008000', '#151515')
-call NERDTreeHighlightFile('vue', '2', 'none', '#008000', '#151515')
-call NERDTreeHighlightFile('test\.js', '148', 'none', '#A6E22E', '#151515')
-call NERDTreeHighlightFile('spec\.js', '148', 'none', '#A6E22E', '#151515')
-call NERDTreeHighlightFile('yml', '186', 'none', '#E6DB74', '#151515')
-call NERDTreeHighlightFile('html', '186', 'none', '#E6DB74', '#151515')
-call NERDTreeHighlightFile('css', '197', 'none', '#FC3488', '#151515')
-call NERDTreeHighlightFile('scss', '208', 'none', '#FD9720', '#151515')
+call NERDTreeHighlightFile('js', 'js', '2', 'none', '#008000', '#151515')
+call NERDTreeHighlightFile('vue', 'vue', '2', 'none', '#008000', '#151515')
+call NERDTreeHighlightFile('testjs', 'test\.js', '148', 'none', '#A6E22E', '#151515')
+call NERDTreeHighlightFile('specjs', 'spec\.js', '148', 'none', '#A6E22E', '#151515')
+call NERDTreeHighlightFile('xml', 'xml', '186', 'none', '#E6DB74', '#151515')
+call NERDTreeHighlightFile('yml', 'yml', '186', 'none', '#E6DB74', '#151515')
+call NERDTreeHighlightFile('html', 'html', '186', 'none', '#E6DB74', '#151515')
+call NERDTreeHighlightFile('css', 'css', '197', 'none', '#FC3488', '#151515')
+call NERDTreeHighlightFile('scss', 'scss', '208', 'none', '#FD9720', '#151515')
 
-call NERDTreeHighlightFile('json', '81', 'none', '#82B1FF', '#151515')
+call NERDTreeHighlightFile('json', 'json', '81', 'none', '#82B1FF', '#151515')
 
-call NERDTreeHighlightFile('css\.map', '241', 'none', '#506E79', '#151515')
-call NERDTreeHighlightFile('.gitignore', '241', 'none', '#506E79', '#151515')
-call NERDTreeHighlightFile('.gitmodules', '241', 'none', '#506E79', '#151515')
+call NERDTreeHighlightFile('cssmap', 'css\.map', '241', 'none', '#506E79', '#151515')
+call NERDTreeHighlightFile('gitignore', '\.gitignore', '241', 'none', '#506E79', '#151515')
+call NERDTreeHighlightFile('gitmodules', '\.gitmodules', '241', 'none', '#506E79', '#151515')
 
 " pangloss/vim-javascript'
 let g:javascript_plugin_jsdoc = 1
