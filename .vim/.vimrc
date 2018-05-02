@@ -43,6 +43,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-unimpaired'
 
 " All of your Plugins must be added before the following line
 
