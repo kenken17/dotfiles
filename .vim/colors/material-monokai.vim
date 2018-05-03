@@ -87,6 +87,7 @@ let s:grey        = { "gui": "#3F565F", "cterm": "238" }
 let s:lightgrey   = { "gui": "#575b61", "cterm": "241" }
 let s:darkgrey    = { "gui": "#232E33", "cterm": "236" }
 let s:coolgrey    = { "gui": "#506E79", "cterm": "241" }
+let s:commentgrey = { "gui": "#8A8A8A", "cterm": "245" }
 
 let s:pink        = { "gui": "#FC3488", "cterm": "197" }
 let s:green       = { "gui": "#A6E22E", "cterm": "148" }
@@ -128,7 +129,7 @@ call s:h("MoreMsg",       { "fg": s:yellow })
 call s:h("ErrorMsg",      { "fg": s:black,      "bg": s:red,          "format": "standout" })
 call s:h("WarningMsg",    { "fg": s:red })
 call s:h("VertSplit",     { "fg": s:grey,       "bg": s:darkgrey })
-call s:h("LineNr",        { "fg": s:grey,       "bg": s:darkgrey })
+call s:h("LineNr",        { "fg": s:coolgrey,       "bg": s:darkgrey })
 call s:h("CursorLineNr",  { "fg": s:aqua,       "bg": s:darkblack })
 call s:h("SignColumn",    {                     "bg": s:lightblack })
 call s:h("SpellCap",      {                                           "format": "underline"})
@@ -201,7 +202,7 @@ call s:h("Tag",           { "fg": s:pink })
 "        Debug"
 
 call s:h("Todo",          { "fg": s:aqua,     "format": "bold,italic" })
-call s:h("Comment",       { "fg": s:coolgrey, "format": "italic" })
+call s:h("Comment",       { "fg": s:commentgrey, "format": "italic" })
 
 call s:h("Underlined",    { "fg": s:green })
 call s:h("Ignore",        {})
