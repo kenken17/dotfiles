@@ -25,16 +25,16 @@ nnoremap g= migg=G'i^
 nnoremap <F2> :q<CR>
 
 " scrooloose/nerdtree
-nnoremap <F3> :NERDTreeToggle<CR>
-nnoremap <F4> :NERDTreeFind<CR>
+nnoremap <Leader><Space> :NERDTreeFind<CR>
 
 " ctrlpvim/ctrlp.vim
-nnoremap <F5> :CtrlP<CR>
-nnoremap <F6> :CtrlPMRU<CR>
+nnoremap <F3> :CtrlP<CR>
+nnoremap <F4> :CtrlPMRU<CR>
 
-" Tabs switching
-nnoremap <F7> :cprevious<CR>
-nnoremap <F8> :cnext<CR>
+nnoremap <F5> :cprevious<CR>
+nnoremap <F6> :cnext<CR>
+nnoremap <F7> [c
+nnoremap <F8> ]c
 
 " tpope/vim-fugitive
 nnoremap <F9> :Gstatus<CR>
