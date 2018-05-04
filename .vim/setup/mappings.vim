@@ -33,8 +33,8 @@ nnoremap <F5> :CtrlP<CR>
 nnoremap <F6> :CtrlPMRU<CR>
 
 " Tabs switching
-nnoremap <F7> :bp<CR>
-nnoremap <F8> :bn<CR>
+nnoremap <F7> :cprevious<CR>
+nnoremap <F8> :cnext<CR>
 
 " tpope/vim-fugitive
 nnoremap <F9> :Gstatus<CR>
