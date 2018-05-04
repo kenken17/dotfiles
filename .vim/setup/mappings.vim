@@ -15,6 +15,10 @@ nnoremap <Leader>; mpk$A;<Esc>`p
 nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
 
+" For search and replace ex mode
+nnoremap <Leader>ff :%s///gn<Left><Left><Left><Left><C-r>0<CR>
+nnoremap <Leader>fr :%s///gc<Left><Left><Left><Left><C-r>0<Right>
+
 " auto indent, use mark i
 nnoremap g= migg=G'i^
 
