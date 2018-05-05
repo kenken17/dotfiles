@@ -22,6 +22,7 @@ git config --global alias.dlc "diff --cached HEAD^"
 git config --global alias.f "!git ls-files | grep -i"
 git config --global alias.grep "grep -Ii"
 git config --global alias.gr "grep -Ii"
+git config --global alias.p "git fetch --prune origin '+refs/tags/*:refs/tags/*'"
 
 
 # For splice.vim merge
