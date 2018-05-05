@@ -36,8 +36,8 @@ nnoremap <F4> :CtrlPMRU<CR>
 
 nnoremap <F5> :cprevious<CR>
 nnoremap <F6> :cnext<CR>
-nnoremap <F7> [c
-nnoremap <F8> ]c
+nnoremap <F7> [czz
+nnoremap <F8> ]czz
 
 " tpope/vim-fugitive
 nnoremap <F9> :Gstatus<CR>
