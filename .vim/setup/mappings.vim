@@ -19,6 +19,9 @@ nnoremap <Leader>B viB
 nnoremap <Leader>ff :%s///gn<Left><Left><Left><Left><C-r>0<CR>
 nnoremap <Leader>fr :%s///gc<Left><Left><Left><Left><C-r>0<Right>
 
+" For quick vsplit diff
+nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
+
 " auto indent, use mark i
 nnoremap g= migg=G'i^
 
