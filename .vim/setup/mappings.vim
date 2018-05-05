@@ -43,7 +43,7 @@ nnoremap <F8> ]czz
 nnoremap <F9> :Gstatus<CR>
 nnoremap <Leader><F9> :Gwrite<CR>
 nnoremap <F10> :Gvdiff<CR>
-nnoremap <Leader><F10> :Gvdiff HEAD@{1}<CR>
+nnoremap <Leader><F10> :Gvdiff HEAD@{}<Left>
 nnoremap <F11> :Gpush
 nnoremap <Leader><F11> :Gpull
 
