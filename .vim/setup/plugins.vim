@@ -65,11 +65,6 @@ let g:AutoPairsShortcutJump = ''
 let g:multi_cursor_start_key = '<C-q>'
 let g:multi_cursor_select_all_key = '<Leader><C-x>'
 
-" SirVer/ultisnips
-let g:UltiSnipsExpandTrigger="<C-space>"
-let g:UltiSnipsJumpForwardTrigger="<C-j>"
-let g:UltiSnipsJumpBackwardTrigger="<C-k>"
-
 " ryanoasis/vim-devicons
 let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
 let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
