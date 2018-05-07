@@ -149,7 +149,7 @@ call s:h("Directory",     { "fg": s:aqua })
 call s:h("DiffAdd",       { "fg": s:addfg,      "bg": s:addbg })
 call s:h("DiffDelete",    { "fg": s:black,      "bg": s:delbg })
 call s:h("DiffChange",    { "fg": s:changefg,   "bg": s:changebg })
-call s:h("DiffText",      { "fg": s:black,      "bg": s:aqua })
+call s:h("DiffText",      { "fg": s:red,        "bg": s:aqua })
 
 " fold
 call s:h("Folded",        { "fg": s:coolgrey,   "bg": s:darkblack })
