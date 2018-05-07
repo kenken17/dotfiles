@@ -34,8 +34,9 @@ nnoremap <Leader><Space> :NERDTreeFind<CR>
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
 
-nnoremap <F5> :cprevious<CR>
-nnoremap <F6> :cnext<CR>
+" tpope/vim-unimpaired 
+nnoremap <F5> [q 
+nnoremap <F6> ]q
 nnoremap <F7> [czz
 nnoremap <F8> ]czz
 
