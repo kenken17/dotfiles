@@ -79,3 +79,7 @@ let g:mta_filetypes = {
             \ 'jinja' : 1,
             \ 'vue' : 1,
             \}
+
+" SirVer/ultisnips
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
+
