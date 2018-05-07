@@ -3,10 +3,10 @@
 
 " scrooloose/nerdtree
 let NERDTreeShowHidden=1
-let g:NERDTreeWinSize=50
+let NERDTreeWinSize=50
 let NERDTreeAutoDeleteBuffer = 1
 let NERDTreeMinimalUI = 1
-let NERDTreeDirArrows = 1
+let NERDTreeQuitOnOpen = 1
 let NERDTreeIgnore=['node_modules$', '\.git$', '\.DS_Store', '\.serverless$', '\.nyc_output$', 'coverage']
 
 autocmd StdinReadPre * let s:std_in=1
