@@ -65,6 +65,9 @@ nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
 " nnoremap <C-h> <C-W>h
 " nnoremap <C-l> <C-W>l
 
+" paste should indent
+inoremap <C-r> <C-r><C-p>
+
 " For jumping to high mid low
 nnoremap H Hzz
 nnoremap L Lzz
