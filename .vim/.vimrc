@@ -81,9 +81,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 " Clear white spaces when file save, no need if we have autoformat installed
 " autocmd BufWritePre * %s/\s\+$//e
 
-" Open then nerdtree when a new file open.
-autocmd BufReadPre,FileReadPre * NERDTreeFind | wincmd p
-
 " Rememeber all file curosr position
 autocmd BufWinLeave ?* silent mkview!
 autocmd BufWinEnter ?* silent loadview
