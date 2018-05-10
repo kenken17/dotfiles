@@ -82,8 +82,8 @@ autocmd QuickFixCmdPost *grep* cwindow
 " autocmd BufWritePre * %s/\s\+$//e
 
 " Rememeber all file curosr position
-autocmd BufWinLeave ?* silent mkview!
-autocmd BufWinEnter ?* silent loadview
+autocmd BufWinLeave *.* silent mkview!
+autocmd BufWinEnter *.* silent loadview
 
 source $HOME/.vim/setup/natives.vim
 source $HOME/.vim/setup/mappings.vim
