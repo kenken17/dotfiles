@@ -58,7 +58,7 @@ nnoremap <F12> :Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
-noremap <Leader>a :Ack! ''<Left>
+nnoremap <Leader>a :Ack! ''<Left>
 nnoremap <Leader>A :Ack! '<C-r>=expand("<cWORD>")<CR>'<Space>
 
 " Reset the current file
