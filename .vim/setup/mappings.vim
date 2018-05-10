@@ -19,8 +19,10 @@ nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
 
 " For search and replace ex mode
-nnoremap <Leader>ff :%s///gn<Left><Left><Left><Left><C-r>0<CR>
-nnoremap <Leader>fr :%s///gc<Left><Left><Left><Left><C-r>0<Right>
+nnoremap <Leader>f :%s/<C-r>=expand("<cword>")<CR>//gn<CR>
+nnoremap <Leader>F :%s/<C-r>=expand("<cWORD>")<CR>//gn<CR>
+nnoremap <Leader>fr :%s/<c-r>=expand("<cword>")<CR>//gc<Left><Left><Left>
+nnoremap <Leader>FR :%s/<c-r>=expand("<cWORD>")<CR>//gc<Left><Left><Left>
 
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
@@ -56,8 +58,8 @@ nnoremap <F12> :Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
-nnoremap <Leader>a :Ack! ''<Left>
-nnoremap <Leader>A :Ack! '<C-r>0'<Space>
+noremap <Leader>a :Ack! ''<Left>
+nnoremap <Leader>A :Ack! '<C-r>=expand("<cWORD>")<CR>'<Space>
 
 " Reset the current file
 nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
