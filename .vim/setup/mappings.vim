@@ -57,16 +57,10 @@ nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
 nnoremap <Leader>a :Ack! ''<Left>
+nnoremap <Leader>A :Ack! '<C-r>0'<Space>
 
 " Reset the current file
 nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
-
-" Smart way to move between windows, no need these map if tmux-navigator is
-" insalled
-" nnoremap <C-j> <C-W>j
-" nnoremap <C-k> <C-W>k
-" nnoremap <C-h> <C-W>h
-" nnoremap <C-l> <C-W>l
 
 " paste should indent
 inoremap <C-r> <C-r><C-p>
