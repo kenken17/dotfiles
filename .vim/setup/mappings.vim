@@ -4,6 +4,9 @@
 " leader is comma
 let mapleader=","
 
+" redraw the screen
+nnoremap <Leader>` :redraw!
+
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<CR>
 
