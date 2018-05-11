@@ -6,6 +6,7 @@ let mapleader=","
 
 " redraw the screen
 nnoremap <Leader>` :redraw!
+nnoremap <Leader>1 :set foldmethod=syntax
 
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<CR>
