@@ -52,10 +52,6 @@ let g:ale_fixers = { 'javascript': ['eslint'] }
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPBuffer'
 
-" 907th/vim-auto-save
-let g:auto_save = 1
-let g:auto_save_events = ["BufLeave"]
-
 " jiangmiao/auto-pairs
 let g:AutoPairsShortcutToggle = ''
 let g:AutoPairsShortcutFastWrap = ''
