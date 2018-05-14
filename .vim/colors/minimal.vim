@@ -181,8 +181,8 @@ call s:hi("SignColumn", s:color_none, s:color_bg)
 " --------------------
 
 " Vim
-call s:hi("vimCommand", s:color_lvl_1, s:color_bg)
-call s:hi("vimOption", s:color_lvl_3, s:color_bg)
+call s:hi("vimCommand", s:color_lvl_4, s:color_bg)
+call s:hi("vimOption", s:color_highlight, s:color_bg)
 
 " JS
 " pangloss/vim-javascript
