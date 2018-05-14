@@ -66,7 +66,8 @@ filetype plugin indent on    " required
 
 " set termguicolors
 set t_Co=256
-colorscheme material-monokai
+" colorscheme material-monokai
+colorscheme minimal
 
 " For autocmd
 "------------
