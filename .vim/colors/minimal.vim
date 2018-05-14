@@ -15,9 +15,9 @@ endif
 let g:colors_name = 'minimal'
 
 let s:color_bg          = ['#000000', 0]
-let s:color_fg          = ['#808080', 244]
+let s:color_fg          = ['#949494', 246]
 let s:color_lvl_0       = ['#3a3a3a', 237]
-let s:color_lvl_1       = ['#585858', 240]
+let s:color_lvl_1       = ['#808080', 244]
 let s:color_lvl_2       = ['#a8a8a8', 248]
 let s:color_lvl_3       = ['#c6c6c6', 251]
 let s:color_lvl_4       = ['#eeeeee', 255]
@@ -72,7 +72,7 @@ call s:hi("ColorColumn", s:color_fg, s:color_lvl_0)
 call s:hi("Cursor", s:color_highlight, s:color_bg)
 " call s:hi("CursorIM", s:color_fg, s:color_bg)
 call s:hi("CursorColumn", s:color_fg, s:color_bg)
-call s:hi("CursorLine", s:color_lvl_4, s:color_lvl_0, s:none)
+call s:hi("CursorLine", s:color_highlight, s:color_lvl_0, s:none)
 call s:hi("Directory", s:color_lvl_2, s:color_bg)
 " call s:hi("DiffAdd", s:color_fg, s:color_bg)
 " call s:hi("DiffChange", s:color_fg, s:color_bg)
@@ -81,8 +81,8 @@ call s:hi("Directory", s:color_lvl_2, s:color_bg)
 call s:hi("EndOfBuffer", s:color_fg, s:color_bg)
 call s:hi("ErrorMsg", s:color_error, s:color_bg)
 call s:hi("VertSplit", s:color_lvl_1, s:color_bg)
-call s:hi("Folded", s:color_lvl_2, s:color_lvl_1)
-call s:hi("FoldColumn", s:color_lvl_2, s:color_lvl_1)
+call s:hi("Folded", s:color_lvl_2, s:color_lvl_0)
+call s:hi("FoldColumn", s:color_lvl_2, s:color_lvl_0)
 call s:hi("SignColumn", s:color_lvl_2, s:color_lvl_1)
 call s:hi("IncSearch", s:color_highlight, s:color_lvl_0)
 call s:hi("LineNr", s:color_lvl_1, s:color_bg)
@@ -131,16 +131,25 @@ call s:hi("Repeat", s:color_lvl_1, s:color_bg)
 call s:hi("Label", s:color_lvl_1, s:color_bg)
 call s:hi("Operator", s:color_lvl_1, s:color_bg)
 call s:hi("Keyword", s:color_lvl_1, s:color_bg)
-call s:hi("Exception", s:color_lvl_1, s:color_bg)
-call s:hi("PreProc", s:color_lvl_1, s:color_bg)
-call s:hi("Include", s:color_lvl_1, s:color_bg)
-call s:hi("Define", s:color_lvl_1, s:color_bg)
-call s:hi("Macro", s:color_lvl_1, s:color_bg)
-call s:hi("PreCondit", s:color_lvl_1, s:color_bg)
-call s:hi("Type", s:color_lvl_1, s:color_bg)
-call s:hi("StorageClass", s:color_lvl_1, s:color_bg)
-call s:hi("Structure", s:color_lvl_1, s:color_bg)
-call s:hi("Typedef", s:color_lvl_1, s:color_bg)
+
+call s:hi("Type", s:color_lvl_2, s:color_bg)
+call s:hi("StorageClass", s:color_lvl_2, s:color_bg)
+call s:hi("Structure", s:color_lvl_2, s:color_bg)
+call s:hi("Typedef", s:color_lvl_2, s:color_bg)
+
+call s:hi("Exception", s:color_highlight, s:color_bg)
+call s:hi("PreProc", s:color_highlight, s:color_bg)
+call s:hi("Include", s:color_highlight, s:color_bg)
+call s:hi("Define", s:color_highlight, s:color_bg)
+call s:hi("Macro", s:color_highlight, s:color_bg)
+call s:hi("PreCondit", s:color_highlight, s:color_bg)
+
+call s:hi("Special", s:color_highlight, s:color_bg)
+call s:hi("SpecialChar", s:color_highlight, s:color_bg)
+call s:hi("Tag", s:color_highlight, s:color_bg)
+call s:hi("Delimiter", s:color_highlight, s:color_bg)
+call s:hi("SpecialComment", s:color_highlight, s:color_bg)
+call s:hi("Debug", s:color_highlight, s:color_bg)
 
 call s:hi("Comment", s:color_comment, s:color_bg)
 
@@ -179,4 +188,14 @@ call s:hi("jsNull", s:color_lvl_5, s:color_bg)
 call s:hi("jsDocTags", s:color_lvl_2, s:color_bg)
 call s:hi("jsDocType", s:color_lvl_3, s:color_bg)
 call s:hi("jsDocParam", s:color_lvl_4, s:color_bg)
+
+" CSS
+call s:hi("cssClassName", s:color_lvl_5, s:color_bg)
+call s:hi("cssIdentifier", s:color_highlight, s:color_bg)
+call s:hi("cssTagName", s:color_lvl_3, s:color_bg)
+call s:hi("cssProp", s:color_lvl_2, s:color_bg)
+
+"SCSS/SASS
+call s:hi("scssComment", s:color_comment, s:color_bg)
+call s:hi("sassComment", s:color_comment, s:color_bg)
 
