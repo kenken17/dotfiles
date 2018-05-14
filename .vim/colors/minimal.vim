@@ -202,6 +202,7 @@ call s:hi("jsObjectKey", s:color_lvl_2, s:color_bg)
 call s:hi("jsObjectColon", s:color_lvl_2, s:color_bg)
 
 call s:hi("jsNull", s:color_lvl_5, s:color_bg)
+call s:hi("jsThis", s:color_lvl_5, s:color_bg)
 
 call s:hi("jsDocTags", s:color_lvl_2, s:color_bg)
 call s:hi("jsDocType", s:color_lvl_3, s:color_bg)
