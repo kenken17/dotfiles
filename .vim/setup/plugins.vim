@@ -12,38 +12,17 @@ let NERDTreeIgnore=['node_modules$', '\.git$', '\.DS_Store', '\.serverless$', '\
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-function! NERDTreeHighlightFile(extensionname, extension, fg, bg, guifg, guibg)
-    exec 'autocmd filetype nerdtree highlight ' .a:extensionname .'	 ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-    exec 'autocmd filetype nerdtree syn match ' .a:extensionname .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-call NERDTreeHighlightFile('js', 'js', '2', 'none', '#008000', '#151515')
-call NERDTreeHighlightFile('vue', 'vue', '2', 'none', '#008000', '#151515')
-call NERDTreeHighlightFile('testjs', 'test\.js', '148', 'none', '#A6E22E', '#151515')
-call NERDTreeHighlightFile('specjs', 'spec\.js', '148', 'none', '#A6E22E', '#151515')
-call NERDTreeHighlightFile('xml', 'xml', '186', 'none', '#E6DB74', '#151515')
-call NERDTreeHighlightFile('yml', 'yml', '186', 'none', '#E6DB74', '#151515')
-call NERDTreeHighlightFile('html', 'html', '186', 'none', '#E6DB74', '#151515')
-call NERDTreeHighlightFile('css', 'css', '197', 'none', '#FC3488', '#151515')
-call NERDTreeHighlightFile('scss', 'scss', '208', 'none', '#FD9720', '#151515')
-
-call NERDTreeHighlightFile('json', 'json', '81', 'none', '#82B1FF', '#151515')
-
-call NERDTreeHighlightFile('cssmap', 'css\.map', '241', 'none', '#506E79', '#151515')
-call NERDTreeHighlightFile('gitignore', '\.gitignore', '241', 'none', '#506E79', '#151515')
-call NERDTreeHighlightFile('gitmodules', '\.gitmodules', '241', 'none', '#506E79', '#151515')
-
 " pangloss/vim-javascript'
 let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 
 " w0rp/ale
 let g:ale_open_list = 1
-let g:ale_sign_error = '>>'
-let g:ale_sign_warning = '>>'
+let g:ale_sign_error = '▶'
+let g:ale_sign_warning = '▶'
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
-let g:ale_sign_column_always = 2
+let g:ale_sign_column_always = 1
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 let g:ale_fixers = { 'javascript': ['eslint'] }
