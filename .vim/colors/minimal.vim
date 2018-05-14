@@ -26,7 +26,7 @@ let s:color_highlight   = ['#afd700', 148]
 let s:color_selection   = ['#c6c6c6', 251]
 let s:color_error       = ['#d70000', 160]
 let s:color_comment     = ['#808080', 244]
-
+let s:color_none        = ['NONE', 'NONE']
 
 let s:default_fg        = s:color_fg
 let s:default_bg        = s:color_bg
@@ -67,6 +67,7 @@ endfunction
 
 
 " vim interface
+call s:hi("newadded", s:color_fg, s:color_lvl_0)
 call s:hi("ColorColumn", s:color_fg, s:color_lvl_0)
 " call s:hi("Conceal", s:color_fg, s:color_bg)
 call s:hi("Cursor", s:color_highlight, s:color_bg)
@@ -74,10 +75,10 @@ call s:hi("Cursor", s:color_highlight, s:color_bg)
 call s:hi("CursorColumn", s:color_fg, s:color_bg)
 call s:hi("CursorLine", s:color_highlight, s:color_lvl_0, s:none)
 call s:hi("Directory", s:color_lvl_2, s:color_bg)
-" call s:hi("DiffAdd", s:color_fg, s:color_bg)
-" call s:hi("DiffChange", s:color_fg, s:color_bg)
-" call s:hi("DiffDelete", s:color_fg, s:color_bg)
-" call s:hi("DiffText", s:color_fg, s:color_bg)
+call s:hi("DiffAdd", s:color_lvl_0, s:color_highlight)
+call s:hi("DiffChange", s:color_lvl_4, s:color_bg)
+call s:hi("DiffDelete", s:color_lvl_4, s:color_error)
+call s:hi("DiffText", s:color_lvl_0, s:color_lvl_3)
 call s:hi("EndOfBuffer", s:color_fg, s:color_bg)
 call s:hi("ErrorMsg", s:color_error, s:color_bg)
 call s:hi("VertSplit", s:color_lvl_1, s:color_bg)
@@ -92,10 +93,10 @@ call s:hi("ModeMsg", s:color_lvl_3, s:color_bg)
 call s:hi("MoreMsg", s:color_lvl_3, s:color_bg)
 call s:hi("NonText", s:color_lvl_3, s:color_bg)
 call s:hi("Normal", s:color_fg, s:color_bg)
-" call s:hi("Pmenu", s:color_fg, s:color_bg)
-" call s:hi("PmenuSel", s:color_fg, s:color_bg)
-" call s:hi("PmenuSbar", s:color_fg, s:color_bg)
-" call s:hi("PmenuThumb", s:color_fg, s:color_bg)
+call s:hi("Pmenu", s:color_lvl_3, s:color_bg)
+call s:hi("PmenuSel", s:color_lvl_0, s:color_highlight)
+call s:hi("PmenuSbar", s:color_fg, s:color_lvl_1)
+call s:hi("PmenuThumb", s:color_fg, s:color_bg)
 call s:hi("Question", s:color_lvl_3, s:color_bg)
 " call s:hi("QuickFixLine", s:color_fg, s:color_bg)
 call s:hi("Search", s:color_lvl_0, s:color_highlight)
