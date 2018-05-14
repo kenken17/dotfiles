@@ -78,10 +78,10 @@ call s:hi("Directory", s:color_lvl_2, s:color_bg)
 call s:hi("DiffAdd", s:color_lvl_0, s:color_highlight)
 call s:hi("DiffChange", s:color_lvl_4, s:color_bg)
 call s:hi("DiffDelete", s:color_lvl_4, s:color_error)
-call s:hi("DiffText", s:color_lvl_0, s:color_lvl_3)
+call s:hi("DiffText", s:color_lvl_0, s:color_highlight)
 call s:hi("EndOfBuffer", s:color_fg, s:color_bg)
 call s:hi("ErrorMsg", s:color_error, s:color_bg)
-call s:hi("VertSplit", s:color_lvl_1, s:color_bg)
+call s:hi("VertSplit", s:color_lvl_0, s:color_bg)
 call s:hi("Folded", s:color_lvl_2, s:color_lvl_0)
 call s:hi("FoldColumn", s:color_lvl_2, s:color_lvl_0)
 call s:hi("SignColumn", s:color_lvl_2, s:color_lvl_1)
@@ -162,6 +162,23 @@ call s:hi("Boolean", s:color_lvl_4, s:color_bg)
 call s:hi("Float", s:color_lvl_4, s:color_bg)
 
 call s:hi("Todo", s:color_highlight, s:color_bg)
+
+" Plugin overwrite
+" ------------------
+
+" NERDTree
+call s:hi("NERDTreeCWD", s:color_error, s:color_none)
+call s:hi("NERDTreeDir", s:color_lvl_3, s:color_none)
+call s:hi("NERDTreeOpenable", s:color_lvl_5, s:color_none)
+call s:hi("NERDTreeClosable", s:color_lvl_5, s:color_none)
+
+"ALE
+call s:hi("ALEErrorSign", s:color_error, s:color_none)
+call s:hi("ALEWarningSign", s:color_lvl_4, s:color_none)
+call s:hi("SignColumn", s:color_none, s:color_bg)
+
+" Language overwrtie
+" --------------------
 
 " Vim
 call s:hi("vimCommand", s:color_lvl_1, s:color_bg)
