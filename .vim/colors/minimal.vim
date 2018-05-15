@@ -68,7 +68,7 @@ endfunction
 
 " vim interface
 call s:hi("newadded", s:color_fg, s:color_lvl_0)
-call s:hi("ColorColumn", s:color_fg, s:color_lvl_0)
+call s:hi("ColorColumn", s:color_lvl_4, s:color_error)
 " call s:hi("Conceal", s:color_fg, s:color_bg)
 call s:hi("Cursor", s:color_highlight, s:color_bg)
 " call s:hi("CursorIM", s:color_fg, s:color_bg)
