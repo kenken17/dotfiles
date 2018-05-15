@@ -20,8 +20,8 @@ nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
 
 " For search and replace ex mode
-nnoremap <Leader>f :%s/<C-r>=expand("<cword>")<CR>//gn<CR>
-nnoremap <Leader>F :%s/<C-r>=expand("<cWORD>")<CR>//gn<CR>
+nnoremap <Leader>ff :%s/<C-r>=expand("<cword>")<CR>//gn<CR>
+nnoremap <Leader>FF :%s/<C-r>=expand("<cWORD>")<CR>//gn<CR>
 nnoremap <Leader>fr :%s/<c-r>=expand("<cword>")<CR>//gc<Left><Left><Left>
 nnoremap <Leader>FR :%s/<c-r>=expand("<cWORD>")<CR>//gc<Left><Left><Left>
 
@@ -59,7 +59,7 @@ nnoremap <F12> :Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
-nnoremap <Leader>a :Ack! ''<Left>
+nnoremap <Leader>a :Ack! '<C-r>=expand("<cword>")<CR>'<Space>
 nnoremap <Leader>A :Ack! '<C-r>=expand("<cWORD>")<CR>'<Space>
 
 " Reset the current file
