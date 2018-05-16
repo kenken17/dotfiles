@@ -198,7 +198,7 @@ call s:hi("jsFuncArgs", s:color_lvl_3, s:color_bg)
 call s:hi("jsArrowFunction", s:color_lvl_3, s:color_bg)
 
 call s:hi("jsObjectProp", s:color_lvl_3, s:color_bg)
-call s:hi("jsObjectKey", s:color_lvl_2, s:color_bg)
+call s:hi("jsObjectKey", s:color_highlight, s:color_bg)
 call s:hi("jsObjectColon", s:color_lvl_2, s:color_bg)
 
 call s:hi("jsNull", s:color_lvl_5, s:color_bg)
@@ -217,4 +217,7 @@ call s:hi("cssProp", s:color_lvl_2, s:color_bg)
 "SCSS/SASS
 call s:hi("scssComment", s:color_comment, s:color_bg)
 call s:hi("sassComment", s:color_comment, s:color_bg)
+
+" JSON
+call s:hi("jsonKeyword", s:color_highlight, s:color_bg)
 
