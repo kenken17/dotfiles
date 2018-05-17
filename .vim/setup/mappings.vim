@@ -69,7 +69,10 @@ nnoremap <Leader>A :Ack! '<C-r><C-a>'<Space>
 nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
 
 " paste should indent
-inoremap <C-r> <C-r><C-p>
+" inoremap <C-r> <C-r><C-p>
+
+" Shift-tab to unindent
+inoremap <S-Tab> <C-o><<
 
 " For jumping to high mid low
 nnoremap H Hzz
