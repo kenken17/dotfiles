@@ -62,8 +62,8 @@ nnoremap <F12> :Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
-nnoremap <Leader>a :Ack! '<C-r>=expand("<cword>")<CR>'<Space>
-nnoremap <Leader>A :Ack! '<C-r>=expand("<cWORD>")<CR>'<Space>
+nnoremap <Leader>a :Ack! '<C-r><C-w>'<Space>
+nnoremap <Leader>A :Ack! '<C-r><C-a>'<Space>
 
 " Reset the current file
 nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
