@@ -23,10 +23,10 @@ nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
 
 " For search and replace ex mode
-nnoremap <Leader>ff :%s/<C-r>=expand("<cword>")<CR>//gn<CR>
-nnoremap <Leader>FF :%s/<C-r>=expand("<cWORD>")<CR>//gn<CR>
-nnoremap <Leader>fr :%s/<c-r>=expand("<cword>")<CR>//gc<Left><Left><Left>
-nnoremap <Leader>FR :%s/<c-r>=expand("<cWORD>")<CR>//gc<Left><Left><Left>
+nnoremap <Leader>ff :%s/<C-r><C-w>//gn<CR>
+nnoremap <Leader>FF :%s/<C-r><C-a>//gn<CR>
+nnoremap <Leader>fr :%s/<c-r><C-w>//gc<Left><Left><Left>
+nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
