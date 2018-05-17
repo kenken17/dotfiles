@@ -25,7 +25,6 @@ set hlsearch
 set lazyredraw " Don't redraw while executing macros (good performance config)
 set magic
 set showmatch
-set background=dark
 set omnifunc=syntaxcomplete#Complete
 set viewoptions=folds,cursor
 set sessionoptions=folds
