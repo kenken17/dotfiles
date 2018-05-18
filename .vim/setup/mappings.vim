@@ -31,9 +31,7 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 
-" auto indent, use mark i
-nnoremap g= migg=G'i^
-
+" Quit
 nnoremap <F2> :q<CR>
 
 " scrooloose/nerdtree
