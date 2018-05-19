@@ -31,11 +31,14 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 
-" Quit
-nnoremap <F2> :q<CR>
-
 " scrooloose/nerdtree
 nnoremap <Leader><Space> :NERDTreeFind<CR>
+
+" Help
+nnoremap <F1> :help <C-r><C-w><CR>
+
+" Quit
+nnoremap <F2> :q<CR>
 
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
