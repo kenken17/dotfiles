@@ -33,7 +33,7 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 
 " scrooloose/nerdtree
-nnoremap <Leader><Space> :NERDTreeFind<CR>
+nnoremap <Leader>\ :NERDTreeFind<CR>
 
 " Help
 nnoremap <F1> :help <C-r><C-w><CR>
