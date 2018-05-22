@@ -2,7 +2,8 @@
 "-------------------------------
 
 " leader is comma
-let mapleader=","
+" let mapleader=","
+" nnoremap \ ,
 
 " redraw the screen
 nnoremap <Leader>` :redraw!
