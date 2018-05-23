@@ -55,6 +55,8 @@ let g:mta_filetypes = {
             \ 'vue' : 1,
             \}
 
-" SirVer/ultisnips
+" SirVer/ultisnips,
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 
+" Plugin 'cohama/agit.vim'
+let g:agit_max_log_lines = 100

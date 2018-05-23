@@ -58,7 +58,7 @@ nnoremap <F11> :Gpush
 nnoremap <Leader><F11> :Gpull
 
 " cohama/agit.vim
-nnoremap <F12> :Agit<CR>
+nnoremap <F12> :Agit<CR>:vertical resize 150<CR>:Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
