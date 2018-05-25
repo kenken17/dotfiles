@@ -2,8 +2,8 @@
 "-------------------------------
 
 " leader is comma
-" let mapleader=","
-" nnoremap \ ,
+let mapleader=","
+nnoremap \ ,
 
 " redraw the screen
 nnoremap <Leader>` :redraw!
@@ -14,6 +14,9 @@ nnoremap <Leader>/ :nohlsearch<CR>
 
 " when go to tag, should look for every matching one
 nnoremap <C-]> g<C-]>
+
+" HTML: quickly add attr to the tag
+nnoremap <Leader>> f>i<Space>
 
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
@@ -33,7 +36,7 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 
 " scrooloose/nerdtree
-nnoremap <Leader>\ :NERDTreeFind<CR>
+nnoremap <Leader><Space> :NERDTreeFind<CR>
 
 " Help
 nnoremap <F1> :help <C-r><C-w><CR>
