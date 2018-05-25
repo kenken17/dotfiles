@@ -24,6 +24,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 "-----------------------
 Plugin 'pangloss/vim-javascript'
 Plugin 'posva/vim-vue'
+Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'w0rp/ale'
 Plugin 'ervandew/supertab'
 Plugin 'Valloric/MatchTagAlways'
