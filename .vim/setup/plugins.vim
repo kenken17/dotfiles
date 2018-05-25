@@ -60,3 +60,6 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 
 " Plugin 'cohama/agit.vim'
 let g:agit_max_log_lines = 100
+
+" Plugin 'editorconfig/editorconfig-vim'
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
