@@ -16,7 +16,7 @@ nnoremap <Leader>/ :nohlsearch<CR>
 nnoremap <C-]> g<C-]>
 
 " HTML: quickly add attr to the tag
-nnoremap <Leader>> f>i<Space>
+nnoremap <Leader>> ^f>i<Space>
 
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
