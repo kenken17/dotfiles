@@ -177,6 +177,20 @@ call s:hi("ALEErrorSign", s:color_error, s:color_none)
 call s:hi("ALEWarningSign", s:color_lvl_4, s:color_none)
 call s:hi("SignColumn", s:color_none, s:color_bg)
 
+" Agit
+call s:hi("agitStatAdded", s:color_highlight, s:color_bg)
+call s:hi("agitStatRemoved", s:color_error, s:color_bg)
+
+call s:hi("agitDiffAdd", s:color_highlight, s:color_bg)
+call s:hi("agitDiffRemove", s:color_error, s:color_bg)
+call s:hi("agitDiffHeader", s:color_lvl_0, s:color_selection)
+call s:hi("agitDiffFileName", s:color_lvl_4, s:color_bg)
+
+call s:hi("agitHead", s:color_error, s:color_lvl_5)
+call s:hi("agitRemote", s:color_lvl_4, s:color_bg)
+call s:hi("agitTag", s:color_lvl_4, s:color_bg)
+call s:hi("agitRef", s:color_highlight, s:color_bg)
+
 " Language overwrtie
 " --------------------
 
