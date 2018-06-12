@@ -17,6 +17,7 @@ let g:javascript_plugin_jsdoc = 1
 let g:javascript_plugin_ngdoc = 1
 
 " w0rp/ale
+let g:ale_set_quickfix = 0
 let g:ale_open_list = 1
 let g:ale_sign_error = '▶'
 let g:ale_sign_warning = '▶'
