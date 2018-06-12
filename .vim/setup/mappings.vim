@@ -35,6 +35,12 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 
+" For navigate on local list
+nnoremap [l :lprevious<CR>
+nnoremap ]l :lnext<CR>
+nnoremap [L :lfirst<CR>
+nnoremap ]L :llast<CR>
+
 " scrooloose/nerdtree
 nnoremap <Leader><Space> :NERDTreeFind<CR>
 
@@ -65,7 +71,8 @@ nnoremap <F12> :Agit<CR>:vertical resize 150<CR>:Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
-nnoremap <Leader>a :Ack! '<C-r><C-w>'<Space>
+nnoremap <Leader>* :Ack! '<C-r><C-w>'<Space>
+nnoremap <Leader>a :Ack! ''<Left>
 nnoremap <Leader>A :Ack! '<C-r><C-a>'<Space>
 
 " Reset the current file
