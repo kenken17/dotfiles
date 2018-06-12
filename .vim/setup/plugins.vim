@@ -59,8 +59,12 @@ let g:mta_filetypes = {
 " SirVer/ultisnips,
 let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 
-" Plugin 'cohama/agit.vim'
+" cohama/agit.vim
 let g:agit_max_log_lines = 100
 
-" Plugin 'editorconfig/editorconfig-vim'
+" editorconfig/editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
+" janko-m/vim-test
+let test#strategy = "dispatch"
+" let g:test#preserve_screen = 1
