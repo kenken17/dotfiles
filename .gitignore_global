@@ -62,3 +62,8 @@ tags
 coverage/
 .nyc_output/
 build/
+
+
+# vim #
+######
+*.un~
