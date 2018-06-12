@@ -28,5 +28,6 @@ set showmatch
 set omnifunc=syntaxcomplete#Complete
 set viewoptions=folds,cursor
 set sessionoptions=folds
+set undofile
 syntax enable " Enable syntax processing
 
