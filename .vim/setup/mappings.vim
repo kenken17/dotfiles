@@ -50,6 +50,10 @@ nnoremap <F1> :help <C-r><C-w><CR>
 " Quit
 nnoremap <F2> :q<CR>
 
+" Center the screen when navigate folds
+nnoremap zj zjzz
+nnoremap zk zkzz
+
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
