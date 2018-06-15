@@ -37,6 +37,8 @@ Plugin 'honza/vim-snippets'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'janko-m/vim-test'
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
 
 " For Tim Pope
 "-------------
