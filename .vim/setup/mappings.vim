@@ -54,6 +54,10 @@ nnoremap <F2> :q<CR>
 nnoremap zj zjzz
 nnoremap zk zkzz
 
+" when pan up/down speed it
+nnoremap <C-e> 5<C-e>
+nnoremap <C-y> 5<C-y>
+
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
