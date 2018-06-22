@@ -61,7 +61,7 @@ tags
 .serverless/
 coverage/
 .nyc_output/
-build/
+/build/
 
 
 # vim #
