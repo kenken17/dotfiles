@@ -5,9 +5,15 @@
 let mapleader=","
 nnoremap \ ,
 
+" Send the paste item to xclip
+vnoremap <Leader>y "+y
+nnoremap <Leader>y :<C-r><C-a>"+y
+nnoremap <Leader>Y "+Y
+
 " redraw the screen
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
+nnoremap <Leader>1 :set foldmethod=indent
 
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<CR>
