@@ -19,8 +19,8 @@ augroup END
 augroup filetype_vue
     au!
     au FileType vue syntax sync fromstart
-    au FileType vue :g/<template>/mark8
-    au FileType vue :g/<script>/mark9
-    au FileType vue :g/<style/mark0
+    au FileType vue :silent :g/<template>/mark8
+    au FileType vue :silent :g/<script>/mark9
+    au FileType vue :silent :g/<style/mark0
 augroup END
 
