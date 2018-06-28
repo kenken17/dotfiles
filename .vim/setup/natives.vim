@@ -18,6 +18,7 @@ set tabstop=4
 set softtabstop=4
 set nowrap
 set cursorline
+set colorcolumn=160
 set number
 set ignorecase
 set smartcase
