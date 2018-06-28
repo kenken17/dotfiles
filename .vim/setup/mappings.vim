@@ -11,7 +11,7 @@ vnoremap <Leader>y "+y
 " redraw the screen
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
-nnoremap <Leader>1 :set foldmethod=indent
+nnoremap <Leader>2 :set foldmethod=indent
 
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<CR>
