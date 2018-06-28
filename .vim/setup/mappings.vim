@@ -7,8 +7,6 @@ nnoremap \ ,
 
 " Send the paste item to xclip
 vnoremap <Leader>y "+y
-nnoremap <Leader>y :<C-r><C-a>"+y
-nnoremap <Leader>Y "+Y
 
 " redraw the screen
 nnoremap <Leader>` :redraw!
