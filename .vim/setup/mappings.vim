@@ -12,6 +12,7 @@ vnoremap <Leader>y "+y
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
 nnoremap <Leader>2 :set foldmethod=indent
+nnoremap <Leader>3 :set cc= 
 
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<CR>
