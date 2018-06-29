@@ -214,6 +214,7 @@ call s:hi("jsArrowFunction", s:color_lvl_3, s:color_bg)
 call s:hi("jsObjectProp", s:color_lvl_3, s:color_bg)
 call s:hi("jsObjectKey", s:color_highlight, s:color_bg)
 call s:hi("jsObjectColon", s:color_lvl_2, s:color_bg)
+call s:hi("jsObjectFuncName", s:color_highlight, s:color_bg)
 
 call s:hi("jsNull", s:color_lvl_5, s:color_bg)
 call s:hi("jsThis", s:color_lvl_5, s:color_bg)
