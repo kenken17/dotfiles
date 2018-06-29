@@ -39,6 +39,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'janko-m/vim-test'
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
+Plugin 'tomtom/tcomment_vim'
 
 " For Tim Pope
 "-------------
@@ -46,7 +47,6 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-unimpaired'
 
