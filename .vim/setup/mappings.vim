@@ -99,6 +99,8 @@ vnoremap > >gv
 vnoremap < <gv
 
 " When a forward search, back to current search item
-nnoremap * *N
-nnoremap # #N
+nnoremap * *Nzz
+nnoremap # #Nzz
+nnoremap n nzz
+nnoremap N Nzz
 
