@@ -26,6 +26,7 @@ nnoremap <Leader>> hf>i<Space>
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
 nnoremap <Leader>; mpk$A;<Esc>`p
+nnoremap <Leader>) o});<ESC> 
 
 " Map the selection of a code block
 nnoremap <Leader>b $V%
