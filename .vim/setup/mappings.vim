@@ -6,7 +6,7 @@ let mapleader=","
 nnoremap \ ,
 
 " Send the paste item to xclip
-vnoremap <Leader>y "+y
+vnoremap <Leader>y "*y
 
 " redraw the screen
 nnoremap <Leader>` :redraw!
@@ -105,3 +105,5 @@ nnoremap # #Nzz
 nnoremap n nzz
 nnoremap N Nzz
 
+" For workflow
+nnoremap <Leader>e :q<CR>:Gstatus<CR>:q<CR>
