@@ -1,6 +1,18 @@
 " Some personal shortcut mapping
 "-------------------------------
 
+" Helper functions
+function! SwitchBool()
+    let wordUnderCursor = expand("<cword>")
+    if wordUnderCursor ==# "true"
+        exe 'normal ciwfalse'
+    endif
+
+    if wordUnderCursor ==# "false"
+        exe 'normal ciwtrue'
+    endif
+endfunction
+
 " leader is comma
 let mapleader=","
 nnoremap \ ,
@@ -46,6 +58,9 @@ nnoremap [l :lprevious<CR>
 nnoremap ]l :lnext<CR>
 nnoremap [L :lfirst<CR>
 nnoremap ]L :llast<CR>
+
+" Quick shorcut for true and false
+nnoremap <Leader>x :call SwitchBool()<CR>
 
 " scrooloose/nerdtree
 nnoremap <Leader><Space> :NERDTreeFind<CR>
