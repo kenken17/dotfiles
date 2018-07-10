@@ -231,6 +231,8 @@ call s:hi("cssProp", s:color_lvl_2, s:color_bg)
 
 "SCSS/SASS
 call s:hi("scssComment", s:color_comment, s:color_bg)
+call s:hi("scssVariable", s:color_highlight, s:color_bg)
+call s:hi("scssProperty", s:color_lvl_3, s:color_bg)
 call s:hi("sassComment", s:color_comment, s:color_bg)
 
 " JSON
