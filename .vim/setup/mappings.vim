@@ -79,6 +79,29 @@ nnoremap zk zkzz
 nnoremap <C-e> 5<C-e>
 nnoremap <C-y> 5<C-y>
 
+" Reset the current file
+nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
+
+" Shift-tab to unindent
+inoremap <S-Tab> <C-o><<
+
+" Keep the indent highlighted
+vnoremap > >gv
+vnoremap < <gv
+
+" When a forward search, back to current search item
+nnoremap * *Nzz
+nnoremap # #Nzz
+nnoremap n nzz
+nnoremap N Nzz
+
+" For workflow
+nnoremap <Leader>e :q<CR>:Gstatus<CR>:q<CR>
+
+" stage the current
+nnoremap <Leader>w :Gwrite!<CR> 
+
+
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
@@ -104,21 +127,3 @@ nnoremap <Leader>* :Ack! '<C-r><C-w>'<Space>
 nnoremap <Leader>a :Ack! ''<Left>
 nnoremap <Leader>A :Ack! '<C-r><C-a>'<Space>
 
-" Reset the current file
-nnoremap <Leader><Del> :! git checkout HEAD -- %<CR>
-
-" Shift-tab to unindent
-inoremap <S-Tab> <C-o><<
-
-" Keep the indent highlighted
-vnoremap > >gv
-vnoremap < <gv
-
-" When a forward search, back to current search item
-nnoremap * *Nzz
-nnoremap # #Nzz
-nnoremap n nzz
-nnoremap N Nzz
-
-" For workflow
-nnoremap <Leader>e :q<CR>:Gstatus<CR>:q<CR>
