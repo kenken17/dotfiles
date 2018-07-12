@@ -11,6 +11,19 @@ function! SwitchBool()
     if wordUnderCursor ==# "false"
         exe 'normal ciwtrue'
     endif
+    
+    if wordUnderCursor ==# "height"
+        exe 'normal ciwwidth'
+    endif
+    if wordUnderCursor ==# "width"
+        exe 'normal ciwheight'
+    endif
+    if wordUnderCursor ==# "margin"
+        exe 'normal ciwpadding'
+    endif
+    if wordUnderCursor ==# "padding"
+        exe 'normal ciwmargin'
+    endif
 endfunction
 
 " leader is comma
