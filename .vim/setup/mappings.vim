@@ -11,7 +11,7 @@ function! SwitchBool()
     if wordUnderCursor ==# "false"
         exe 'normal ciwtrue'
     endif
-    
+
     if wordUnderCursor ==# "height"
         exe 'normal ciwwidth'
     endif
@@ -32,6 +32,9 @@ nnoremap \ ,
 
 " Send the paste item to xclip
 vnoremap <Leader>y "*y
+
+" format the entier file
+nnoremap <Leader>= mpggVG=`p`:w<CR>
 
 " redraw the screen and set items
 nnoremap <Leader>` :redraw!
