@@ -33,11 +33,14 @@ nnoremap \ ,
 " Send the paste item to xclip
 vnoremap <Leader>y "*y
 
-" redraw the screen
+" redraw the screen and set items
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
 nnoremap <Leader>2 :set foldmethod=indent
 nnoremap <Leader>3 :set cc=
+
+" unset and disable items
+nnoremap <Leader>! :ALEDisable<CR>
 
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<CR>

@@ -30,7 +30,8 @@ let g:ale_fixers = {
     \ 'javascript': ['prettier'],
     \ 'css': ['prettier'],
     \ 'scss': ['prettier'],
-    \ 'vue': ['prettier']
+    \ 'vue': ['prettier'],
+    \ 'yml': ['prettier']
     \}
 
 " ctrlpvim/ctrlp.vim
