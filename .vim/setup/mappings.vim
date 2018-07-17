@@ -84,12 +84,6 @@ nnoremap <Leader>x :call SwitchBool()<CR>
 " scrooloose/nerdtree
 nnoremap <Leader><Space> :NERDTreeFind<CR>
 
-" Help
-nnoremap <F1> :help <C-r><C-w><CR>
-
-" Quit
-nnoremap <F2> :q<CR>
-
 " Center the screen when navigate folds
 nnoremap zj zjzz
 nnoremap zk zkzz
@@ -120,6 +114,11 @@ nnoremap <Leader>e :q<CR>:Gstatus<CR>:q<CR>
 " stage the current
 nnoremap <Leader>w :Gwrite!<CR> 
 
+" Help
+nnoremap <F1> :help <C-r><C-w><CR>
+
+" Quit
+nnoremap <F2> :q<CR>
 
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
