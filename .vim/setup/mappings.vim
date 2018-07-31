@@ -31,6 +31,13 @@ function! SwitchBool()
     if wordUnderCursor ==# "right"
         exe 'normal ciwleft'
     endif
+
+    if wordUnderCursor ==# "top"
+        exe 'normal ciwbottom'
+    endif
+    if wordUnderCursor ==# "bottom"
+        exe 'normal ciwtop'
+    endif
 endfunction
 
 " leader is comma
