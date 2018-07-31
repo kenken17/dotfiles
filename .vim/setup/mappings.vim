@@ -7,7 +7,6 @@ function! SwitchBool()
     if wordUnderCursor ==# "true"
         exe 'normal ciwfalse'
     endif
-
     if wordUnderCursor ==# "false"
         exe 'normal ciwtrue'
     endif
@@ -18,11 +17,19 @@ function! SwitchBool()
     if wordUnderCursor ==# "width"
         exe 'normal ciwheight'
     endif
+
     if wordUnderCursor ==# "margin"
         exe 'normal ciwpadding'
     endif
     if wordUnderCursor ==# "padding"
         exe 'normal ciwmargin'
+    endif
+
+    if wordUnderCursor ==# "left"
+        exe 'normal ciwright'
+    endif
+    if wordUnderCursor ==# "right"
+        exe 'normal ciwleft'
     endif
 endfunction
 
