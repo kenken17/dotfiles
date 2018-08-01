@@ -38,6 +38,13 @@ function! SwitchBool()
     if wordUnderCursor ==# "bottom"
         exe 'normal ciwtop'
     endif
+
+    if wordUnderCursor ==# "write"
+        exe 'normal ciwread'
+    endif
+    if wordUnderCursor ==# "read"
+        exe 'normal ciwwrite'
+    endif
 endfunction
 
 " leader is comma
