@@ -155,7 +155,7 @@ nnoremap <Leader><F9> :Gwrite<CR>
 nnoremap <F10> :Gvdiff<CR>
 nnoremap <Leader><F10> :Gvdiff HEAD@{}<Left>
 nnoremap <F11> :Gpush
-nnoremap <Leader><F11> :Gpull
+nnoremap <Leader><F11> :Gpull<CR> :Gfetch --tags --prune
 
 " cohama/agit.vim
 nnoremap <F12> :Agit<CR>:vertical resize 150<CR>:Agit<CR>
