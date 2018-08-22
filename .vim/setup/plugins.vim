@@ -81,3 +81,7 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 " janko-m/vim-test
 let test#strategy = "dispatch"
 " let g:test#preserve_screen = 1
+
+" mattn/emmet-vim
+let g:user_emmet_mode='i'
+let g:user_emmet_leader_key=','
