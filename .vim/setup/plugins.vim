@@ -54,12 +54,6 @@ let g:AutoPairsShortcutJump = ''
 let g:multi_cursor_start_key = '<C-q>'
 let g:multi_cursor_select_all_key = '<Leader><C-x>'
 
-" ryanoasis/vim-devicons
-let g:WebDevIconsNerdTreeAfterGlyphPadding = '  '
-let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
-let g:DevIconsEnableFoldersOpenClose = 1
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-
 " Valloric/MatchTagAlways
 let g:mta_filetypes = {
             \ 'html' : 1,
