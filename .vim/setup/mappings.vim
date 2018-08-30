@@ -129,6 +129,10 @@ nnoremap # #Nzz
 nnoremap n nzz
 nnoremap N Nzz
 
+" Up/down wiht center
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
 " For workflow
 nnoremap <Leader>e :q<CR>:Gstatus<CR>:q<CR>
 
