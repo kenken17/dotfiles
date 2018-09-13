@@ -61,7 +61,7 @@ nnoremap \ ,
 " Send the paste item to xclip
 vnoremap <Leader>y "*y
 
-" format the entier file
+" format the entire file
 nnoremap <Leader>= mpggVG=`p`:w<CR>
 
 " redraw the screen and set items
@@ -100,13 +100,16 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 
+" spell check
+nnoremap <Leader>s :set spell spelllang=en_us<CR>
+
 " For navigate on local list
 nnoremap [l :lprevious<CR>
 nnoremap ]l :lnext<CR>
 nnoremap [L :lfirst<CR>
 nnoremap ]L :llast<CR>
 
-" Quick shorcut for true and false
+" Quick shortcut for true and false
 nnoremap <Leader>x :call SwitchBool()<CR>
 
 " scrooloose/nerdtree
@@ -136,7 +139,7 @@ nnoremap # #Nzz
 nnoremap n nzz
 nnoremap N Nzz
 
-" Up/down wiht center
+" Up/down with center
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
