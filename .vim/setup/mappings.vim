@@ -102,6 +102,7 @@ nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 
 " spell check
 nnoremap <Leader>s :set spell spelllang=en_us<CR>
+nnoremap <Leader>S :set nospell<CR>
 
 " For navigate on local list
 nnoremap [l :lprevious<CR>
