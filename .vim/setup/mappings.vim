@@ -160,6 +160,9 @@ nnoremap <F2> :q<CR>
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
 
+" Repeat the replace after search
+nnoremap <F6> n.
+
 " tpope/vim-unimpaired 
 nnoremap <F7> [czz
 nnoremap <F8> ]czz
