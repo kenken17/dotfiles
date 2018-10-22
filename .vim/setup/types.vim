@@ -24,3 +24,4 @@ augroup filetype_vue
     au FileType vue :silent :g/<style/mark0
 augroup END
 
+au FileType * setlocal comments-=:// comments+=f://
