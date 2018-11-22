@@ -100,6 +100,9 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 
+" Diff any commit
+nnoremap <Leader>D <C-w><Enter><C-w>L<CR>:ccl<CR><C-w>H:diffthis<CR><C-w>l:diffthis<CR>
+
 " spell check
 nnoremap <Leader>s :set spell spelllang=en_us<CR>
 nnoremap <Leader>S :set nospell<CR>
