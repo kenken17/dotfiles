@@ -173,7 +173,7 @@ nnoremap <F7> [czz
 nnoremap <F8> ]czz
 
 " tpope/vim-fugitive
-nnoremap <F9> :Gstatus<CR>
+nnoremap <F9> :split<CR>:G<CR><C-w>l:q<CR>:resize 20<CR>
 nnoremap <Leader><F9> :Gwrite<CR>
 nnoremap <F10> :Gvdiff<CR>
 nnoremap <Leader><F10> :Gvdiff HEAD@{}<Left>
