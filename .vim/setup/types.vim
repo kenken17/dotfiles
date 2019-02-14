@@ -7,6 +7,9 @@ augroup filetype_md
 
     au InsertEnter * let save_cwd = getcwd() | set autochdir
     au InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
+
+    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
 augroup END
 
 augroup filetype_vim
