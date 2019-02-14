@@ -4,6 +4,9 @@
 augroup filetype_md
     au!
     au BufEnter *.md noremap <Leader><F5> :! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome %:p<CR>
+
+    au InsertEnter * let save_cwd = getcwd() | set autochdir
+    au InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
 augroup END
 
 augroup filetype_vim
