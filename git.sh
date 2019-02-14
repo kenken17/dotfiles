@@ -17,6 +17,7 @@ git config --global alias.la "!git config -l | grep alias | cut -c 7-"
 git config --global alias.ll 'log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat'
 git config --global alias.ls 'log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative'
 git config --global alias.l "log --graph --oneline --decorate --all"
+git config --global alias.lb "log --graph --oneline --decorate"
 git config --global alias.dl "!git ll -1"
 git config --global alias.dlc "diff --cached HEAD^"
 git config --global alias.f "!git ls-files | grep -i"

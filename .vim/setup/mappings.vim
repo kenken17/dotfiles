@@ -95,10 +95,15 @@ nnoremap <Leader>B viB
 nnoremap <Leader>ff :%s/<C-r><C-w>//gn<CR>
 nnoremap <Leader>FF :%s/<C-r><C-a>//gn<CR>
 nnoremap <Leader>fr :%s/<c-r><C-w>//gc<Left><Left><Left>
+vnoremap <Leader>fr :s//g<Left><Left>
 nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
+vnoremap <Leader>FR :s//g<Left><Left>
 
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
+
+" Diff any commit
+nnoremap <Leader>D <C-w><Enter><C-w>L<CR>:ccl<CR><C-w>H:diffthis<CR><C-w>l:diffthis<CR>
 
 " spell check
 nnoremap <Leader>s :set spell spelllang=en_us<CR>
@@ -168,7 +173,7 @@ nnoremap <F7> [czz
 nnoremap <F8> ]czz
 
 " tpope/vim-fugitive
-nnoremap <F9> :Gstatus<CR>
+nnoremap <F9> :G<CR>
 nnoremap <Leader><F9> :Gwrite<CR>
 nnoremap <F10> :Gvdiff<CR>
 nnoremap <Leader><F10> :Gvdiff HEAD@{}<Left>
