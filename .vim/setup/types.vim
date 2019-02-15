@@ -4,12 +4,6 @@
 augroup filetype_md
     au!
     au BufEnter *.md noremap <Leader><F5> :! /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome %:p<CR>
-
-    au InsertEnter * let save_cwd = getcwd() | set autochdir
-    au InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
-
-    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-    au WinLeave * setlocal nocursorline
 augroup END
 
 augroup filetype_vim
@@ -31,3 +25,8 @@ augroup filetype_vue
 augroup END
 
 au FileType * setlocal comments-=:// comments+=f://
+au InsertEnter * let save_cwd = getcwd() | set autochdir
+au InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
+
+au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+au WinLeave * setlocal nocursorline
