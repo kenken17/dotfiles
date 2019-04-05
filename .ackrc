@@ -10,10 +10,12 @@
 --ignore-dir=build
 --ignore-dir=coverage
 --ignore-dir=node_modules
+--ignore-dir=dist
 --ignore-dir=.serverless
 --ignore-dir=.git
 --ignore-dir=.nyc_output
 --ignore-dir=.idea
+--ignore-dir=.vscode
 
 # Don't search generated files
 --ignore-file=is:.gitignore
