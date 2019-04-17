@@ -6,4 +6,5 @@ iabbr waht what
 iabbr chnage change
 iabbr cahneg change
 iabbr cahnge change
+iabbr compnay company
 
