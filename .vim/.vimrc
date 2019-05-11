@@ -18,6 +18,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'yggdroot/indentline'
 
 " For Coding & Syntaxing
 "-----------------------
