@@ -30,5 +30,7 @@ set omnifunc=syntaxcomplete#Complete
 set viewoptions=folds,cursor
 set sessionoptions=folds
 set undofile
+set exrc
+set secure
 syntax enable " Enable syntax processing
 
