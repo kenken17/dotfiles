@@ -145,6 +145,9 @@ nnoremap # #Nzz
 nnoremap n nzz
 nnoremap N Nzz
 
+" tabular the file
+nmap <Leader>t :Tabularize /\|<CR>
+
 " Up/down with center
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
