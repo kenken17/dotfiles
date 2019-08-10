@@ -2,55 +2,58 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
+call plug#begin('~/.vim/plugged')
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Plug 'VundleVim/Vundle.vim'
 
 " For IDE
 "--------
-Plugin 'scrooloose/nerdtree'
-Plugin 'vim-airline/vim-airline'
-Plugin 'mileszs/ack.vim'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'yggdroot/indentline'
-Plugin 'kshenoy/vim-signature'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+Plug 'mileszs/ack.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'yggdroot/indentline'
+Plug 'kshenoy/vim-signature'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " For Coding & Syntaxing
 "-----------------------
-" Plugin 'pangloss/vim-javascript'
-Plugin 'sheerun/vim-polyglot'
-Plugin 'w0rp/ale'
-Plugin 'ervandew/supertab'
-Plugin 'Valloric/MatchTagAlways'
-Plugin 'ludovicchabant/vim-gutentags'
-Plugin 'jiangmiao/auto-pairs'
-Plugin 'cohama/agit.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'godlygeek/tabular'
-Plugin 'tomtom/tcomment_vim'
-Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist-vim'
-Plugin 'mattn/emmet-vim'
+" Plug 'pangloss/vim-javascript'
+Plug 'sheerun/vim-polyglot'
+Plug 'w0rp/ale'
+" Plug 'ervandew/supertab'
+Plug 'Valloric/MatchTagAlways'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'jiangmiao/auto-pairs'
+Plug 'cohama/agit.vim'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+Plug 'godlygeek/tabular'
+Plug 'tomtom/tcomment_vim'
+Plug 'mattn/webapi-vim'
+Plug 'mattn/gist-vim'
+Plug 'mattn/emmet-vim'
 
 " For Tim Pope
 "-------------
-Plugin 'tpope/vim-dispatch'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-unimpaired'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
 
 " All of your Plugins must be added before the following line
 
-call vundle#end()            " required
+call plug#end()
+" call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -94,6 +97,7 @@ source $HOME/.vim/setup/mappings.vim
 source $HOME/.vim/setup/typos.vim
 source $HOME/.vim/setup/types.vim
 source $HOME/.vim/setup/plugins.vim
+source $HOME/.vim/setup/coc.vim
 
 hi Normal guibg=NONE ctermbg=NONE
 

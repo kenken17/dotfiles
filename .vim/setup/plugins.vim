@@ -65,7 +65,7 @@ let g:mta_filetypes = {
             \}
 
 " SirVer/ultisnips,
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
+" let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
 
 " cohama/agit.vim
 let g:agit_max_log_lines = 100
