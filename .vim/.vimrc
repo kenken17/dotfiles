@@ -1,16 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
-" call vundle#begin()
 call plug#begin('~/.vim/plugged')
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plug 'VundleVim/Vundle.vim'
-
 " For IDE
 "--------
 Plug 'scrooloose/nerdtree'
@@ -25,16 +16,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " For Coding & Syntaxing
 "-----------------------
-" Plug 'pangloss/vim-javascript'
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
-" Plug 'ervandew/supertab'
 Plug 'Valloric/MatchTagAlways'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'jiangmiao/auto-pairs'
 Plug 'cohama/agit.vim'
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'mattn/webapi-vim'
@@ -50,10 +37,8 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 
-" All of your Plugins must be added before the following line
-
 call plug#end()
-" call vundle#end()            " required
+
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
