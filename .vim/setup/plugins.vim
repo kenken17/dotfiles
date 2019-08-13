@@ -13,10 +13,6 @@ let g:NERDTreeNodeDelimiter = "\u00a0"
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-" pangloss/vim-javascript'
-let g:javascript_plugin_jsdoc = 1
-let g:javascript_plugin_ngdoc = 1
-
 " w0rp/ale
 let g:ale_set_quickfix = 0
 let g:ale_open_list = 1
@@ -51,10 +47,6 @@ let g:AutoPairsShortcutToggle = ''
 let g:AutoPairsShortcutFastWrap = ''
 let g:AutoPairsShortcutJump = ''
 
-" terryma/vim-multiple-cursors
-let g:multi_cursor_start_key = '<C-q>'
-let g:multi_cursor_select_all_key = '<Leader><C-x>'
-
 " Valloric/MatchTagAlways
 let g:mta_filetypes = {
             \ 'html' : 1,
@@ -64,18 +56,11 @@ let g:mta_filetypes = {
             \ 'vue' : 1,
             \}
 
-" SirVer/ultisnips,
-" let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
-
 " cohama/agit.vim
 let g:agit_max_log_lines = 100
 
 " editorconfig/editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
-
-" janko-m/vim-test
-let test#strategy = "dispatch"
-" let g:test#preserve_screen = 1
 
 " mattn/emmet-vim
 let g:user_emmet_mode='i'
