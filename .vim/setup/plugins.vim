@@ -47,24 +47,11 @@ let g:AutoPairsShortcutToggle = ''
 let g:AutoPairsShortcutFastWrap = ''
 let g:AutoPairsShortcutJump = ''
 
-" Valloric/MatchTagAlways
-let g:mta_filetypes = {
-            \ 'html' : 1,
-            \ 'xhtml' : 1,
-            \ 'xml' : 1,
-            \ 'jinja' : 1,
-            \ 'vue' : 1,
-            \}
-
 " cohama/agit.vim
 let g:agit_max_log_lines = 100
 
 " editorconfig/editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
-" mattn/emmet-vim
-let g:user_emmet_mode='i'
-let g:user_emmet_leader_key=','
-
-" Plugin 'yggdroot/indentline'
-let g:indentLine_color_term = 237
+" SirVer/ultisnips,
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]

@@ -28,5 +28,5 @@ au FileType * setlocal comments-=:// comments+=f://
 au InsertEnter * let save_cwd = getcwd() | set autochdir
 au InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
 
-au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+" au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
 au WinLeave * setlocal nocursorline

@@ -13,12 +13,12 @@ set foldenable
 set foldmethod=indent   " fold based on syntax level
 set foldlevel=99
 set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set nowrap
 set cursorline
-set colorcolumn=160
+" set colorcolumn=160
 set number
 set ignorecase
 set smartcase

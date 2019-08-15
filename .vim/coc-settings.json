@@ -1,6 +1,8 @@
 {
-    "snippets.ultisnips.directories": [
-        "UltiSnips",
-        "mysnippets"
-    ]
+  "suggest.noselect": false,
+  "suggest.minTriggerInputLength": 3,
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "mysnippets"
+  ]
 }

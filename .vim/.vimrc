@@ -10,23 +10,26 @@ Plug 'mileszs/ack.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'yggdroot/indentline'
-Plug 'kshenoy/vim-signature'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'yggdroot/indentline'
+" Plug 'kshenoy/vim-signature'
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " For Coding & Syntaxing
 "-----------------------
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
-Plug 'Valloric/MatchTagAlways'
+" Plug 'Valloric/MatchTagAlways'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'jiangmiao/auto-pairs'
 Plug 'cohama/agit.vim'
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
-Plug 'mattn/webapi-vim'
-Plug 'mattn/gist-vim'
-Plug 'mattn/emmet-vim'
+Plug 'ervandew/supertab'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" Plug 'mattn/webapi-vim'
+" Plug 'mattn/gist-vim'
+" Plug 'mattn/emmet-vim'
 
 " For Tim Pope
 "-------------
@@ -70,7 +73,7 @@ source $HOME/.vim/setup/mappings.vim
 source $HOME/.vim/setup/typos.vim
 source $HOME/.vim/setup/types.vim
 source $HOME/.vim/setup/plugins.vim
-source $HOME/.vim/setup/coc.vim
+" source $HOME/.vim/setup/coc.vim
 
 hi Normal guibg=NONE ctermbg=NONE
 
