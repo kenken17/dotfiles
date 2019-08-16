@@ -53,5 +53,8 @@ let g:agit_max_log_lines = 100
 " editorconfig/editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
-" SirVer/ultisnips,
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "mysnippets"]
+" SirVer/ultisnips
+let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mysnippets"]
+
+" sheerun/vim-polyglot
+" let g:polyglot_disabled = ['coffee-script', 'pug', 'haml']

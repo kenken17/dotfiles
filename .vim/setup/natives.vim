@@ -32,5 +32,7 @@ set sessionoptions=folds
 set undofile
 set exrc
 set secure
-syntax enable " Enable syntax processing
+
+syntax enable
+filetype plugin indent on
 
