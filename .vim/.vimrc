@@ -55,7 +55,7 @@ command W w !sudo tee % > /dev/null
 autocmd QuickFixCmdPost *grep* cwindow
 
 " Clear white spaces when file save, no need if we have autoformat installed
-" autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//e
 
 " Rememeber all file curosr position
 autocmd BufWinLeave *.* silent mkview!
