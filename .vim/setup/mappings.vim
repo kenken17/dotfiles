@@ -85,7 +85,7 @@ nnoremap <Leader>> hf>i<Space>
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
 nnoremap <Leader>; mpk$A;<Esc>`p
-nnoremap <Leader>) o});<ESC> 
+nnoremap <Leader>) o});<ESC>
 
 " Map the selection of a code block
 nnoremap <Leader>b $V%
@@ -156,7 +156,7 @@ nnoremap <C-u> <C-u>zz
 nnoremap <Leader>e :q<CR>:Gstatus<CR>:q<CR>
 
 " stage the current
-nnoremap <Leader>w :Gwrite!<CR> 
+nnoremap <Leader>w :Gwrite!<CR>
 
 " Help
 nnoremap <F1> :help <C-r><C-w><CR>
@@ -171,7 +171,7 @@ nnoremap <F4> :CtrlPMRU<CR>
 " Repeat the replace after search
 nnoremap <F6> n.
 
-" tpope/vim-unimpaired 
+" tpope/vim-unimpaired
 nnoremap <F7> [czz
 nnoremap <F8> ]czz
 
@@ -192,3 +192,9 @@ nnoremap <Leader>* :Ack! '<C-r><C-w>'<Space>
 nnoremap <Leader>a :Ack! ''<Left>
 nnoremap <Leader>A :Ack! '<C-r><C-a>'<Space>
 
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction
