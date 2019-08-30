@@ -15,7 +15,7 @@ Plug 'editorconfig/editorconfig-vim'
 "-----------------------
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
-Plug 'ludovicchabant/vim-gutentags'
+" Plug 'ludovicchabant/vim-gutentags'
 Plug 'jiangmiao/auto-pairs'
 Plug 'cohama/agit.vim'
 Plug 'godlygeek/tabular'

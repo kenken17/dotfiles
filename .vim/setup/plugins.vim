@@ -23,14 +23,14 @@ let g:ale_lint_on_enter = 0
 let g:ale_sign_column_always = 1
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
-let g:ale_linters = { 
+let g:ale_linters = {
     \ 'javascript': ['eslint'],
     \ 'vue': ['eslint'],
     \ 'css': ['prettier'],
     \ 'scss': ['prettier'],
     \ 'yml': ['prettier']
     \}
-let g:ale_fixers = { 
+let g:ale_fixers = {
     \ 'javascript': ['eslint'],
     \ 'vue': ['eslint'],
     \ 'css': ['prettier'],
@@ -58,3 +58,5 @@ let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mysnippets"]
 
 " sheerun/vim-polyglot
 " let g:polyglot_disabled = ['coffee-script', 'pug', 'haml']
+
+let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'

@@ -47,10 +47,17 @@ function! SwitchBool()
     endif
 
     if wordUnderCursor ==# "get"
-        exe 'normal cipost'
+        exe 'normal ciwpost'
     endif
     if wordUnderCursor ==# "post"
         exe 'normal ciwget'
+    endif
+
+    if wordUnderCursor ==# "yes"
+        exe 'normal ciwno'
+    endif
+    if wordUnderCursor ==# "no"
+        exe 'normal ciwyes'
     endif
 endfunction
 
@@ -77,7 +84,7 @@ nnoremap <Leader>! :ALEDisable<CR>
 nnoremap <Leader>/ :nohlsearch<CR>
 
 " when go to tag, should look for every matching one
-nnoremap <C-]> g<C-]>
+" nnoremap <C-]> g<C-]>
 
 " HTML: quickly add attr to the tag
 nnoremap <Leader>> hf>i<Space>
@@ -90,6 +97,11 @@ nnoremap <Leader>) o});<ESC>
 " Map the selection of a code block
 nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
+
+" When paste format the content
+nnoremap p mppviB=`p<ESC>
+nnoremap P mpPviB=`p<ESC>
+inoremap <C-r>0 <C-r>0<ESC>mpviB=`p<ESC>
 
 " For search and replace ex mode
 nnoremap <Leader>ff :%s/<C-r><C-w>//gn<CR>
@@ -164,6 +176,10 @@ nnoremap <F1> :help <C-r><C-w><CR>
 " Quit
 nnoremap <F2> :q<CR>
 
+" Get key and value from object
+nnoremap <Leader>v _f:ly$
+nnoremap <Leader>k _yt:
+
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
@@ -188,7 +204,7 @@ nnoremap <F12> :Agit<CR>:vertical resize 150<CR>:Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
-nnoremap <Leader>* :Ack! '<C-r><C-w>'<Space>
+nnoremap <Leader>* :Ack! '<C-r><C-w>'<Space> -w
 nnoremap <Leader>a :Ack! ''<Left>
 nnoremap <Leader>A :Ack! '<C-r><C-a>'<Space>
 
