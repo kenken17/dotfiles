@@ -112,7 +112,7 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 vnoremap <Leader>FR :s//g<Left><Left>
 
 " For quick vsplit diff
-nnoremap <Leader>d :diffthis<CR>
+nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 nnoremap <Leader>D :diffoff<CR>
 
 " Diff any commit
