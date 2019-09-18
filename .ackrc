@@ -21,3 +21,5 @@
 --ignore-file=is:.gitignore
 --ignore-file=is:.tags
 --ignore-file=is:tags
+
+--type-add=vue:ext:vue
