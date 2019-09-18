@@ -99,9 +99,9 @@ nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
 
 " When paste format the content
-nnoremap p mppviB=`p<ESC>
-nnoremap P mpPviB=`p<ESC>
-inoremap <C-r>0 <C-r>0<ESC>mpviB=`p<ESC>
+nnoremap p pmp$V%=`p
+nnoremap P Pmp$V%=`p
+inoremap <C-r>0 <C-r>0<ESC>mp$V%=`p
 
 " For search and replace ex mode
 nnoremap <Leader>ff :%s/<C-r><C-w>//gn<CR>
@@ -112,7 +112,8 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 vnoremap <Leader>FR :s//g<Left><Left>
 
 " For quick vsplit diff
-nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
+nnoremap <Leader>d :diffthis<CR>
+nnoremap <Leader>D :diffoff<CR>
 
 " Diff any commit
 nnoremap <Leader>D <C-w><Enter><C-w>L<CR>:ccl<CR><C-w>H:diffthis<CR><C-w>l:diffthis<CR>
@@ -214,3 +215,5 @@ function! ExecuteMacroOverVisualRange()
   echo "@".getcmdline()
   execute ":'<,'>normal @".nr2char(getchar())
 endfunction
+
+nnoremap <Leader>j :%!python -m json.tool<CR>
