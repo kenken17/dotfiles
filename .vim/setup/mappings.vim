@@ -116,7 +116,7 @@ nnoremap <Leader>d :diffthis<CR><C-w>l:diffthis<CR>
 nnoremap <Leader>D :diffoff<CR>
 
 " Diff any commit
-nnoremap <Leader>D <C-w><Enter><C-w>L<CR>:ccl<CR><C-w>H:diffthis<CR><C-w>l:diffthis<CR>
+" nnoremap <Leader>D <C-w><Enter><C-w>L<CR>:ccl<CR><C-w>H:diffthis<CR><C-w>l:diffthis<CR>
 
 " spell check
 nnoremap <Leader>s :set spell spelllang=en_us<CR>
