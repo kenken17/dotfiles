@@ -87,7 +87,7 @@ nnoremap <Leader>/ :nohlsearch<CR>
 " nnoremap <C-]> g<C-]>
 
 " HTML: quickly add attr to the tag
-nnoremap <Leader>> hf>i<Space>
+nnoremap <Leader>> hf>i<SPACE>
 
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
@@ -99,9 +99,9 @@ nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
 
 " When paste format the content
-nnoremap p pmp$V%=`p
-nnoremap P Pmp$V%=`p
-inoremap <C-r>0 <C-r>0<ESC>mp$V%=`p
+nnoremap p pmp,b=`p
+nnoremap P Pmp,b=`p
+inoremap <C-r>0 <C-r>0<ESC>mp,b=`p
 
 " For search and replace ex mode
 nnoremap <Leader>ff :%s/<C-r><C-w>//gn<CR>
@@ -132,7 +132,7 @@ nnoremap ]L :llast<CR>
 nnoremap <Leader>x :call SwitchBool()<CR>
 
 " scrooloose/nerdtree
-nnoremap <Leader><Space> :NERDTreeFind<CR>
+nnoremap <Leader><SPACE> :NERDTreeFind<CR>
 
 " Center the screen when navigate folds
 nnoremap zj zjzz
@@ -166,10 +166,8 @@ nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
 " For workflow
-nnoremap <Leader>e :q<CR>:Gstatus<CR>:q<CR>
-
-" stage the current
-nnoremap <Leader>w :Gwrite!<CR>
+nnoremap <Leader>i :! git update-index --skip-worktree %:p<CR>
+nnoremap <Leader>I :! git update-index --no-skip-worktree %:p<CR>
 
 " Help
 nnoremap <F1> :help <C-r><C-w><CR>
@@ -177,16 +175,9 @@ nnoremap <F1> :help <C-r><C-w><CR>
 " Quit
 nnoremap <F2> :q<CR>
 
-" Get key and value from object
-nnoremap <Leader>v _f:ly$
-nnoremap <Leader>k _yt:
-
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
-
-" Repeat the replace after search
-nnoremap <F6> n.
 
 " tpope/vim-unimpaired
 nnoremap <F7> [czz
@@ -205,9 +196,8 @@ nnoremap <F12> :Agit<CR>:vertical resize 150<CR>:Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
 " mileszs/ack.vim
-nnoremap <Leader>* :Ack! '<C-r><C-w>'<Space> -w
-nnoremap <Leader>a :Ack! ''<Left>
-nnoremap <Leader>A :Ack! '<C-r><C-a>'<Space>
+nnoremap <Leader>* :Ack! --smart-case <C-r><C-w> -w
+nnoremap <Leader>a :Ack! --smart-case<SPACE>
 
 xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
 
