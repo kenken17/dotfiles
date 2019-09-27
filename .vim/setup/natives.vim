@@ -32,6 +32,7 @@ set sessionoptions=folds
 set undofile
 set exrc
 set secure
+set diffopt=vertical
 
 syntax enable
 filetype plugin indent on

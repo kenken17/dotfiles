@@ -174,6 +174,7 @@ nnoremap <F1> :help <C-r><C-w><CR>
 
 " Quit
 nnoremap <F2> :q<CR>
+nnoremap <Leader><F2> :tabclose<CR>
 
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
@@ -183,13 +184,15 @@ nnoremap <F4> :CtrlPMRU<CR>
 nnoremap <F7> [czz
 nnoremap <F8> ]czz
 
-" tpope/vim-fugitive
-nnoremap <F9> :G<CR>
-nnoremap <Leader><F9> :Gwrite<CR>
-nnoremap <F10> :Gvdiff<CR>
-nnoremap <Leader><F10> :Gvdiff HEAD@{}<Left>
-nnoremap <F11> :Gpush
-nnoremap <Leader><F11> :Gpull<CR> :Gfetch --tags --prune<CR>
+" lambdalisue/gina.vim  (git)
+nnoremap <Leader>c :Gina commit<CR>
+nnoremap <Leader>C :Gina commit --amend<CR>
+nnoremap <F9> :Gina status<CR>
+nnoremap <Leader><C :Gina blame<CR>
+nnoremap <F10> :Gina compare<CR>
+nnoremap <Leader><F10> :Gina patch<CR>
+nnoremap <F11> :Gina pull<CR>
+nnoremap <Leader><F11> :Gina push<CR>
 
 " cohama/agit.vim
 nnoremap <F12> :Agit<CR>:vertical resize 150<CR>:Agit<CR>

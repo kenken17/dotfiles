@@ -15,7 +15,6 @@ Plug 'editorconfig/editorconfig-vim'
 "-----------------------
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
-" Plug 'ludovicchabant/vim-gutentags'
 Plug 'jiangmiao/auto-pairs'
 Plug 'cohama/agit.vim'
 Plug 'godlygeek/tabular'
@@ -23,11 +22,11 @@ Plug 'tomtom/tcomment_vim'
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'lambdalisue/gina.vim'
 
 " For Tim Pope
 "-------------
 Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
