@@ -188,7 +188,7 @@ nnoremap <F8> ]czz
 nnoremap <Leader>c :Gina commit<CR>
 nnoremap <Leader>C :Gina commit --amend<CR>
 nnoremap <F9> :Gina status<CR>
-nnoremap <Leader><C :Gina blame<CR>
+nnoremap <Leader><F9> :Gina blame<CR>
 nnoremap <F10> :Gina compare<CR>
 nnoremap <Leader><F10> :Gina patch<CR>
 nnoremap <F11> :Gina pull<CR>
