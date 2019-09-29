@@ -60,3 +60,7 @@ let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mysnippets"]
 " let g:polyglot_disabled = ['coffee-script', 'pug', 'haml']
 
 let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+
+" lambdalisue/gina.vim
+let g:gina#command#blame#formatter#format = "%su%=on %ti %ma%in - %au"
+
