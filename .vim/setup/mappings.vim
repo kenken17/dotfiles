@@ -187,8 +187,8 @@ nnoremap <F8> ]czz
 " lambdalisue/gina.vim  (git)
 nnoremap <Leader>c :Gina commit<CR>
 nnoremap <Leader>C :Gina commit --amend<CR>
-nnoremap <F9> :Gina status<CR>
-nnoremap <Leader><F9> :Gina blame<CR>
+nnoremap <F9> :Gina status --opener="to split"<CR>
+nnoremap <Leader><F9> :Gina blame<CR>:vertical resize 100<CR>:Gina blame<CR>
 nnoremap <F10> :Gina compare<CR>
 nnoremap <Leader><F10> :Gina patch<CR>
 nnoremap <F11> :Gina pull<CR>
