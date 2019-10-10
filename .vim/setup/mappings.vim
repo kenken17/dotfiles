@@ -169,6 +169,8 @@ nnoremap <C-u> <C-u>zz
 nnoremap <Leader>i :! git update-index --skip-worktree %:p<CR>
 nnoremap <Leader>I :! git update-index --no-skip-worktree %:p<CR>
 
+vmap J :s/$\n\s*//gc<CR>a<CR>,/
+
 " Help
 nnoremap <F1> :help <C-r><C-w><CR>
 
