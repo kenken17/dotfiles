@@ -8,4 +8,6 @@ iabbr cahneg change
 iabbr cahnge change
 iabbr compnay company
 iabbr tarvel travel
+iabbr lenght length
+iabbr shoudl should
 
