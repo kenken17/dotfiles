@@ -24,6 +24,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'majutsushi/tagbar'
 
 " For Tim Pope
 "-------------
@@ -47,9 +48,6 @@ colorscheme minimal
 
 " For autocmd
 "------------
-
-" :W sudo saves the file
-command W w !sudo tee % > /dev/null
 
 "" Open log in quicklist window
 autocmd QuickFixCmdPost *grep* cwindow

@@ -65,6 +65,11 @@ endfunction
 let mapleader=","
 nnoremap \ ,
 
+command W w
+
+" : sudo saves the file
+nnoremap <Leader>w :w !sudo tee % > /dev/null<CR>
+
 " Send the paste item to xclip
 vnoremap <Leader>y "*y
 
@@ -181,6 +186,8 @@ nnoremap <Leader><F2> :tabclose<CR>
 " ctrlpvim/ctrlp.vim
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
+
+nnoremap <F5> :TagbarToggle<CR>
 
 " tpope/vim-unimpaired
 nnoremap <F7> [czz
