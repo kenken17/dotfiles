@@ -68,3 +68,4 @@ coverage/
 ######
 *.un~
 .vimrc
+Session.vim
