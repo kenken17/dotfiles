@@ -23,6 +23,7 @@ Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'lambdalisue/gina.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 " For Tim Pope
 "-------------
