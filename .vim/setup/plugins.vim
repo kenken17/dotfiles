@@ -64,3 +64,5 @@ let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 " lambdalisue/gina.vim
 let g:gina#command#blame#formatter#format = "%su%=on %ti %ma%in - %au"
 
+" janko/vim-test
+let test#strategy = "vimux"

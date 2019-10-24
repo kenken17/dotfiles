@@ -25,6 +25,8 @@ Plug 'honza/vim-snippets'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
+Plug 'benmills/vimux'
+Plug 'janko/vim-test'
 
 " For Tim Pope
 "-------------
