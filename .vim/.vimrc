@@ -19,14 +19,12 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'cohama/agit.vim'
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
-Plug 'ervandew/supertab'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
 Plug 'benmills/vimux'
 Plug 'janko/vim-test'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " For Tim Pope
 "-------------
