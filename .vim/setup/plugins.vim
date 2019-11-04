@@ -64,10 +64,20 @@ let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 " lambdalisue/gina.vim
 let g:gina#command#blame#formatter#format = "%su%=on %ti %ma%in - %au"
 
-" janko/vim-test
-let test#strategy = "vimux"
-
 " scrooloose/nerdcommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
+
+" Use tab for trigger completion with characters ahead and navigate.
+" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
