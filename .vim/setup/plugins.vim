@@ -53,9 +53,6 @@ let g:agit_max_log_lines = 100
 " editorconfig/editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
-" SirVer/ultisnips
-let g:UltiSnipsSnippetDirectories = ["UltiSnips", "mysnippets"]
-
 " sheerun/vim-polyglot
 " let g:polyglot_disabled = ['coffee-script', 'pug', 'haml']
 
@@ -69,15 +66,3 @@ let g:gina#command#blame#formatter#format = "%su%=on %ti %ma%in - %au"
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
-" Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
