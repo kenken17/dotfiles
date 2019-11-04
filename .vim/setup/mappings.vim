@@ -89,10 +89,7 @@ nnoremap <Leader>! :ALEDisable<CR>
 nnoremap <Leader>/ :nohlsearch<CR>
 
 " when go to tag, should look for every matching one
-" nnoremap <C-]> g<C-]>
-
-" HTML: quickly add attr to the tag
-nnoremap <Leader>> hf>i<SPACE>
+nnoremap <C-]> g<C-]>
 
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
