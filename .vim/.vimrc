@@ -7,7 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'benmills/vimux'
+" Plug 'benmills/vimux'
 
 " For Coding & Syntaxing
 "-----------------------
@@ -22,7 +22,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
-Plug 'janko/vim-test'
+" Plug 'janko/vim-test'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " For Tim Pope
