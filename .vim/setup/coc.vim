@@ -26,3 +26,6 @@ nmap <leader>f  <Plug>(coc-format-selected)
 
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
+
+" Add status line support, for integration with other plugin, checkout `:h coc-status`
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
