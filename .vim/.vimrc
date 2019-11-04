@@ -6,13 +6,14 @@ call plug#begin('~/.vim/plugged')
 "--------
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
-Plug 'mileszs/ack.vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'editorconfig/editorconfig-vim'
+Plug 'benmills/vimux'
 
 " For Coding & Syntaxing
 "-----------------------
+Plug 'mileszs/ack.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'w0rp/ale'
 Plug 'cohama/agit.vim'
@@ -21,7 +22,6 @@ Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
-Plug 'benmills/vimux'
 Plug 'janko/vim-test'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
