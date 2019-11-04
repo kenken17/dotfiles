@@ -66,3 +66,8 @@ let g:gina#command#blame#formatter#format = "%su%=on %ti %ma%in - %au"
 
 " janko/vim-test
 let test#strategy = "vimux"
+
+" scrooloose/nerdcommenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
