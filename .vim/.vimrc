@@ -61,6 +61,7 @@ autocmd BufWinEnter *.* silent loadview
 
 source $HOME/.vim/setup/natives.vim
 source $HOME/.vim/setup/mappings.vim
+source $HOME/.vim/setup/mappings-switch.vim
 source $HOME/.vim/setup/typos.vim
 source $HOME/.vim/setup/types.vim
 source $HOME/.vim/setup/plugins.vim
