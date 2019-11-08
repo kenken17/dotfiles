@@ -11,34 +11,6 @@ function! SwitchBool()
         exe 'normal ciwtrue'
     endif
 
-    if wordUnderCursor ==# "height"
-        exe 'normal ciwwidth'
-    endif
-    if wordUnderCursor ==# "width"
-        exe 'normal ciwheight'
-    endif
-
-    if wordUnderCursor ==# "margin"
-        exe 'normal ciwpadding'
-    endif
-    if wordUnderCursor ==# "padding"
-        exe 'normal ciwmargin'
-    endif
-
-    if wordUnderCursor ==# "left"
-        exe 'normal ciwright'
-    endif
-    if wordUnderCursor ==# "right"
-        exe 'normal ciwleft'
-    endif
-
-    if wordUnderCursor ==# "top"
-        exe 'normal ciwbottom'
-    endif
-    if wordUnderCursor ==# "bottom"
-        exe 'normal ciwtop'
-    endif
-
     if wordUnderCursor ==# "write"
         exe 'normal ciwread'
     endif
@@ -58,6 +30,43 @@ function! SwitchBool()
     endif
     if wordUnderCursor ==# "no"
         exe 'normal ciwyes'
+    endif
+
+    " For CSS (mainly)
+    if wordUnderCursor ==# "left"
+        exe 'normal ciwright'
+    endif
+    if wordUnderCursor ==# "right"
+        exe 'normal ciwleft'
+    endif
+
+    if wordUnderCursor ==# "top"
+        exe 'normal ciwbottom'
+    endif
+    if wordUnderCursor ==# "bottom"
+        exe 'normal ciwtop'
+    endif
+
+    if wordUnderCursor ==# "height"
+        exe 'normal ciwwidth'
+    endif
+    if wordUnderCursor ==# "width"
+        exe 'normal ciwheight'
+    endif
+
+    if wordUnderCursor ==# "margin"
+        exe 'normal ciwpadding'
+    endif
+    if wordUnderCursor ==# "padding"
+        exe 'normal ciwmargin'
+    endif
+
+    " For JS
+    if wordUnderCursor ==# "let"
+        exe 'normal ciwconst'
+    endif
+    if wordUnderCursor ==# "const"
+        exe 'normal ciwlet'
     endif
 endfunction
 
