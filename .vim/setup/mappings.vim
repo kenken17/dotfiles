@@ -121,9 +121,6 @@ nnoremap <Leader><F2> :tabclose<CR>
 nnoremap <F3> :CtrlP<CR>
 nnoremap <F4> :CtrlPMRU<CR>
 
-nnoremap <F5> :TagbarToggle<CR>
-nnoremap <F6> :Obsession<CR>
-
 " tpope/vim-unimpaired
 nnoremap <F7> [czz
 nnoremap <F8> ]czz

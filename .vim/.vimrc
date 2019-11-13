@@ -7,7 +7,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
-" Plug 'benmills/vimux'
+Plug 'benmills/vimux'
 
 " For Coding & Syntaxing
 "-----------------------
@@ -21,9 +21,12 @@ Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'majutsushi/tagbar'
-" Plug 'janko/vim-test'
+Plug 'janko/vim-test'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc-lists', { 'do': 'yarn'}
+Plug 'neoclide/coc-pairs', { 'do': 'yarn'}
+Plug 'neoclide/coc-json', { 'do': 'yarn'}
+Plug 'neoclide/coc-snippets', { 'do': 'yarn'}
 
 " For Tim Pope
 "-------------
@@ -32,7 +35,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-obsession'
+" Plug 'tpope/vim-obsession'
 
 call plug#end()
 
