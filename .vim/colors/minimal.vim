@@ -240,3 +240,6 @@ call s:hi("sassComment", s:color_comment, s:color_bg)
 " JSON
 call s:hi("jsonKeyword", s:color_highlight, s:color_bg)
 
+" COC"
+call s:hi("CocHighlightText", s:color_highlight, s:color_lvl_1)
+
