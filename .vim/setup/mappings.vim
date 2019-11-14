@@ -139,6 +139,9 @@ nnoremap <Leader><F11> :Gina push<CR>
 nnoremap <F12> :Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
+nnoremap <Leader>* :Ag -S <C-r><C-w>
+nnoremap <Leader>a :Ag -S<Space>
+
 xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
 
 function! ExecuteMacroOverVisualRange()
