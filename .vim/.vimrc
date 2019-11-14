@@ -11,7 +11,6 @@ Plug 'benmills/vimux'
 
 " For Coding & Syntaxing
 "-----------------------
-Plug 'mileszs/ack.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
@@ -35,7 +34,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
-" Plug 'tpope/vim-obsession'
 
 call plug#end()
 

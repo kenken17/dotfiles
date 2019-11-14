@@ -139,10 +139,6 @@ nnoremap <Leader><F11> :Gina push<CR>
 nnoremap <F12> :Agit<CR>
 nnoremap <Leader><F12> :AgitFile<CR>
 
-" mileszs/ack.vim
-nnoremap <Leader>* :Ack! --smart-case <C-r><C-w> -w
-nnoremap <Leader>a :Ack! --smart-case<SPACE>
-
 xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
 
 function! ExecuteMacroOverVisualRange()
