@@ -41,9 +41,9 @@ nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
 
 " When paste format the content
-nnoremap p pmp,b=`p
-nnoremap P Pmp,b=`p
-inoremap <C-r>0 <C-r>0<ESC>mp,b=`p
+nnoremap p p'[V']=
+nnoremap P P'[V']=
+inoremap <C-r>0 <C-r>0<ESC>'[V']=
 
 " For search and replace ex mode
 nnoremap <Leader>ff :%s/<C-r><C-w>//gn<CR>
@@ -71,7 +71,7 @@ nnoremap [L :lfirst<CR>
 nnoremap ]L :llast<CR>
 
 " scrooloose/nerdtree
-nnoremap <Leader><SPACE> :NERDTreeFind<CR>
+nnoremap <Leader><Space> :NERDTreeFind<CR>
 
 " Center the screen when navigate folds
 nnoremap zj zjzz
