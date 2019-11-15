@@ -22,7 +22,7 @@ let s:color_lvl_2       = ['#a8a8a8', 248]
 let s:color_lvl_3       = ['#c6c6c6', 251]
 let s:color_lvl_4       = ['#eeeeee', 255]
 let s:color_lvl_5       = ['#ffffff', 231]
-let s:color_float       = ['#262626', 235]
+let s:color_float       = ['#3a3a3a', 237]
 let s:color_highlight   = ['#afd700', 148]
 let s:color_selection   = ['#c6c6c6', 251]
 let s:color_error       = ['#d70000', 160]
@@ -243,5 +243,5 @@ call s:hi("jsonKeyword", s:color_highlight, s:color_none)
 
 " COC"
 call s:hi("CocHighlightText", s:color_highlight, s:color_lvl_1)
-call s:hi("CocFloating", s:color_highlight, s:color_lvl_0)
+call s:hi("CocFloating", s:color_lvl_4, s:color_float)
 
