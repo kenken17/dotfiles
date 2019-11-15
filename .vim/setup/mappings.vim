@@ -43,7 +43,6 @@ nnoremap <Leader>B viB
 " When paste format the content
 nnoremap p p'[V']=
 nnoremap P P'[V']=
-inoremap <C-r>0 <C-r>0<ESC>'[V']=
 
 " For search and replace ex mode
 nnoremap <Leader>ff :%s/<C-r><C-w>//gn<CR>
