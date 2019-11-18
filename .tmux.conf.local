@@ -277,7 +277,7 @@ set -g @tpm_plugins '          \
     tmux-plugins/tpm             \
     tmux-plugins/tmux-sensible   \
     tmux-plugins/tmux-resurrect  \
-    christoomey/vim-tmux-navigator \
+    tmux-plugins/tmux-continuum  \
     tmux-plugins/tmux-yank \
 '
 
