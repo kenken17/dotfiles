@@ -2,6 +2,16 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
+
+" For Tim Pope
+"-------------
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-unimpaired'
+" Plug 'tpope/vim-fugitive'
+
 " For IDE
 "--------
 Plug 'scrooloose/nerdtree'
@@ -19,21 +29,12 @@ Plug 'cohama/agit.vim'
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'janko/vim-test'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-lists', { 'do': 'yarn'}
 Plug 'neoclide/coc-pairs', { 'do': 'yarn'}
 Plug 'neoclide/coc-json', { 'do': 'yarn'}
 Plug 'neoclide/coc-snippets', { 'do': 'yarn'}
-
-" For Tim Pope
-"-------------
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
