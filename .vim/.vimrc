@@ -29,6 +29,7 @@ Plug 'cohama/agit.vim'
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
+Plug 'ludovicchabant/vim-gutentags'
 Plug 'janko/vim-test'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-lists', { 'do': 'yarn'}
@@ -37,8 +38,6 @@ Plug 'neoclide/coc-json', { 'do': 'yarn'}
 Plug 'neoclide/coc-snippets', { 'do': 'yarn'}
 
 call plug#end()
-
-filetype plugin indent on    " required
 
 " For color and theme
 "--------------------
@@ -56,10 +55,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " Clear white spaces when file save, no need if we have autoformat installed
 autocmd BufWritePre * %s/\s\+$//e
-
-" Rememeber all file curosr position
-autocmd BufWinLeave *.* silent mkview!
-autocmd BufWinEnter *.* silent loadview
 
 source $HOME/.vim/setup/natives.vim
 source $HOME/.vim/setup/mappings.vim
@@ -84,3 +79,7 @@ set foldtext=MyFoldText()
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[6 q"
 let &t_EI.="\e[1 q"
+
+if !has('nvim')
+  set ttymouse=xterm2
+endif

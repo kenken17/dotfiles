@@ -98,12 +98,26 @@ echo ">>> Link .tmux.conf.local to ~/.tmux.conf.local ..."
 
 if [[ -f ~/.tmux.conf.local && $OVERWRITE -eq 0 ]]
 then
-    echo ">>> Found ~/.tmux.conf.local, replace with ~/.tmux.conf.local_backup"
-    echo
-    mv ~/.tmux.conf.local ~/.tmux.conf.local_backup
+  echo ">>> Found ~/.tmux.conf.local, replace with ~/.tmux.conf.local_backup"
+  echo
+  mv ~/.tmux.conf.local ~/.tmux.conf.local_backup
 else
-    rm ~/.tmux.conf.local
+  rm ~/.tmux.conf.local
 fi
 
 ln -s $(pwd)/.tmux.conf.local ~/.tmux.conf.local
+
+
+echo ">>> Link init.vim to ~/.config/nvim/init.vim ..."
+
+if [[ -f ~/.config/nvim/init.vim && $OVERWRITE -eq 0 ]]
+then
+    echo ">>> Found ~/.config/nvim/init.vim, replace with ~/.config/nvmim/init.vim_backup"
+    echo
+    mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim_backup
+else
+    rm ~/.config/nvim/init.vim
+fi
+
+ln -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
 

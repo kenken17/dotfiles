@@ -1,4 +1,8 @@
 {
   "coc.preferences.formatOnType": true,
-  "snippets.ultisnips.directories": ["UltiSnips", "mysnippets"]
+  "snippets.ultisnips.enable": true,
+  "snippets.userSnippetsDirectory": "~/dotfiles/.vim/mysnippets",
+  "snippets.extends": {
+    "vue": ["javascript"]
+  }
 }
