@@ -1,46 +1,46 @@
 " For native settings/options
 "----------------------------
-set hidden
-set nobackup
-set nowritebackup
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
-set nowb
-set noswapfile
-set showcmd
-set path+=**
-set wildignore+=.git\*,.hg\*,.svn\*
-set wildignore+=**\node_modules\**,**\build\**,**\coverage\**,**\*.swp,**\*.svg,**\*.un~
-set wildignore+=**\*.jpg,**\*.gif,**\*.png
-set whichwrap+=<,>,h,l
-set foldenable
-set foldmethod=indent   " fold based on syntax level
-set foldlevel=99
-set expandtab
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
-set nowrap
-set cursorline
 " set colorcolumn=160
-set number
+" set showcmd
+" set hlsearch
+set cursorline
+set diffopt=vertical
+set expandtab
+set exrc
+set foldenable
+set foldlevel=99
+set foldmethod=indent   " fold based on syntax level
+set hidden
 set ignorecase
-set smartcase
-set hlsearch
 set lazyredraw " Don't redraw while executing macros (good performance config)
 set magic
-set showmatch
+set nobackup
+set noswapfile
+set nowb
+set nowrap
+set nowritebackup
+set number
 set omnifunc=syntaxcomplete#Complete
-set viewoptions=folds,cursor
-set sessionoptions=folds
-set undofile
-set exrc
+set path+=**
 set secure
-set diffopt=vertical
+set sessionoptions=folds
+set shiftwidth=2
+set shortmess+=c
+set showmatch
+set signcolumn=yes
+set smartcase
+set softtabstop=2
+set tabstop=2
+set undofile
+set updatetime=300
+set viewoptions=folds,cursor
+set whichwrap+=<,>,h,l
+set wildignore+=**\*.jpg,**\*.gif,**\*.png
+set wildignore+=**\node_modules\**,**\build\**,**\coverage\**,**\*.swp,**\*.svg,**\*.un~
+set wildignore+=.git\*,.hg\*,.svn\*
 
-syntax enable
-filetype plugin indent on
+" syntax enable
+" filetype plugin indent on
 
 " For Ag
 if executable('ag')
