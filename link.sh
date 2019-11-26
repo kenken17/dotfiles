@@ -1,7 +1,5 @@
+#!/bin/sh
 
-# For Vim
-VIMVERSION=$(vim --version | head -1 | cut -d ' ' -f 5)
-MIN_VIMVERSION="8"
 OVERWRITE=0
 
 # Checking for options
@@ -19,6 +17,7 @@ done
 shift "$(($OPTIND -1))"
 
 
+
 echo ">>> Link .vim to ~/.vim ..."
 
 if [[ -d ~/.vim && $OVERWRITE -eq 0 ]]
@@ -30,7 +29,8 @@ else
     rm ~/.vim
 fi
 
-ln -s $(pwd)/.vim ~
+ln -v -s $(pwd)/.vim ~
+
 
 
 echo ">>> Link .vimrc to ~ ..."
@@ -44,7 +44,7 @@ else
     rm ~/.vimrc
 fi
 
-ln -s $(pwd)/.vim/.vimrc ~/.vimrc
+ln -v -s $(pwd)/.vim/.vimrc ~/.vimrc
 
 
 
@@ -59,7 +59,7 @@ else
     rm ~/.ctags
 fi
 
-ln -s $(pwd)/.ctags ~/.ctags
+ln -v -s $(pwd)/.ctags ~/.ctags
 
 
 
@@ -74,8 +74,9 @@ else
     rm ~/.gitignore_global
 fi
 
-ln -s $(pwd)/.gitignore_global ~/.gitignore_global
+ln -v -s $(pwd)/.gitignore_global ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
+
 
 
 
@@ -90,7 +91,7 @@ else
     rm ~/.ackrc
 fi
 
-ln -s $(pwd)/.ackrc ~/.ackrc
+ln -v -s $(pwd)/.ackrc ~/.ackrc
 
 
 
@@ -105,7 +106,8 @@ else
   rm ~/.tmux.conf.local
 fi
 
-ln -s $(pwd)/.tmux.conf.local ~/.tmux.conf.local
+ln -v -s $(pwd)/.tmux.conf.local ~/.tmux.conf.local
+
 
 
 echo ">>> Link init.vim to ~/.config/nvim/init.vim ..."
@@ -119,5 +121,20 @@ else
     rm ~/.config/nvim/init.vim
 fi
 
-ln -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
+ln -v -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
+
+
+
+echo ">>> Link .git-templates to ~/.git-templates ..."
+
+if [[ -d ~/.git-templates && $OVERWRITE -eq 0 ]]
+then
+  echo ">>> Found ~/.git-templates, replace with ~/.git-templates_backup"
+  echo
+  mv ~/.git-templates ~/.git-templates_backup
+else
+  rm ~/.git-templates
+fi
+
+ln -v -s $(pwd)/.git-templates ~/.git-templates
 

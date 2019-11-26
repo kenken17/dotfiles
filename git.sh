@@ -1,3 +1,5 @@
+#!/bin/sh
+
 git config --global alias.rh "reset --hard"
 git config --global alias.hr "reset --hard"
 git config --global alias.cp "cherry-pick"
@@ -29,3 +31,8 @@ git config --global alias.p "git fetch --prune origin '+refs/tags/*:refs/tags/*'
 # For splice.vim merge
 git config --global merge.tool vimdiff
 git config --global diff.tool vimdiff
+
+
+# For hooks
+git config --global init.templatedir '~/.git-templates'
+
