@@ -83,3 +83,8 @@ let &t_EI.="\e[1 q"
 if !has('nvim')
   set ttymouse=xterm2
 endif
+
+" Rememeber all file curosr position
+autocmd BufWinLeave *.* silent! mkview!
+autocmd BufWinEnter *.* silent! loadview
+
