@@ -66,3 +66,5 @@ let g:gina#command#blame#formatter#format = "%su%=on %ti %ma%in - %au"
 let g:NERDSpaceDelims = 1
 let g:NERDCompactSexyComs = 1
 
+" janko/vim-test
+let test#strategy = "vimux"
