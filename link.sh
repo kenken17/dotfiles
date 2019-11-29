@@ -136,5 +136,19 @@ else
   rm ~/.git-templates
 fi
 
-ln -v -s $(pwd)/.git-templates ~/.git-templates
+
+
+echo ">>> Link .bash_profile to ~/.bash_profile ..."
+
+if [[ -f ~/.bash_profile && $OVERWRITE -eq 0 ]]
+then
+  echo ">>> Found ~/.bash_profile, replace with ~/.bash_profile_backup"
+  echo
+  mv ~/.bash_profile ~/.bash_profile_backup
+else
+  rm ~/.bash_profile
+fi
+
+ln -v -s $(pwd)/.bash_profile ~/.bash_profile
+
 
