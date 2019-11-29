@@ -4,5 +4,6 @@
   "snippets.userSnippetsDirectory": "~/dotfiles/.vim/mysnippets",
   "snippets.extends": {
     "vue": ["javascript"]
-  }
+  },
+  "tsserver.formatOnType": false
 }
