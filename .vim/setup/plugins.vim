@@ -42,11 +42,6 @@ let g:ale_fixers = {
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlPBuffer'
 
-" jiangmiao/auto-pairs
-let g:AutoPairsShortcutToggle = ''
-let g:AutoPairsShortcutFastWrap = ''
-let g:AutoPairsShortcutJump = ''
-
 " cohama/agit.vim
 let g:agit_max_log_lines = 100
 
