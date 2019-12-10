@@ -28,9 +28,6 @@ nnoremap <Leader>! :ALEDisable<Cr>
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<Cr>
 
-" when go to tag, should look for every matching one
-nnoremap <C-]> g<C-]>
-
 " Add a ,/; above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
 nnoremap <Leader>; mpk$A;<Esc>`p
@@ -39,6 +36,12 @@ nnoremap <Leader>) o});<Esc>
 " Map the selection of a code block
 nnoremap <Leader>b $V%
 nnoremap <Leader>B viB
+
+" Space to repeat
+nmap <Space> .
+
+" when go to tag, should look for every matching one
+nnoremap <C-]> g<C-]>
 
 " When paste format the content
 nnoremap p p'[V']=
