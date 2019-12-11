@@ -31,6 +31,9 @@ Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'janko/vim-test'
+
+" Coc
+"----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-lists', { 'do': 'yarn'}
 Plug 'neoclide/coc-pairs', { 'do': 'yarn'}

@@ -47,6 +47,8 @@ nnoremap <C-]> g<C-]>
 nnoremap p p'[V']=
 nnoremap P P'[V']=
 
+nnoremap <C-o> <C-o>zz
+
 " For search and replace ex mode
 nnoremap <Leader>ff :%s/<C-r><C-w>//gn<Cr>
 nnoremap <Leader>FF :%s/<C-r><C-a>//gn<Cr>
