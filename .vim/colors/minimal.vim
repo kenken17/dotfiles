@@ -209,11 +209,12 @@ call s:hi("jsOperator", s:color_lvl_4, s:color_none)
 call s:hi("jsParensError", s:color_error, s:color_none)
 
 call s:hi("jsVariableDef", s:color_lvl_3, s:color_none)
-call s:hi("jsFuncCall", s:color_lvl_4, s:color_none)
+call s:hi("jsFuncCall", s:color_lvl_5, s:color_none)
 call s:hi("jsFuncName", s:color_lvl_4, s:color_none)
 call s:hi("jsFuncArgs", s:color_lvl_3, s:color_none)
-
-call s:hi("jsArrowFunction", s:color_lvl_3, s:color_none)
+call s:hi("jsFuncParens", s:color_highlight, s:color_none)
+call s:hi("jsFuncBraces", s:color_highlight, s:color_none)
+call s:hi("jsArrowFunction", s:color_highlight, s:color_none)
 
 call s:hi("jsObjectProp", s:color_lvl_3, s:color_none)
 call s:hi("jsObjectKey", s:color_highlight, s:color_none)
@@ -221,7 +222,9 @@ call s:hi("jsObjectColon", s:color_lvl_2, s:color_none)
 call s:hi("jsObjectFuncName", s:color_highlight, s:color_none)
 
 call s:hi("jsNull", s:color_lvl_5, s:color_none)
-call s:hi("jsThis", s:color_lvl_5, s:color_none)
+call s:hi("jsThis", s:color_lvl_3, s:color_none)
+call s:hi("jsUndefined", s:color_error, s:color_none)
+call s:hi("jsReturn", s:color_lvl_3, s:color_none)
 
 call s:hi("jsDocTags", s:color_lvl_2, s:color_none)
 call s:hi("jsDocType", s:color_lvl_3, s:color_none)
