@@ -173,8 +173,10 @@ call s:hi("Todo", s:color_highlight, s:color_none)
 " NERDTree
 call s:hi("NERDTreeCWD", s:color_error, s:color_none)
 call s:hi("NERDTreeDir", s:color_lvl_3, s:color_none)
+call s:hi("NERDTreeDirSlash", s:color_highlight, s:color_none)
 call s:hi("NERDTreeOpenable", s:color_lvl_5, s:color_none)
 call s:hi("NERDTreeClosable", s:color_lvl_5, s:color_none)
+call s:hi("NERDTreeExecFile", s:color_highlight, s:color_none)
 
 "ALE
 call s:hi("ALEErrorSign", s:color_error, s:color_none)
