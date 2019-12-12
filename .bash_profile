@@ -72,4 +72,4 @@ kill_p () {
   kill -9 $(lsof -t -i:$1)
 }
 
-source ./mom/.bash_profile
+source ~/dotfiles/mom/.bash_profile
