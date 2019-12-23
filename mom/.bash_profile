@@ -45,7 +45,7 @@ d_rebuild () {
 _doFetch () {
   echo ""
   echo -e "${GREEN}$1...${NOCOLOR}"
-  cd $1 && ft
+  cd $1
 
   _pullMaster
 
