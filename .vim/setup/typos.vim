@@ -11,3 +11,5 @@ iabbr tarvel travel
 iabbr lenght length
 iabbr shoudl should
 
+nnoremap cie ciw
+
