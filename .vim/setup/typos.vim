@@ -9,6 +9,7 @@ iabbr cahnge change
 iabbr compnay company
 iabbr tarvel travel
 iabbr lenght length
+iabbr legnth length
 iabbr shoudl should
 
 nnoremap cie ciw
