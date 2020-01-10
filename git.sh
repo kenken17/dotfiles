@@ -34,5 +34,5 @@ git config --global diff.tool vimdiff
 
 
 # For hooks
-git config --global init.templatedir '~/.git-templates'
+# git config --global init.templatedir '~/.git-templates'
 

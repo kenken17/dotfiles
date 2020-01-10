@@ -125,17 +125,18 @@ ln -v -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
 
 
 
-echo ">>> Link .git-templates to ~/.git-templates ..."
+# echo ">>> Link .git-templates to ~/.git-templates ..."
+#
+# if [[ -d ~/.git-templates && $OVERWRITE -eq 0 ]]
+# then
+#   echo ">>> Found ~/.git-templates, replace with ~/.git-templates_backup"
+#   echo
+#   mv ~/.git-templates ~/.git-templates_backup
+# else
+#   rm ~/.git-templates
+# fi
 
-if [[ -d ~/.git-templates && $OVERWRITE -eq 0 ]]
-then
-  echo ">>> Found ~/.git-templates, replace with ~/.git-templates_backup"
-  echo
-  mv ~/.git-templates ~/.git-templates_backup
-else
-  rm ~/.git-templates
-fi
-
+# ln -v -s $(pwd)/.git-templates ~/.git-templates
 
 
 echo ">>> Link .bash_profile to ~/.bash_profile ..."
