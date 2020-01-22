@@ -10,7 +10,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
-" Plug 'tpope/vim-fugitive'
 
 " For IDE
 "--------
@@ -18,6 +17,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'benmills/vimux'
+Plug 'Yggdroot/indentLine'
 
 " For Coding & Syntaxing
 "-----------------------

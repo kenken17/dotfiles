@@ -63,3 +63,6 @@ let g:NERDCompactSexyComs = 1
 
 " janko/vim-test
 let test#strategy = "vimux"
+
+" Yggdroot/indentLine
+let g:indentLine_char = '⎸'
