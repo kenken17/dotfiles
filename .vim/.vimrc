@@ -24,13 +24,13 @@ Plug 'Yggdroot/indentLine'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'w0rp/ale'
 Plug 'cohama/agit.vim'
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'janko/vim-test'
+Plug 'justinmk/vim-sneak'
 
 " Coc
 "----
@@ -39,6 +39,12 @@ Plug 'neoclide/coc-lists', { 'do': 'yarn'}
 Plug 'neoclide/coc-pairs', { 'do': 'yarn'}
 Plug 'neoclide/coc-json', { 'do': 'yarn'}
 Plug 'neoclide/coc-snippets', { 'do': 'yarn'}
+Plug 'neoclide/coc-vetur', { 'do': 'yarn'}
+
+" Inline install
+" --------------
+" coc-eslint
+" coc-tsserver
 
 call plug#end()
 

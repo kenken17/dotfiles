@@ -5,5 +5,14 @@
   "snippets.extends": {
     "vue": ["javascript"]
   },
-  "tsserver.formatOnType": false
+  "tsserver.formatOnType": false,
+  "eslint.filetypes": [
+    "vue",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.run": "onSave",
+  "eslint.autoFixOnSave": true
 }
