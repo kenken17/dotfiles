@@ -7,6 +7,12 @@ nnoremap \ ,
 
 command W w
 
+" Map arrow keys
+inoremap <M-h> <Left>
+inoremap <M-j> <Down>
+inoremap <M-k> <Up>
+inoremap <M-l> <Right>
+
 " : sudo saves the file
 nnoremap <Leader>w :w !sudo tee % > /dev/null<Cr>
 
