@@ -37,13 +37,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-lists', { 'do': 'yarn'}
 Plug 'neoclide/coc-pairs', { 'do': 'yarn'}
 Plug 'neoclide/coc-json', { 'do': 'yarn'}
-Plug 'neoclide/coc-snippets', { 'do': 'yarn'}
 Plug 'neoclide/coc-vetur', { 'do': 'yarn'}
 
 " Inline install
 " --------------
 " coc-eslint
 " coc-tsserver
+" coc-snippets
 
 call plug#end()
 
