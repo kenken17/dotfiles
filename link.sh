@@ -114,14 +114,29 @@ echo ">>> Link init.vim to ~/.config/nvim/init.vim ..."
 
 if [[ -f ~/.config/nvim/init.vim && $OVERWRITE -eq 0 ]]
 then
-    echo ">>> Found ~/.config/nvim/init.vim, replace with ~/.config/nvmim/init.vim_backup"
-    echo
-    mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim_backup
+  echo ">>> Found ~/.config/nvim/init.vim, replace with ~/.config/nvmim/init.vim_backup"
+  echo
+  mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim_backup
 else
-    rm ~/.config/nvim/init.vim
+  rm ~/.config/nvim/init.vim
 fi
 
 ln -v -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
+
+
+
+echo ">>> Link coc-settings.json to ~/.config/nvim/coc-settings.json ..."
+
+if [[ -f ~/.config/nvim/coc-settings.json && $OVERWRITE -eq 0 ]]
+then
+    echo ">>> Found ~/.config/nvim/coc-settings.json, replace with ~/.config/nvmim/coc-settings.json_backup"
+    echo
+    mv ~/.config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json_backup
+else
+    rm ~/.config/nvim/coc-settings.json
+fi
+
+ln -v -s $(pwd)/.vim/coc-settings.json ~/.config/nvim/coc-settings.json
 
 
 
