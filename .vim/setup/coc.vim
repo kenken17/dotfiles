@@ -50,9 +50,14 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Remap for format selected region
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>=  <Plug>(coc-format-selected)
+nmap <leader>=  <Plug>(coc-format-selected)
 
+" Remap for do codeAction of selected region
+vmap <leader>f  <Plug>(coc-codeaction-selected)
+
+" Fix autofix problem of current line
+nmap <leader>f  <Plug>(coc-fix-current)
 
 autocmd FileType json syntax match Comment +\/\/.\+$+
 

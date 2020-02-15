@@ -19,9 +19,6 @@ nnoremap <Leader>w :w !sudo tee % > /dev/null<Cr>
 " Send the paste item to xclip
 vnoremap <Leader>y "*y
 
-" format the entire file
-nnoremap <Leader>= mpggVG=`p`:w<Cr>
-
 " redraw the screen and set items
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
