@@ -23,7 +23,7 @@ vnoremap <Leader>y "*y
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
 nnoremap <Leader>2 :set foldmethod=indent
-nnoremap <Leader>3 :set cc=
+nnoremap <Leader>3 :set colorcolumn=
 
 " unset and disable items
 nnoremap <Leader>! :ALEDisable<Cr>
