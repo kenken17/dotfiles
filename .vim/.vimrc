@@ -97,3 +97,6 @@ endif
 autocmd BufWinLeave *.* silent! mkview!
 autocmd BufWinEnter *.* silent! loadview
 
+" Cursor
+:autocmd InsertEnter * set cul
+:autocmd InsertLeave * set nocul
