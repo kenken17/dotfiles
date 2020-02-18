@@ -24,6 +24,7 @@ let g:agit_max_log_lines = 100
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " sheerun/vim-polyglot
+let g:polyglot_disabled = ['markdown']
 " let g:polyglot_disabled = ['coffee-script', 'pug', 'haml']
 
 let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'

@@ -253,3 +253,13 @@ call s:hi("jsonKeyword", s:color_highlight, s:color_none)
 call s:hi("CocHighlightText", s:color_highlight, s:color_lvl_1)
 call s:hi("CocFloating", s:color_lvl_4, s:color_float)
 
+" Markdown
+call s:hi("htmlLink", s:color_lvl_3, s:color_none)
+call s:hi("markdownUrl", s:color_highlight, s:color_none)
+call s:hi("htmlBold", s:color_lvl_4, s:color_none)
+call s:hi("htmlH1", s:color_lvl_4, s:color_none)
+call s:hi("htmlH2", s:color_lvl_4, s:color_none)
+call s:hi("htmlH3", s:color_lvl_4, s:color_none)
+call s:hi("htmlH4", s:color_lvl_4, s:color_none)
+call s:hi("htmlH5", s:color_lvl_4, s:color_none)
+call s:hi("htmlH6", s:color_lvl_4, s:color_none)
