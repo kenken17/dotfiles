@@ -3,12 +3,12 @@ filetype off                  " required
 
 call plug#begin('~/.vim/plugged')
 
-" For Tim Pope
+" By Tim Pope
 "-------------
 Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 
 " For IDE
@@ -22,6 +22,7 @@ Plug 'Yggdroot/indentLine'
 " For Coding & Syntaxing
 "-----------------------
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'jiangmiao/auto-pairs'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'cohama/agit.vim'
@@ -36,7 +37,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 "----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neoclide/coc-lists', { 'do': 'yarn'}
-Plug 'neoclide/coc-pairs', { 'do': 'yarn'}
 Plug 'neoclide/coc-json', { 'do': 'yarn'}
 Plug 'neoclide/coc-vetur', { 'do': 'yarn'}
 
