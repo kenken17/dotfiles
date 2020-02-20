@@ -161,3 +161,5 @@ alias o_auth="cd ~/Projects/wins-auth && vim"
 alias o_csp="cd ~/Projects/wins-mock-csp && vim"
 alias o_iam="cd ~/Projects/wins-common-iam && vim"
 
+alias npm_original="npm config set registry https://registry.npmjs.org/"
+alias npm_mom="npm config set registry http://172.16.5.227:4873/"
