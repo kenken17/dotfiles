@@ -26,7 +26,8 @@ nnoremap <Leader>2 :set foldmethod=indent
 nnoremap <Leader>3 :set colorcolumn=
 
 " unset and disable items
-nnoremap <Leader>! :ALEDisable<Cr>
+nnoremap <Leader>! :call coc#config('eslint.enable', v:false)<CR>
+nnoremap <Leader>@ :call coc#config('eslint.enable', v:true)<CR>
 
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<Cr>
