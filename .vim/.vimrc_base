@@ -32,3 +32,5 @@ Plug 'scrooloose/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
+
+source $HOME/.vim/setup/base/plugins.vim

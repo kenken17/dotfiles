@@ -70,5 +70,6 @@ call plug#end()
 
 source $HOME/.vim/setup/coc.vim
 source $HOME/.vim/setup/mappings.vim
+source $HOME/.vim/setup/base/plugins.vim
 source $HOME/.vim/setup/plugins.vim
 

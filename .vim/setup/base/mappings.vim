@@ -19,11 +19,15 @@ nnoremap <Leader>w :w !sudo tee % > /dev/null<Cr>
 " Send the paste item to xclip
 vnoremap <Leader>y "*y
 
-" redraw the screen and set items
+" Work flow
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
 nnoremap <Leader>2 :set foldmethod=indent
 nnoremap <Leader>3 :set colorcolumn=
+nnoremap <Leader>i :! git update-index --skip-worktree %:p<Cr>
+nnoremap <Leader>I :! git update-index --no-skip-worktree %:p<Cr>
+nnoremap <Leader>! :call coc#config('eslint.enable', v:false)
+nnoremap <Leader>@ :1,norm! @@
 
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<Cr>

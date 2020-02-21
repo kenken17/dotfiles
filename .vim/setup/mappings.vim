@@ -26,12 +26,6 @@ nnoremap <Leader><Del> :! git checkout HEAD -- %<Cr>
 " tabular the file
 nmap <Leader>t :Tabularize /\|<Cr>
 
-" For workflow
-nnoremap <Leader>i :! git update-index --skip-worktree %:p<Cr>
-nnoremap <Leader>I :! git update-index --no-skip-worktree %:p<Cr>
-nnoremap <Leader>! :call coc#config('eslint.enable', v:false)<CR>
-nnoremap <Leader>@ :call coc#config('eslint.enable', v:true)<CR>
-
 " lambdalisue/gina.vim  (git)
 nnoremap <Leader>c :Gina commit<Cr>
 nnoremap <Leader>C :Gina commit --amend<Cr>
@@ -51,10 +45,5 @@ nnoremap <F12> :Agit<Cr>
 nnoremap <Leader><F12> :AgitFile<Cr>
 
 xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<Cr>
-
-function! ExecuteMacroOverVisualRange()
-  echo "@".getcmdline()
-  execute ":'<,'>normal @".nr2char(getchar())
-endfunction
 
 nnoremap <Leader>j :%!python -m json.tool<Cr>
