@@ -1,0 +1,34 @@
+set nocompatible
+filetype off
+
+source $HOME/.vim/setup/base/natives.vim
+source $HOME/.vim/setup/base/mappings-switch.vim
+source $HOME/.vim/setup/base/mappings.vim
+source $HOME/.vim/setup/base/typos.vim
+source $HOME/.vim/setup/base/types.vim
+source $HOME/.vim/setup/base/autocmd.vim
+
+" For color and theme
+"--------------------
+
+" set termguicolors
+set t_Co=256
+colorscheme minimal
+
+hi Normal guibg=NONE ctermbg=NONE
+
+if !has('nvim')
+  set ttymouse=xterm2
+endif
+
+call plug#begin('~/.vim/plugged')
+
+" For IDE
+"--------
+Plug 'scrooloose/nerdtree'
+
+" For Coding & Syntaxing
+"-----------------------
+Plug 'ctrlpvim/ctrlp.vim'
+
+call plug#end()
