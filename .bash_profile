@@ -62,7 +62,6 @@ fi
 # Alias/Functions
 alias unit='npm run test'
 alias coverage='npm run test:dev-coverage'
-alias build='npm run build:production'
 alias serve='python -m SimpleHTTPServer '
 alias lint='npx eslint'
 

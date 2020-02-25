@@ -18,6 +18,8 @@ WHITE='\033[1;37m'
 
 alias mom='tmux a -t mom'
 alias ep_dev="cd ~/Projects/wins-ep-dev"
+alias build='npm run build:production'
+alias dev='npm run dev'
 
 d_log () {
   if [ -z $1 ]
@@ -134,6 +136,15 @@ _d_re_completions()
   COMPREPLY=($(compgen -W '${SERVICE[@]}' "${COMP_WORDS[1]}"))
 }
 
+alias _rebuild=d_rebuild
+alias _restart=d_restart
+alias _log=d_log
+alias _bash=d_bash
+
+complete -F _d_re_completions _rebuild
+complete -F _d_re_completions _restart
+complete -F _d_re_completions _log
+complete -F _d_re_completions _bash
 complete -F _d_re_completions d_rebuild
 complete -F _d_re_completions d_restart
 complete -F _d_re_completions d_log
