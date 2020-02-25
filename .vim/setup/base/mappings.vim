@@ -32,10 +32,12 @@ nnoremap <Leader>@ :1,norm! @@
 " turn off the highlight
 nnoremap <Leader>/ :nohlsearch<Cr>
 
-" Add a ,/; above end of line
+" Add a ,;)]} above end of line
 nnoremap <Leader>, mpk$A,<Esc>`p
 nnoremap <Leader>; mpk$A;<Esc>`p
-nnoremap <Leader>) o});<Esc>
+nnoremap <Leader>) mpk$A)<Esc>`p
+nnoremap <Leader>] mpk$A]<Esc>`p
+nnoremap <Leader>} mpk$A}<Esc>`p
 
 " Map the selection of a code block
 nnoremap <Leader>b $V%
