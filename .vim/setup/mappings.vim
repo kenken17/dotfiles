@@ -44,6 +44,4 @@ nnoremap <F8> ]czz
 nnoremap <F12> :Agit<Cr>
 nnoremap <Leader><F12> :AgitFile<Cr>
 
-xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<Cr>
-
 nnoremap <Leader>j :%!python -m json.tool<Cr>
