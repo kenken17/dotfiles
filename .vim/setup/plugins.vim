@@ -1,6 +1,30 @@
 " For all other plugins settings/mappings
 "----------------------------------
 
+" vim-airline/vim-airline
+let g:airline_section_z = '%3l/%L:%3v'
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+let g:airline_mode_map = {
+      \ '__'     : '-',
+      \ 'c'      : 'C',
+      \ 'i'      : 'I',
+      \ 'ic'     : 'I',
+      \ 'ix'     : 'I',
+      \ 'n'      : 'N',
+      \ 'multi'  : 'M',
+      \ 'ni'     : 'N',
+      \ 'no'     : 'N',
+      \ 'R'      : 'R',
+      \ 'Rv'     : 'R',
+      \ 's'      : 'S',
+      \ 'S'      : 'S',
+      \ ''     : 'S',
+      \ 't'      : 'T',
+      \ 'v'      : 'V',
+      \ 'V'      : 'V',
+      \ ''     : 'V',
+      \ }
+
 " cohama/agit.vim
 let g:agit_max_log_lines = 100
 
