@@ -1,6 +1,9 @@
 # Setup the prompt
 source ~/.bash_prompt
 
+# Alias for sourcing
+alias so='source ~/.bash_profile'
+
 # Do not show the zsh message anymore
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
@@ -11,7 +14,7 @@ export LC_ALL=en_US.UTF-8
 export HISTFILESIZE=
 export HISTSIZE=
 
-# colours!
+# Colours!
 NOCOLOR='\033[0m'
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -59,22 +62,30 @@ if command -v brew >/dev/null 2>&1; then
   [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
-# Alias/Functions
+# Git
+alias aa='git aa'
+
+# Npm
 alias unit='npm run test'
 alias coverage='npm run test:dev-coverage'
-alias serve='python -m SimpleHTTPServer '
 alias lint='npx eslint'
+alias serve='python -m SimpleHTTPServer '
 
+# Workflow
 alias xit='exit'
 
+# Ports
 alias show_p='netstat -an -ptcp | grep LISTEN'
 kill_p () {
   kill -9 $(lsof -t -i:$1)
 }
 
+# Docker
 alias d_ps='docker ps --format "table {{.ID}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
+
 d_bash () {
   docker exec -it $1 bash
 }
 
+# For others
 source ~/dotfiles/mom/.bash_profile
