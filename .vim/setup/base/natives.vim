@@ -13,16 +13,13 @@ set lazyredraw " Don't redraw while executing macros (good performance config)
 set magic
 set nobackup
 set noswapfile
-set nowb
 set nowrap
 set nowritebackup
 set number
 set omnifunc=syntaxcomplete#Complete
 set path+=**
 set secure
-set sessionoptions=folds
 set shiftwidth=2
-set shortmess+=c
 set showmatch
 set signcolumn=yes
 set smartcase
@@ -36,8 +33,11 @@ set wildignore+=**\*.jpg,**\*.gif,**\*.png
 set wildignore+=**\node_modules\**,**\build\**,**\coverage\**,**\*.swp,**\*.svg,**\*.un~
 set wildignore+=.git\*,.hg\*,.svn\*
 
-" syntax enable
+" nvim defualts
 " filetype plugin indent on
+" set fillchars="fold: "
+" set sessionoptions=folds
+" set shortmess+=c
 
 " For Ag
 if executable('ag')
@@ -57,7 +57,6 @@ if executable('ag')
 endif
 
 " Change the folder text
-set fillchars="fold: "
 function! MyFoldText()
   let endLine = getline(v:foldend)
   let end = substitute(endLine, '\s', '', 'g')
