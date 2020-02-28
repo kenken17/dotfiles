@@ -2,6 +2,7 @@
 "----------------------------------
 
 " vim-airline/vim-airline
+let g:airline_exclude_preview=1
 let g:airline_section_z = '%3l/%L:%3v'
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
 let g:airline_mode_map = {
@@ -39,7 +40,7 @@ let g:polyglot_disabled = ['markdown']
 let g:gina#command#blame#formatter#format = "%su%=on %ti %ma%in - %au"
 
 " janko/vim-test
-let test#strategy = "vimux"
+let test#strategy = "dispatch"
 
 " Yggdroot/indentLine
 let g:indentLine_char = '⎸'

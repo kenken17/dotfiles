@@ -2,7 +2,6 @@ set nocompatible
 filetype off
 
 source $HOME/.vim/setup/base/natives.vim
-source $HOME/.vim/setup/base/mappings-switch.vim
 source $HOME/.vim/setup/base/mappings.vim
 source $HOME/.vim/setup/base/typos.vim
 source $HOME/.vim/setup/base/types.vim
@@ -36,7 +35,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'benmills/vimux'
 Plug 'Yggdroot/indentLine'
 
 " For Coding & Syntaxing
@@ -70,6 +68,7 @@ call plug#end()
 
 source $HOME/.vim/setup/coc.vim
 source $HOME/.vim/setup/mappings.vim
+source $HOME/.vim/setup/mappings-switch.vim
 source $HOME/.vim/setup/base/plugins.vim
 source $HOME/.vim/setup/plugins.vim
 

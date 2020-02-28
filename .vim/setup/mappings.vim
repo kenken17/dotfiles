@@ -37,6 +37,8 @@ nnoremap <F11> :Gina pull<Cr>
 nnoremap <Leader><F11> :Gina push<Cr>
 
 " tpope/vim-unimpaired
+nnoremap <F5> [q
+nnoremap <F6> ]q
 nnoremap <F7> [czz
 nnoremap <F8> ]czz
 
