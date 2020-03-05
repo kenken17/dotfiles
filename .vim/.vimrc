@@ -35,7 +35,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'Yggdroot/indentLine'
 
 " For Coding & Syntaxing
 "-----------------------

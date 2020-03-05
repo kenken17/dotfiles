@@ -79,22 +79,6 @@ git config --global core.excludesfile ~/.gitignore_global
 
 
 
-
-echo ">>> Link .ackrc to ~/.ackrc ..."
-
-if [[ -f ~/.ackrc && $OVERWRITE -eq 0 ]]
-then
-    echo ">>> Found ~/.ackrc, replace with ~/.ackrc_backup"
-    echo
-    mv ~/.ackrc ~/.ackrc_backup
-else
-    rm ~/.ackrc
-fi
-
-ln -v -s $(pwd)/.ackrc ~/.ackrc
-
-
-
 echo ">>> Link .tmux.conf.local to ~/.tmux.conf.local ..."
 
 if [[ -f ~/.tmux.conf.local && $OVERWRITE -eq 0 ]]
@@ -140,18 +124,19 @@ ln -v -s $(pwd)/.vim/coc-settings.json ~/.config/nvim/coc-settings.json
 
 
 
-# echo ">>> Link .git-templates to ~/.git-templates ..."
-#
-# if [[ -d ~/.git-templates && $OVERWRITE -eq 0 ]]
-# then
-#   echo ">>> Found ~/.git-templates, replace with ~/.git-templates_backup"
-#   echo
-#   mv ~/.git-templates ~/.git-templates_backup
-# else
-#   rm ~/.git-templates
-# fi
+echo ">>> Link .bash_prompt to ~/.bash_prompt ..."
 
-# ln -v -s $(pwd)/.git-templates ~/.git-templates
+if [[ -f ~/.bash_profile && $OVERWRITE -eq 0 ]]
+then
+  echo ">>> Found ~/.bash_prompt, replace with ~/.bash_prompt_backup"
+  echo
+  mv ~/.bash_prompt ~/.bash_prompt_backup
+else
+  rm ~/.bash_prompt
+fi
+
+ln -v -s $(pwd)/.bash_prompt ~/.bash_prompt
+
 
 
 echo ">>> Link .bash_profile to ~/.bash_profile ..."
@@ -168,3 +153,5 @@ fi
 ln -v -s $(pwd)/.bash_profile ~/.bash_profile
 
 
+
+source ~/bash_profile
