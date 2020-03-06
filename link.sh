@@ -18,6 +18,7 @@ shift "$(($OPTIND -1))"
 
 
 
+echo
 echo ">>> Link .vim to ~/.vim ..."
 
 if [[ -d ~/.vim && $OVERWRITE -eq 0 ]]
@@ -33,6 +34,7 @@ ln -v -s $(pwd)/.vim ~
 
 
 
+echo
 echo ">>> Link .vimrc to ~ ..."
 
 if [[ -f ~/.vimrc && $OVERWRITE -eq 0 ]]
@@ -48,6 +50,7 @@ ln -v -s $(pwd)/.vim/.vimrc ~/.vimrc
 
 
 
+echo
 echo ">>> Link .ctags to ~/.ctags ..."
 
 if [[ -f ~/.ctags && $OVERWRITE -eq 0 ]]
@@ -63,6 +66,7 @@ ln -v -s $(pwd)/.ctags ~/.ctags
 
 
 
+echo
 echo ">>> Link .gitignore_global to ~/.gitignore_global ..."
 
 if [[ -f ~/.gitignore_global && $OVERWRITE -eq 0 ]]
@@ -79,6 +83,7 @@ git config --global core.excludesfile ~/.gitignore_global
 
 
 
+echo
 echo ">>> Link .tmux.conf.local to ~/.tmux.conf.local ..."
 
 if [[ -f ~/.tmux.conf.local && $OVERWRITE -eq 0 ]]
@@ -94,6 +99,7 @@ ln -v -s $(pwd)/.tmux.conf.local ~/.tmux.conf.local
 
 
 
+echo
 echo ">>> Link init.vim to ~/.config/nvim/init.vim ..."
 
 if [[ -f ~/.config/nvim/init.vim && $OVERWRITE -eq 0 ]]
@@ -109,6 +115,7 @@ ln -v -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
 
 
 
+echo
 echo ">>> Link coc-settings.json to ~/.config/nvim/coc-settings.json ..."
 
 if [[ -f ~/.config/nvim/coc-settings.json && $OVERWRITE -eq 0 ]]
@@ -124,6 +131,7 @@ ln -v -s $(pwd)/.vim/coc-settings.json ~/.config/nvim/coc-settings.json
 
 
 
+echo
 echo ">>> Link .bash_prompt to ~/.bash_prompt ..."
 
 if [[ -f ~/.bash_profile && $OVERWRITE -eq 0 ]]
@@ -139,6 +147,7 @@ ln -v -s $(pwd)/.bash_prompt ~/.bash_prompt
 
 
 
+echo
 echo ">>> Link .bash_profile to ~/.bash_profile ..."
 
 if [[ -f ~/.bash_profile && $OVERWRITE -eq 0 ]]

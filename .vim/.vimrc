@@ -53,9 +53,9 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 " Coc
 "----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-lists', { 'do': 'yarn'}
-Plug 'neoclide/coc-json', { 'do': 'yarn'}
-Plug 'neoclide/coc-vetur', { 'do': 'yarn'}
+Plug 'neoclide/coc-lists', {'do': 'yarn'}
+Plug 'neoclide/coc-json', {'do': 'yarn'}
+Plug 'neoclide/coc-vetur', {'do': 'yarn'}
 
 " Inline install
 " --------------
