@@ -66,6 +66,7 @@ Plug 'neoclide/coc-vetur', {'do': 'yarn'}
 call plug#end()
 
 source $HOME/.vim/setup/coc.vim
+source $HOME/.vim/setup/autocmd.vim
 source $HOME/.vim/setup/mappings.vim
 source $HOME/.vim/setup/mappings-switch.vim
 source $HOME/.vim/setup/base/plugins.vim
