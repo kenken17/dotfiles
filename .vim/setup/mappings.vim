@@ -27,9 +27,7 @@ nnoremap <Leader><Del> :! git checkout HEAD -- %<Cr>
 nmap <Leader>t :Tabularize /\|<Cr>
 
 " lambdalisue/gina.vim  (git)
-nnoremap <Leader>c :Gina commit<Cr>
-nnoremap <Leader>C :Gina commit --amend<Cr>
-nnoremap <F9> :Gina status --opener="to split"<Cr>
+nnoremap <F9> :Gstatus<Cr>
 nnoremap <Leader><F9> :Gina blame --width=100<Cr>
 nnoremap <F10> :Gina compare<Cr>
 nnoremap <Leader><F10> :Gina patch<Cr>
