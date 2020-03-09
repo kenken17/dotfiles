@@ -32,6 +32,8 @@ git config --global alias.p "git fetch --prune origin '+refs/tags/*:refs/tags/*'
 git config --global merge.tool vimdiff
 git config --global diff.tool vimdiff
 
+# Always use rebase for pulling
+git config --global pull.rebase true
 
 # For hooks
 # git config --global init.templatedir '~/.git-templates'
