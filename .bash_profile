@@ -87,5 +87,10 @@ d_bash () {
   docker exec -it $1 bash
 }
 
+d_prune_shit () {
+  docker system prune -f
+  docker volume prune -f
+}
+
 # For others
 source ~/dotfiles/mom/.bash_profile
