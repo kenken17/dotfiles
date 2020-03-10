@@ -44,3 +44,6 @@ let test#strategy = "dispatch"
 
 " Yggdroot/indentLine
 let g:indentLine_char = '⎸'
+
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
