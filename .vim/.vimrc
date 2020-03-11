@@ -51,6 +51,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'janko/vim-test'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'terryma/vim-expand-region'
+Plug 'sk1418/QFGrep'
 
 " Coc
 "----
