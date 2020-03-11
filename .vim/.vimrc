@@ -50,6 +50,7 @@ Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'janko/vim-test'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'terryma/vim-expand-region'
 
 " Coc
 "----
