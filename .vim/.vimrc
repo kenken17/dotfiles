@@ -56,15 +56,15 @@ Plug 'sk1418/QFGrep'
 " Coc
 "----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neoclide/coc-lists', {'do': 'yarn'}
-Plug 'neoclide/coc-json', {'do': 'yarn'}
-Plug 'neoclide/coc-vetur', {'do': 'yarn'}
 
 " Inline install
 " --------------
 " coc-eslint
 " coc-tsserver
 " coc-snippets
+" coc-vetur
+" coc-lists
+" coc-json
 
 call plug#end()
 
