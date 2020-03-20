@@ -73,35 +73,9 @@ fetch_all () {
   done
 }
 
-d_stop_payment () {
-  docker stop wins_ep_payment
-  docker stop wins_ep_payment_braintree
-  docker stop wins_ep_payment_report
-}
-
-d_start_payment () {
-  d_restart wins_ep_payment
-  d_restart wins_ep_payment_braintree
-  d_restart wins_ep_payment_report
-}
-
 d_stop_shit () {
   docker stop wins_data_lookup_sync
   docker stop wins_selenium_box
-}
-
-d_stop_auth () {
-  docker stop wins_ep_company
-  docker stop wins_common_foreigner
-  docker stop wins_mock_uam
-  docker stop wins_common_iam
-}
-
-d_start_auth () {
-  d_restart wins_ep_company
-  d_restart wins_common_foreigner
-  d_restart wins_mock_uam
-  d_restart wins_common_iam
 }
 
 _d_re_completions()

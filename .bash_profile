@@ -64,6 +64,8 @@ fi
 
 # Git
 alias aa='git aa'
+alias pull='git pull'
+alias push='git push'
 
 # Npm
 alias unit='npm run test'
