@@ -62,7 +62,7 @@ tags
 coverage/
 .nyc_output/
 /build/
-
+swagger-ui-bundle.js
 
 # vim #
 ######
