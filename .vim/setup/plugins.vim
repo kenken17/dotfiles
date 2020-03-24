@@ -47,3 +47,6 @@ let g:indentLine_char = '⎸'
 
 let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
+
+" terryma/vim-expand-region
+let g:VimTodoListsMoveItems = 0
