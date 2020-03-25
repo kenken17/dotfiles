@@ -65,6 +65,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " coc-vetur
 " coc-lists
 " coc-json
+" coc-java
 
 call plug#end()
 
