@@ -263,3 +263,8 @@ call s:hi("htmlH3", s:color_lvl_4, s:color_none)
 call s:hi("htmlH4", s:color_lvl_4, s:color_none)
 call s:hi("htmlH5", s:color_lvl_4, s:color_none)
 call s:hi("htmlH6", s:color_lvl_4, s:color_none)
+
+" Todo
+call s:hi("vimTodoListsImportant", s:color_highlight, s:color_none)
+call s:hi("vimTodoListsDone", s:color_comment, s:color_none)
+call s:hi("vimTodoListsNormal", s:color_lvl_2, s:color_none)
