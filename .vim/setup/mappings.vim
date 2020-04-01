@@ -11,11 +11,6 @@ nnoremap ]l :lnext<Cr>
 nnoremap [L :lfirst<Cr>
 nnoremap ]L :llast<Cr>
 
-
-" Center the screen when navigate folds
-nnoremap zj zjzz
-nnoremap zk zkzz
-
 " when pan up/down speed it
 nnoremap <C-e> 5<C-e>
 nnoremap <C-y> 5<C-y>
