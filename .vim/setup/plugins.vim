@@ -48,5 +48,5 @@ let g:indentLine_char = '⎸'
 let s:vim_tags = expand('~/.cache/tags')
 let g:gutentags_cache_dir = s:vim_tags
 
-" terryma/vim-expand-region
-let g:VimTodoListsMoveItems = 0
+" iamcco/markdown-preview.nvim
+let g:mkdp_command_for_global = 1
