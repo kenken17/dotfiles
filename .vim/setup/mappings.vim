@@ -37,4 +37,4 @@ nnoremap <F8> ]czz
 nnoremap <F12> :Agit<Cr>
 nnoremap <Leader><F12> :AgitFile<Cr>
 
-nnoremap <Leader>j :%!python -m json.tool<Cr>
+nnoremap <Leader>j :'<,'>!python -m json.tool<Cr>
