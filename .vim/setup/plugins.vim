@@ -50,3 +50,6 @@ let g:gutentags_cache_dir = s:vim_tags
 
 " iamcco/markdown-preview.nvim
 let g:mkdp_command_for_global = 1
+
+" aserebryakov/vim-todo-lists
+let g:VimTodoListsMoveItems = 0
