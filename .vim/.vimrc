@@ -40,7 +40,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " For Coding & Syntaxing
 "-----------------------
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'jiangmiao/auto-pairs'
+Plug 'doums/coBra'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'cohama/agit.vim'
