@@ -268,3 +268,7 @@ call s:hi("htmlH6", s:color_lvl_4, s:color_none)
 call s:hi("vimTodoListsImportant", s:color_highlight, s:color_none)
 call s:hi("vimTodoListsDone", s:color_comment, s:color_none)
 call s:hi("vimTodoListsNormal", s:color_lvl_2, s:color_none)
+
+" Quick Scope
+call s:hi("QuickScopePrimary", s:color_lvl_5, s:color_error)
+call s:hi("QuickScopeSecondary", s:color_lvl_0, s:color_highlight)

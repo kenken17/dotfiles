@@ -53,3 +53,6 @@ let g:mkdp_command_for_global = 1
 
 " aserebryakov/vim-todo-lists
 let g:VimTodoListsMoveItems = 0
+
+" unblevable/quick-scope
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']

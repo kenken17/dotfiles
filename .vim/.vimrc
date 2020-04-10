@@ -48,10 +48,10 @@ Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
-" Plug 'janko/vim-test'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'sk1418/QFGrep'
 Plug 'aserebryakov/vim-todo-lists'
+Plug 'unblevable/quick-scope'
 
 " Coc
 "----
