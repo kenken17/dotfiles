@@ -49,7 +49,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-Plug 'sk1418/QFGrep'
+Plug 'romainl/vim-qf'
 Plug 'aserebryakov/vim-todo-lists'
 Plug 'unblevable/quick-scope'
 

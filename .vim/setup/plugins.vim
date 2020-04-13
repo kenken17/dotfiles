@@ -56,3 +56,7 @@ let g:VimTodoListsMoveItems = 0
 
 " unblevable/quick-scope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" romainl/vim-qf
+let g:qf_mapping_ack_style = 1
+let g:qf_shorten_path = 0
