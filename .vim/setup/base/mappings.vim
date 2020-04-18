@@ -85,8 +85,6 @@ nnoremap N Nzz
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
-vmap J :s/$\n\s*//gc<Cr>a<Cr>,/
-
 " Help
 nnoremap <F1> :help <C-r><C-w><Cr>
 

@@ -52,6 +52,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'romainl/vim-qf'
 Plug 'aserebryakov/vim-todo-lists'
 Plug 'unblevable/quick-scope'
+Plug 'AndrewRadev/splitjoin.vim'
 
 " Coc
 "----
@@ -66,6 +67,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " coc-lists
 " coc-json
 " coc-java
+" coc-prettier
 
 call plug#end()
 
