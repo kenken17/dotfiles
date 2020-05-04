@@ -22,7 +22,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" By Tim Pope
+" All Tim Pope
 "-------------
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-repeat'
@@ -30,6 +30,7 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-dadbod'
 
 " For IDE
 "--------
@@ -68,6 +69,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " coc-json
 " coc-java
 " coc-prettier
+" coc-sh
+" coc-db        // for vim-dadbod
 
 call plug#end()
 

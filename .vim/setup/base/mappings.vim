@@ -58,8 +58,8 @@ nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
 vnoremap <Leader>FR :s//g<Left><Left>
 
 " For quick vsplit diff
-nnoremap <Leader>d :diffthis<Cr><C-w>l:diffthis<Cr>
-nnoremap <Leader>D :diffoff<Cr>
+nnoremap <Leader>d :diffthis<Cr><C-w>l:diffthis<Cr><C-w>h
+nnoremap <Leader>D :diffoff<Cr><C-w>l:diffoff<Cr><C-w>h
 
 " spell check
 nnoremap <Leader>s :set spell spelllang=en_us<Cr>
