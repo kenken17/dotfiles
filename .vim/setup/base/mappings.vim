@@ -19,6 +19,10 @@ nnoremap <Leader>w :w !sudo tee % > /dev/null<Cr>
 " Send the paste item to xclip
 vnoremap <Leader>y "*y
 
+" Patse with cursor at new place
+nnoremap P gP
+nnoremap p gp
+
 " Work flow
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
