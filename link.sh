@@ -163,4 +163,20 @@ ln -v -s $(pwd)/.bash_profile ~/.bash_profile
 
 
 
+echo
+echo ">>> Link .alacritty.yml to ~/.alacritty.yml ..."
+
+if [[ -f ~/.alacritty.yml && $OVERWRITE -eq 0 ]]
+then
+  echo ">>> Found ~/.alacritty.yml, replace with ~/.alacritty.yml_backup"
+  echo
+  mv ~/.alacritty.yml ~/.alacritty.yml_backup
+else
+  rm ~/.alacritty.yml
+fi
+
+ln -v -s $(pwd)/.alacritty.yml ~/.alacritty.yml
+
+
+
 source ~/bash_profile
