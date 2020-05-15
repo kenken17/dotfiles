@@ -175,7 +175,7 @@ else
   rm ~/.alacritty.yml
 fi
 
-ln -v -s $(pwd)/.alacritty.yml ~/.alacritty.yml
+ln -v -s $(pwd)/termimal/.alacritty.yml ~/.alacritty.yml
 
 
 
