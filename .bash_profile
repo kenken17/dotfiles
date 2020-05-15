@@ -32,6 +32,13 @@ LIGHTPURPLE='\033[1;35m'
 LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 
+alias ls="ls --color"
+alias dir='dir --color'
+alias vdir='vdir --color'
+alias grep='grep --color'
+alias fgrep='fgrep --color'
+alias egrep='egrep --color'
+
 ###### VIM ######
 export EDITOR='nvim'
 
@@ -54,7 +61,7 @@ export NVM_DIR="$HOME/.nvm"
 rm -rf /Users/ken/dotfiles/.vim/view/**
 
 # Make sure tmux run in 256 color scheme
-alias tmux="TERM=screen-256color tmux"
+# alias tmux="TERM=screen-256color tmux"
 
 # z
 if command -v brew >/dev/null 2>&1; then
