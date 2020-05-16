@@ -16,8 +16,11 @@ inoremap <M-l> <Right>
 " : sudo saves the file
 nnoremap <Leader>w :w !sudo tee % > /dev/null<Cr>
 
-" Send the paste item to xclip
-vnoremap <Leader>y "*y
+" Send the paste item to primary
+vnoremap <Leader>Y "*y
+
+" Send the paste item to clipboard
+vnoremap <Leader>y "+y
 
 " Work flow
 nnoremap <Leader>` :redraw!
