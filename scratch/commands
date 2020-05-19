@@ -1,0 +1,2 @@
+
+nmcli con up gcc-dev passwd-file ~/.passwd/vpn-gcc-dev
