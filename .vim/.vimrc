@@ -3,6 +3,7 @@ filetype off
 
 source $HOME/.vim/setup/base/natives.vim
 source $HOME/.vim/setup/base/mappings.vim
+source $HOME/.vim/setup/base/mappings-operator.vim
 source $HOME/.vim/setup/base/typos.vim
 source $HOME/.vim/setup/base/types.vim
 source $HOME/.vim/setup/base/autocmd.vim
