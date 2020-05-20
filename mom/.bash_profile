@@ -131,22 +131,14 @@ s_start () {
   npm start
 }
 
+vpn_gcc () {
+  nmcli con mod gcc-dev vpn.secrets "password=$(cat ~/.passwd/vpn-gcc-dev)"
+  nmcli con up gcc-dev -a
+}
+
 s_pack () {
   npm run build:system
   npm pack
 }
-
-alias o_lookup="cd ~/Projects/wins-common-lookup && vim"
-alias o_company="cd ~/Projects/wins-ep-company && vim"
-alias o_foreigner="cd ~/Projects/wins-common-foreigner && vim"
-alias o_application="cd ~/Projects/wins-ep-application && vim"
-alias o_online="cd ~/Projects/wins-ep-online && vim"
-alias o_dev="cd ~/Projects/wins-ep-dev && vim"
-alias o_auth="cd ~/Projects/wins-auth && vim"
-alias o_csp="cd ~/Projects/wins-mock-csp && vim"
-alias o_iam="cd ~/Projects/wins-common-iam && vim"
-
-alias npm_original="npm config set registry https://registry.npmjs.org/"
-alias npm_mom="npm config set registry http://172.16.5.227:4873/"
 
 alias ssh_automation='ssh wins@172.16.12.200'
