@@ -1,9 +1,10 @@
 password file contains:
 ```sh
-  vpn.secrets.password:MY_PASSWORD
+  MY_PASSWORD
 ```
 
 command:
 ```sh
-  nmcli con up gcc-dev passwd-file ~/.passwd/vpn-gcc-dev
+  nmcli con mod gcc-dev vpn.secrets "password=$(cat ~/.passwd/vpn-gcc-dev)"
+  nmcli con up gcc-dev -a
 ```
