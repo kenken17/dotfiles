@@ -55,6 +55,7 @@ Plug 'romainl/vim-qf'
 Plug 'aserebryakov/vim-todo-lists'
 Plug 'unblevable/quick-scope'
 Plug 'AndrewRadev/splitjoin.vim'
+" Plug 'puremourning/vimspector'
 
 " Coc
 "----
@@ -62,16 +63,18 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Inline install
 " --------------
+" coc-css
+" coc-db        // for vim-dadbod
 " coc-eslint
-" coc-tsserver
-" coc-snippets
-" coc-vetur
-" coc-lists
-" coc-json
+" coc-html
 " coc-java
+" coc-json
+" coc-lists
 " coc-prettier
 " coc-sh
-" coc-db        // for vim-dadbod
+" coc-snippets
+" coc-tsserver
+" coc-vetur
 
 call plug#end()
 
