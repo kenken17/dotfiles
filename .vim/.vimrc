@@ -65,6 +65,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " --------------
 " coc-css
 " coc-db        // for vim-dadbod
+" coc-docker
 " coc-eslint
 " coc-html
 " coc-java
@@ -73,8 +74,12 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " coc-prettier
 " coc-sh
 " coc-snippets
+" coc-sql
+" coc-stylelint
 " coc-tsserver
 " coc-vetur
+" coc-webpack
+" coc-yaml
 
 call plug#end()
 
