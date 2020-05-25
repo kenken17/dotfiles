@@ -54,11 +54,10 @@ nnoremap <C-]> g<C-]>
 
 " For search and replace ex mode
 nnoremap <Leader>ff :%s/<C-r><C-w>//gn<Cr>
-nnoremap <Leader>FF :%s/<C-r><C-a>//gn<Cr>
 nnoremap <Leader>fr :%s/<c-r><C-w>//gc<Left><Left><Left>
-vnoremap <Leader>fr :s//g<Left><Left>
-nnoremap <Leader>FR :%s/<c-r><C-a>//gc<Left><Left><Left>
-vnoremap <Leader>FR :s//g<Left><Left>
+
+" For search and replace in quickfix list
+nnoremap <Leader>c :<C-r>:<C-b><S-Right><S-Right><C-u>cdo %s/<Del><C-e>//ge \| update<S-Left><S-Left><Left><Left><Left><Left>
 
 " For quick vsplit diff
 nnoremap <Leader>d :diffthis<Cr><C-w>l:diffthis<Cr><C-w>h
@@ -99,6 +98,7 @@ nnoremap <Leader><F2> :tabclose<Cr>
 nnoremap <F3> :CtrlP<Cr>
 nnoremap <F4> :CtrlPMRU<Cr>
 
+" Global search
 nnoremap <Leader>* :Ag -S <C-r><C-w>
 nnoremap <Leader>a :Ag -S<Space>
 
