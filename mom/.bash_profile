@@ -132,6 +132,7 @@ s_start () {
 }
 
 vpn_gcc () {
+  sudo ifmetric wlp1s0 1
   nmcli con mod gcc-dev vpn.secrets "password=$(cat ~/.passwd/vpn-gcc-dev)"
   nmcli con up gcc-dev -a
 }
