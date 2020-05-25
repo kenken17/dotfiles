@@ -31,7 +31,6 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
-" Plug 'tpope/vim-dadbod'
 
 " For IDE
 "--------
@@ -63,23 +62,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Inline install
 " --------------
-" coc-css
-" coc-db        // for vim-dadbod
-" coc-docker
-" coc-eslint
-" coc-html
-" coc-java
-" coc-json
-" coc-lists
-" coc-prettier
-" coc-sh
-" coc-snippets
-" coc-sql
-" coc-stylelint
-" coc-tsserver
-" coc-vetur
-" coc-webpack
-" coc-yaml
+" coc-css coc-db coc-docker coc-eslint coc-html coc-java coc-json coc-lists coc-prettier coc-sh coc-snippets coc-sql coc-stylelint coc-tsserver coc-vetur coc-webpack coc-yaml
 
 call plug#end()
 
