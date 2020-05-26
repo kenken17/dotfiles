@@ -102,4 +102,5 @@ nnoremap <F4> :CtrlPMRU<Cr>
 nnoremap <Leader>* :Ag -S <C-r><C-w>
 nnoremap <Leader>a :Ag -S<Space>
 
+nnoremap <Leader>j :%!python -m json.tool<Cr>
 command! -range FormatJSON <line1>,<line2>!python -m json.tool

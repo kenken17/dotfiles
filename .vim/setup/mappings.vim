@@ -11,10 +11,6 @@ nnoremap ]l :lnext<Cr>
 nnoremap [L :lfirst<Cr>
 nnoremap ]L :llast<Cr>
 
-" when pan up/down speed it
-nnoremap <C-e> 5<C-e>
-nnoremap <C-y> 5<C-y>
-
 " Reset the current file
 nnoremap <Leader><Del> :! git checkout HEAD -- %<Cr>
 
@@ -36,5 +32,3 @@ nnoremap <F8> ]czz
 " cohama/agit.vim
 nnoremap <F12> :Agit<Cr>
 nnoremap <Leader><F12> :AgitFile<Cr>
-
-nnoremap <Leader>j :%!python -m json.tool<Cr>
