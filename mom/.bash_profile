@@ -49,6 +49,52 @@ d_stop_shit () {
   docker stop wins_selenium_box
 }
 
+_d_re_completions()
+{
+  SERVICE[0]="wins_common_document"
+  SERVICE[1]="wins_common_foreigner"
+  SERVICE[2]="wins_common_iam"
+  SERVICE[3]="wins_common_lookup"
+  SERVICE[4]="wins_data_lookup_sync"
+  SERVICE[5]="wins_ep_application"
+  SERVICE[6]="wins_ep_company"
+  SERVICE[7]="wins_ep_draft"
+  SERVICE[8]="wins_ep_internal_user"
+  SERVICE[9]="wins_ep_intranet_utility"
+  SERVICE[10]="wins_ep_message_handler"
+  SERVICE[11]="wins_ep_nginx"
+  SERVICE[12]="wins_ep_online"
+  SERVICE[13]="wins_ep_oracle"
+  SERVICE[14]="wins_ep_payment"
+  SERVICE[15]="wins_ep_payment_braintree"
+  SERVICE[16]="wins_ep_payment_report"
+  SERVICE[17]="wins_ep_workpass"
+  SERVICE[18]="wins_external_service"
+  SERVICE[19]="wins_intranet_service"
+  SERVICE[20]="wins_mock_csp"
+  SERVICE[21]="wins_mock_service"
+  SERVICE[22]="wins_mock_uam"
+  SERVICE[23]="wins_rabbitmq"
+  SERVICE[24]="wins_redis"
+  SERVICE[25]="wins_selenium_box"
+
+  COMPREPLY=($(compgen -W '${SERVICE[@]}' "${COMP_WORDS[1]}"))
+}
+
+alias _rebuild=d_rebuild
+alias _restart=d_restart
+alias _log=d_log
+alias _bash=d_bash
+
+complete -F _d_re_completions _rebuild
+complete -F _d_re_completions _restart
+complete -F _d_re_completions _log
+complete -F _d_re_completions _bash
+complete -F _d_re_completions d_rebuild
+complete -F _d_re_completions d_restart
+complete -F _d_re_completions d_log
+complete -F _d_re_completions d_bash
+
 s_start () {
   npm run theo
   gulp
@@ -68,3 +114,5 @@ s_pack () {
 }
 
 alias ssh_automation='ssh wins@172.16.12.200'
+
+
