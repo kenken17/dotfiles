@@ -11,6 +11,7 @@ iabbr tarvel travel
 iabbr lenght length
 iabbr legnth length
 iabbr shoudl should
+iabbr cosnt const
 
 nnoremap cie ciw
 
