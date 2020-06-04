@@ -101,5 +101,7 @@ d_prune_shit () {
   docker volume prune -f
 }
 
+alias open='xdg-open'
+
 # For others
 source ~/dotfiles/mom/.bash_profile
