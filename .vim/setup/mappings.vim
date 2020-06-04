@@ -32,3 +32,6 @@ nnoremap <F8> ]czz
 " cohama/agit.vim
 nnoremap <F12> :Agit<Cr>
 nnoremap <Leader><F12> :AgitFile<Cr>
+
+" For opening respective spec file
+nnoremap <Leader>T :vsplit %:h/__tests__/%:t:r.spec.js<CR>
