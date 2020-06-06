@@ -4,8 +4,9 @@
 " vim-airline/vim-airline
 let g:airline_exclude_preview=1
 let g:airline_section_a = '' " do not show the mode
-let g:airline_section_z = '%3l/%L:%3v'
+let g:airline_section_z = '%l/%L:%3v'
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+let g:airline_extensions = ['branch', 'coc', 'ctrlp', 'fugitiveline', 'gina', 'gutentags', 'nerdtree']
 
 " cohama/agit.vim
 let g:agit_max_log_lines = 10000
