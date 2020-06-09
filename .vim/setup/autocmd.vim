@@ -13,3 +13,17 @@ augroup hugefile
     \ endif |
     \ unlet size
 augroup END
+
+function! LoadSession()
+  let b:sessiondir = $HOME . "/.vim/sessions/" . fnamemodify(getcwd(), ':t')
+  let b:sessionfile = b:sessiondir . "/Session.vim"
+
+  if (filereadable(b:sessionfile))
+    exe 'silent! source ' b:sessionfile
+  else
+    exe 'silent! !mkdir -p ' b:sessiondir
+    exe 'silent! Obsession ' b:sessiondir
+  endif
+endfunction
+
+au VimEnter * nested :call LoadSession()
