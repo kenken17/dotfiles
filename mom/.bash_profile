@@ -16,7 +16,7 @@ LIGHTPURPLE='\033[1;35m'
 LIGHTCYAN='\033[1;36m'
 WHITE='\033[1;37m'
 
-alias mom='tmux a -t mom'
+alias mom='tmux a -t mom || tmux new -s mom'
 alias ep_dev="cd ~/Projects/wins-ep-dev"
 alias build='npm run build:production'
 alias dev='npm run dev'
