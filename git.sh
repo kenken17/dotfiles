@@ -1,5 +1,8 @@
 #!/bin/sh
 
+git config --global user.name "ken"
+git config --global user.email kenken17@gmail.com
+
 git config --global alias.rh "reset --hard"
 git config --global alias.hr "reset --hard"
 git config --global alias.cp "cherry-pick"
