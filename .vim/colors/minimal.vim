@@ -14,6 +14,11 @@ endif
 
 let g:colors_name = 'minimal'
 
+let s:italic            = 'italic'
+let s:bold              = 'bold'
+let s:underline         = 'underline'
+let s:none              = 'NONE'
+
 let s:color_bg          = ['#000000', 0]
 let s:color_fg          = ['#949494', 246]
 let s:color_lvl_0       = ['#3a3a3a', 237]
@@ -27,15 +32,10 @@ let s:color_highlight   = ['#ffff00', 226]
 let s:color_selection   = ['#c6c6c6', 251]
 let s:color_error       = ['#d70000', 160]
 let s:color_comment     = ['#808080', 244]
-let s:color_none        = ['NONE', 'NONE']
+let s:color_none        = [s:none, s:none]
 
 let s:default_fg        = s:color_fg
 let s:default_bg        = s:color_bg
-
-let s:italic            = 'italic'
-let s:bold              = 'bold'
-let s:underline         = 'underline'
-let s:none              = 'NONE'
 
 let s:default_lst       = []
 let s:default_str       = ''
@@ -105,10 +105,10 @@ call s:hi("qfLineNr", s:color_highlight, s:color_none)
 " call s:hi("qfSeparator", s:color_error, s:color_none)
 call s:hi("Search", s:color_lvl_0, s:color_lvl_3)
 call s:hi("SpecialKey", s:color_lvl_3, s:color_none)
-" call s:hi("SpellBad", s:color_fg, s:color_none)
-" call s:hi("SpellCap", s:color_fg, s:color_none)
-" call s:hi("SpellLocal", s:color_fg, s:color_none)
-" call s:hi("SpellRare", s:color_fg, s:color_none)
+call s:hi("SpellBad", s:color_none, s:color_error)
+call s:hi("SpellCap", s:color_none, s:color_error)
+call s:hi("SpellLocal", s:color_none, s:color_error)
+call s:hi("SpellRare", s:color_none, s:color_error)
 " call s:hi("StatusLine", s:color_fg, s:color_none)
 " call s:hi("StatusLineNC", s:color_fg, s:color_none)
 " call s:hi("StatusLineTerm", s:color_fg, s:color_none)
@@ -272,3 +272,8 @@ call s:hi("vimTodoListsNormal", s:color_lvl_2, s:color_none)
 " Quick Scope
 call s:hi("QuickScopePrimary", s:color_lvl_5, s:color_error)
 call s:hi("QuickScopeSecondary", s:color_lvl_0, s:color_highlight)
+
+" kamykn/spelunker.vim
+call s:hi("SpelunkerSpellBad", s:color_lvl_5, s:color_error)
+call s:hi("SpelunkerComplexOrCompoundWord", s:color_lvl_5, s:color_error)
+

@@ -63,10 +63,6 @@ nnoremap <Leader>c :<C-r>:<C-b><S-Right><S-Right><C-u>cdo %s/<Del><C-e>//ge \| u
 nnoremap <Leader>d :diffthis<Cr><C-w>l:diffthis<Cr><C-w>h
 nnoremap <Leader>D :diffoff<Cr><C-w>l:diffoff<Cr><C-w>h
 
-" spell check
-nnoremap <Leader>s :set spell spelllang=en_us<Cr>
-nnoremap <Leader>S :set nospell<Cr>
-
 " scrooloose/nerdtree
 nnoremap <Leader><Space> :NERDTreeFind<Cr>
 

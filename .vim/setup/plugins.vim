@@ -36,3 +36,10 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 " romainl/vim-qf
 let g:qf_mapping_ack_style = 1
 let g:qf_shorten_path = 0
+
+" janko/vim-test
+let test#strategy = "dispatch"
+
+" kamykn/spelunker.vim
+let g:ctrlp_extensions = get(g:, 'ctrlp_extensions', [])
+      \ + ['spelunker']

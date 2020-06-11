@@ -13,6 +13,7 @@ set lazyredraw " Don't redraw while executing macros (good performance config)
 set magic
 set nobackup
 set noswapfile
+set nospell
 set nowrap
 set nowritebackup
 set number

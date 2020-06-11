@@ -35,3 +35,8 @@ nnoremap <Leader><F12> :AgitFile<Cr>
 
 " For opening respective spec file
 nnoremap <Leader>T :vsplit %:h/__tests__/%:t:r.spec.js<CR>
+
+" kamykn/spelunker.vim
+nnoremap <Leader>s :CtrlPSpell<CR>
+nnoremap <Leader>S :SpelunkerAddAll
+
