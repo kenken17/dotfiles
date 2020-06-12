@@ -1,7 +1,7 @@
 " Minimal vim color scheme
 "
 " File:       minimal.vim
-" Maintainer: kenekn17
+" Maintainer: kenken17
 " License:    MIT
 
 set background=dark
@@ -28,7 +28,7 @@ let s:color_lvl_3       = ['#c6c6c6', 251]
 let s:color_lvl_4       = ['#eeeeee', 255]
 let s:color_lvl_5       = ['#ffffff', 231]
 let s:color_float       = ['#3a3a3a', 237]
-let s:color_highlight   = ['#ffff00', 226]
+let s:color_highlight   = ['#afd700', 148]
 let s:color_selection   = ['#c6c6c6', 251]
 let s:color_error       = ['#d70000', 160]
 let s:color_comment     = ['#808080', 244]
