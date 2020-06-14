@@ -58,6 +58,7 @@ Plug 'AndrewRadev/splitjoin.vim'
 Plug 'kamykn/spelunker.vim'
 " Plug 'janko/vim-test'
 " Plug 'puremourning/vimspector'
+" Plug 'tweekmonster/startuptime.vim'
 
 " Coc
 "----
