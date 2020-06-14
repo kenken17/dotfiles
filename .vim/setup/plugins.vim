@@ -41,5 +41,6 @@ let g:qf_shorten_path = 0
 let test#strategy = "dispatch"
 
 " kamykn/spelunker.vim
+let g:enable_spelunker_vim = 0
 let g:ctrlp_extensions = get(g:, 'ctrlp_extensions', [])
       \ + ['spelunker']
