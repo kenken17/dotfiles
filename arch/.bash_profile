@@ -33,10 +33,9 @@ alias grep='grep --color'
 alias fgrep='fgrep --color'
 alias egrep='egrep --color'
 
-alias serve='python -m SimpleHTTPServer '
-
 # Workflow
 alias xit='exit'
+alias arch='tmux a -t arch || tmux new -s arch'
 
 ###### VIM ######
 export EDITOR='vim'
@@ -55,11 +54,9 @@ vim_base () {
 # Clean the vim view files
 rm -rf /Users/ken/dotfiles/.vim/view/**
 
-# Make sure tmux run in 256 color scheme
-# alias tmux="TERM=screen-256color tmux"
-
 # Ports
 alias show_p='netstat -an -ptcp | grep LISTEN'
+
 kill_p () {
   kill -9 $(lsof -t -i:$1)
 }
