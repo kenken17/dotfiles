@@ -46,3 +46,8 @@ refactor
 rbac
 reusability
 kenken
+tmux
+pacman
+systemd
+systemctl
+journalctl
