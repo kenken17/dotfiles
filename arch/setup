@@ -57,8 +57,8 @@ pacman -S virtualbox (use *-arch)
 pacman -S ibus-libpinyin
 
 # CJK Font
-pacman -S dobe-source-han-serif-otc-fonts
-pacman -S dobe-source-han-sans-otc-fonts
+pacman -S adobe-source-han-serif-otc-fonts
+pacman -S adobe-source-han-sans-otc-fonts
 
 # Nerd Font
 yay -S nerd-fonts-complete
