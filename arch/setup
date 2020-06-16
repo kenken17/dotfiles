@@ -33,6 +33,15 @@ yay google-chrome
 # NodeJS and NPM
 pacman -S nodejs npm
 
+# For suod issue
+mkdir ~/.npm-global
+
+# Configure npm to use the new directory path:
+npm config set prefix '~/.npm-global'
+
+# open /.bashrc file and add this line:
+export PATH=~/.npm-global/bin:$PATH
+
 # Tmux
 pacman -S tmux
 
