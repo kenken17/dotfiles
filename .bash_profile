@@ -40,12 +40,11 @@ alias fgrep='fgrep --color'
 alias egrep='egrep --color'
 
 ###### VIM ######
-export EDITOR='nvim'
+export EDITOR='vim'
 
-alias vim="nvim"
-alias vi="nvim"
-alias im='nvim'
-alias cim='nvim'
+alias vi="vim"
+alias im='vim'
+alias cim='vim'
 
 vim_base () {
   ln -v -s -f ~/dotfiles/.vim/.vimrc_base ~/.vimrc
