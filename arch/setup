@@ -129,7 +129,7 @@ sudo vim /etc/clamav/clamd.conf
 
 # Add in:
   # Enables on-access scan, requires clamav-daemon.service running
-  ScanOnAccess true
+  ScanOnAccess yes
 
   # Set the mount point where to recursively perform the scan,
   # this could be every path or multiple path (one line for path)
@@ -138,10 +138,10 @@ sudo vim /etc/clamav/clamd.conf
   OnAccessExcludePath /var/log/
 
   # Flag fanotify to block any events on monitored files to perform the scan
-  OnAccessPrevention false
+  OnAccessPrevention no
 
   # Perform scans on newly created, moved, or renamed files
-  OnAccessExtraScanning true
+  OnAccessExtraScanning yes
 
   # Check the UID from the event of fanotify
   OnAccessExcludeUID 0
