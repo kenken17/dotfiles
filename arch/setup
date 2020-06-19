@@ -22,6 +22,9 @@ systemctl --failed
 
 journalctl -p 3 -xb
 
+# Remove broken yay package
+yay -Yc
+
 # Add in AUR helper yay
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -52,6 +55,10 @@ ln -s -f .tmux/.tmux.conf
 
 # Add in plugin
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Git
+git config --global user.name "ken"
+git config --global user.email kenken17@gmail.com
 
 # GitKraken
 yay -S gitkraken
