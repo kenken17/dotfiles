@@ -189,3 +189,6 @@ sudo vim /etc/clamav/detected.sh
                          PATH=${PATH} \
                          /usr/bin/notify-send -i dialog-warning "clamAV" "$alert"
   done
+
+# Install the WIFI adaptor driver
+yay -S rtl88x2bu-dkms-git
