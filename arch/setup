@@ -192,3 +192,7 @@ sudo vim /etc/clamav/detected.sh
 
 # Install the WIFI adaptor driver
 yay -S rtl88x2bu-dkms-git
+
+# For backup
+pacman -S cron
+yay -S timeshift
