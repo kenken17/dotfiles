@@ -196,3 +196,13 @@ yay -S rtl88x2bu-dkms-git
 # For backup
 pacman -S cron
 yay -S timeshift
+
+# For email
+pacman -S neomutt
+
+# Setting up gpg, set passphrase as empty
+gpg --full-gen-key
+
+# Encript and decript
+gpg -e --default-recipient-self doc  # default recipient to myself
+gpg -dq doc.gpg   # stdout
