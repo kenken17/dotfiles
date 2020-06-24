@@ -112,4 +112,4 @@ s_pack () {
 
 alias ssh_automation='ssh wins@172.16.12.200'
 
-
+alias upd='wdt repos-upd'
