@@ -15,3 +15,5 @@ iabbr cosnt const
 
 nnoremap cie ciw
 
+" For shortcuts
+iabbr kenk kenken17@gmail.com

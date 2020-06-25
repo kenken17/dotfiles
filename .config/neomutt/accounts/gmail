@@ -1,0 +1,36 @@
+# vim: filetype=muttrc
+
+# Hides the inboxes of accounts not currently viewing
+#unmailboxes *
+
+# Decrypts passwords quietly
+# see: https://wiki.archlinux.org/index.php/Mutt#Passwords_management
+# pass word is google app password not login password since no 2-factor for neomutt
+source "gpg -dq $HOME/.passwd/gmail.gpg |"
+
+# Username and password
+set imap_user = "kenken17@gmail.com"
+
+# Password assigned from decrypted file
+set imap_pass = $my_pass
+
+# in/out mail servers
+set realname = "Lee Tze Ken"
+set imap_pass = $my_pass
+set smtp_url = "smtps://kenken17@smtp.gmail.com:587"
+set smtp_pass = $my_pass
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+
+set from = "kenken17@gmail.com"
+set envelope_from
+set use_from = "yes"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+
+# Check mail every x seconds
+set mail_check = 60
+
+# Allow Mutt to open a new IMAP connection automatically
+unset imap_passive

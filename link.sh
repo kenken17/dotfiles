@@ -163,6 +163,25 @@ ln -v -s $(pwd)/.bash_profile ~/.bash_profile
 
 
 
+
+
+echo
+echo ">>> Link .config/neomutt to ~/.config/neomutt ..."
+
+if [[ -d ~/.config/neomutt && $OVERWRITE -eq 0 ]]
+then
+  echo ">>> Found ~/.config/neomutt, replace with ~/.config/neomutt_backup"
+  echo
+  mv ~/.config/neomutt ~/.config/neomutt_backup
+else
+  rm ~/.config/neomutt
+fi
+
+ln -v -s $(pwd)/.config/neomutt ~/.config/neomutt
+
+
+
+
 # echo
 # echo ">>> Link .alacritty.yml to ~/.alacritty.yml ..."
 #
