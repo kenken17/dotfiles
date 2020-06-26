@@ -206,3 +206,7 @@ gpg --full-gen-key
 # Encript and decript
 gpg -e --default-recipient-self doc  # default recipient to myself
 gpg -dq doc.gpg   # stdout
+
+# For gnome-extras replacing missing packages
+yay -S universal-ctags-git
+pacman -S gnome-tweaks gnome-usage
