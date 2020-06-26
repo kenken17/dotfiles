@@ -81,7 +81,7 @@ yay -S nerd-fonts-complete
 
 # Reflector for mirrolist
 pacman -S reflector
-reflector -c Singapore -c Malaysia -c Taiwan -a 12 -p https --sort rate --save /etc/pacman.d/mirrorlist
+reflector -c Singapore -c Malaysia -c Taiwan -c US -a 12 -p https --sort rate --save /etc/pacman.d/mirrorlist
 
 # Add in service for reflector
 sudo vim /etc/systemd/system/reflector.service
@@ -94,7 +94,7 @@ Add in:
 
   [Service]
   Type=oneshot
-  ExecStart=/usr/bin/reflector -c Singapore -c Malaysia -c Taiwan -a 12 -p https --sort rate --save /etc/pacman.d/mirrorlist
+  ExecStart=/usr/bin/reflector -c Singapore -c Malaysia -c Taiwan -c US -a 12 -p https --sort rate --save /etc/pacman.d/mirrorlist
 
   [Install]
   RequiredBy=multi-user.target
@@ -195,6 +195,8 @@ yay -S rtl88x2bu-dkms-git
 
 # For backup
 pacman -S cron
+systemctl start cronie
+systemctl enable cronie
 yay -S timeshift
 
 # For email
