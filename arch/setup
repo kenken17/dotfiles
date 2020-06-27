@@ -200,7 +200,7 @@ systemctl enable cronie
 yay -S timeshift
 
 # For email
-pacman -S neomutt
+yay -S mailspring
 
 # Setting up gpg, set passphrase as empty
 gpg --full-gen-key
