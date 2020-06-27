@@ -212,3 +212,6 @@ gpg -dq doc.gpg   # stdout
 # For gnome-extras replacing missing packages
 yay -S universal-ctags-git
 pacman -S gnome-tweaks gnome-usage
+
+# Get grub customizer
+pacman -S grub-customizer
