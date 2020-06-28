@@ -14,13 +14,13 @@ systemctl enable ufw.service
 # Remove unuse packages
 pacman -Rns $(pacman -Qtdq)
 
-# Optimize pacman DB
-pacman-optimize
-
 # Check for errors
 systemctl --failed
 
 journalctl -p 3 -xb
+
+# JSON parser
+pacman -S jq
 
 # Remove broken yay package
 yay -Yc
@@ -216,7 +216,7 @@ pacman -S gnome-tweaks gnome-usage
 # For removing gnome app not in used
 # Epiphany - web
 # Totem - videos
-pacman -Runs gnome-boxes gnome-books gnome-contacts gnome-maps epiphany gnome-music gnome-music totem gnome-photos cheese
+pacman -Runs gnome-boxes gnome-books gnome-contacts gnome-maps epiphany gnome-music gnome-music totem gnome-photos
 
 # Get grub customizer
 pacman -S grub-customizer
