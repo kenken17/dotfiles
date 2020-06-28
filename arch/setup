@@ -213,6 +213,11 @@ gpg -dq doc.gpg   # stdout
 yay -S universal-ctags-git
 pacman -S gnome-tweaks gnome-usage
 
+# For removing gnome app not in used
+# Epiphany - web
+# Totem - videos
+pacman -Runs gnome-boxes gnome-books gnome-contacts gnome-maps epiphany gnome-music gnome-music totem gnome-photos cheese
+
 # Get grub customizer
 pacman -S grub-customizer
 
