@@ -215,3 +215,6 @@ pacman -S gnome-tweaks gnome-usage
 
 # Get grub customizer
 pacman -S grub-customizer
+
+# Get VLC and cast ability
+pacman -S vlc libmicrodns
