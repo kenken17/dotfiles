@@ -31,7 +31,7 @@ let s:color_float       = ['#3a3a3a', 237]
 let s:color_highlight   = ['#afd700', 148]
 let s:color_selection   = ['#c6c6c6', 251]
 let s:color_error       = ['#d70000', 160]
-let s:color_comment     = ['#808080', 244]
+let s:color_comment     = ['#585858', 240]
 let s:color_none        = [s:none, s:none]
 
 let s:default_fg        = s:color_fg
