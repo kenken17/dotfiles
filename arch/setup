@@ -2,6 +2,9 @@
 systemctl start bluetooth
 systemctl enable bluetooth
 
+# Screen to show basic info
+pacman -S screenfetch
+
 # Install LTS
 pacman -S linux-lts linux-lts-headers
 grub-mkconfig -o /boot/grub/grub.cfg
