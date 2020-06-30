@@ -277,3 +277,12 @@ call s:hi("QuickScopeSecondary", s:color_lvl_0, s:color_highlight)
 call s:hi("SpelunkerSpellBad", s:color_lvl_5, s:color_error)
 call s:hi("SpelunkerComplexOrCompoundWord", s:color_lvl_5, s:color_error)
 
+
+" junegunn/vim-plug
+call s:hi("plug2", s:color_lvl_4, s:color_none)
+call s:hi("plugNumber", s:color_highlight, s:color_none)
+call s:hi("plugMessage", s:color_highlight, s:color_none)
+call s:hi("plugName", s:color_lvl_4, s:color_none)
+call s:hi("plugInstall", s:color_highlight, s:color_none)
+call s:hi("plugUpdate", s:color_highlight, s:color_none)
+call s:hi("plugDeleted", s:color_lvl_4, s:color_none)
