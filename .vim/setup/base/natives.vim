@@ -8,7 +8,6 @@ set foldenable
 set foldlevel=99
 set foldmethod=indent   " fold based on syntax level
 set hidden
-set hlsearch
 set ignorecase
 set lazyredraw " Don't redraw while executing macros (good performance config)
 set magic
@@ -40,6 +39,14 @@ filetype plugin indent on
 set fillchars="fold: "
 set sessionoptions=folds
 set shortmess+=c
+set autoindent
+set autoread
+set hlsearch
+set incsearch
+set showcmd
+set smarttab
+set nostartofline
+set wildmenu
 
 " For Ag
 if executable('ag')
