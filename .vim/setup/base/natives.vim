@@ -8,6 +8,7 @@ set foldenable
 set foldlevel=99
 set foldmethod=indent   " fold based on syntax level
 set hidden
+set hlsearch
 set ignorecase
 set lazyredraw " Don't redraw while executing macros (good performance config)
 set magic
@@ -34,11 +35,11 @@ set wildignore+=**\*.jpg,**\*.gif,**\*.png
 set wildignore+=**\node_modules\**,**\build\**,**\coverage\**,**\*.swp,**\*.svg,**\*.un~
 set wildignore+=.git\*,.hg\*,.svn\*
 
-" nvim defualts
-" filetype plugin indent on
-" set fillchars="fold: "
-" set sessionoptions=folds
-" set shortmess+=c
+" nvim defaults
+filetype plugin indent on
+set fillchars="fold: "
+set sessionoptions=folds
+set shortmess+=c
 
 " For Ag
 if executable('ag')
