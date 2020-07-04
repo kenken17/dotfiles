@@ -221,6 +221,9 @@ pacman -S gnome-tweaks gnome-usage
 # Totem - videos
 pacman -Runs gnome-boxes gnome-books gnome-contacts gnome-maps epiphany gnome-music gnome-music totem gnome-photos
 
+# For gnome settings, use editor
+pacman -S dconf-editor # For auto save session, open the editor and search for 'session', turn it on
+
 # Get grub customizer
 pacman -S grub-customizer
 
