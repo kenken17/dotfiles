@@ -222,7 +222,10 @@ pacman -S gnome-tweaks gnome-usage
 pacman -Runs gnome-boxes gnome-books gnome-contacts gnome-maps epiphany gnome-music gnome-music totem gnome-photos
 
 # For gnome settings, use editor
-pacman -S dconf-editor # For auto save session, open the editor and search for 'session', turn it on
+pacman -S dconf-editor # For auto save session, open the editor and search for 'session', turn it on. Though it does not seem to work
+
+# For gnome extension, instll extension from chrome store (GNOME Shell integration) then:
+pacman -S chrome-gnome-shell
 
 # Get grub customizer
 pacman -S grub-customizer
