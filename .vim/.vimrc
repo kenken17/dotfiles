@@ -23,6 +23,9 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+" All me
+Plug 'kenken17/xopp.vim'
+
 " All Tim Pope
 "-------------
 Plug 'tpope/vim-dispatch'
@@ -72,7 +75,6 @@ call plug#end()
 source $HOME/.vim/setup/coc.vim
 source $HOME/.vim/setup/autocmd.vim
 source $HOME/.vim/setup/mappings.vim
-source $HOME/.vim/setup/mappings-switch.vim
 source $HOME/.vim/setup/base/plugins.vim
 source $HOME/.vim/setup/plugins.vim
 
