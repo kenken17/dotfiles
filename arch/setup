@@ -70,7 +70,8 @@ yay -S gitkraken
 yay -S jdk
 
 # Virtual box
-pacman -S virtualbox (use *-arch)
+pacman -S virtualbox
+pacman -S virtualbox-host-dkms
 
 # Chinese IME
 pacman -S ibus-libpinyin
