@@ -36,8 +36,8 @@ makepkg -si
 # Install Google
 yay google-chrome
 
-# NodeJS and NPM
-pacman -S nodejs npm
+# NodeJS and NPM, yarn
+pacman -S nodejs npm yarn
 
 # For suod issue
 mkdir ~/.npm-global
