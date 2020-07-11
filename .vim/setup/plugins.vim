@@ -30,15 +30,12 @@ let g:mkdp_command_for_global = 1
 " aserebryakov/vim-todo-lists
 let g:VimTodoListsMoveItems = 0
 
-" unblevable/quick-scope
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-
 " romainl/vim-qf
 let g:qf_mapping_ack_style = 1
 let g:qf_shorten_path = 0
 
 " janko/vim-test
-let test#strategy = "dispatch"
+" let test#strategy = "dispatch"
 
 " kamykn/spelunker.vim
 let g:enable_spelunker_vim = 0
