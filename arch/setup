@@ -233,3 +233,12 @@ pacman -S grub-customizer
 
 # Get VLC and cast ability, and subtitle fonts
 pacman -S vlc libmicrodns ttf-dejavu
+
+# Get the RDP
+pacman -S freerdp remmina
+
+# For multilib and steam
+# Uncomment multilib on /etc/pacman.d
+pacman -Sy
+pacman -S steam
+yay -S steam-fonts
