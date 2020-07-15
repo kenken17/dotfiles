@@ -2,7 +2,7 @@
 source ~/.bash_prompt
 
 # Alias for sourcing
-alias so='source ~/.bash_profile'
+alias so='source ~/.bashrc'
 
 # Do not show the zsh message anymore
 export BASH_SILENCE_DEPRECATION_WARNING=1

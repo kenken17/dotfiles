@@ -113,3 +113,12 @@ s_pack () {
 alias ssh_automation='ssh wins@172.16.12.200'
 
 alias upd='wdt repos-upd'
+
+g_track () {
+  if [ -z $1 ]; then
+    echo "No branch?"
+  else
+    git br --track $1 origin/$1
+    git co $1
+  fi
+}
