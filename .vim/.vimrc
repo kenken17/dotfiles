@@ -35,12 +35,17 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-speeddating'
 
 " For IDE
 "--------
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'vim-scripts/SyntaxRange'
+Plug 'mattn/calendar-vim'
+Plug 'vim-scripts/utl.vim'
+Plug 'jceb/vim-orgmode'
 
 " For Coding & Syntaxing
 "-----------------------
@@ -55,7 +60,6 @@ Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'romainl/vim-qf'
-Plug 'aserebryakov/vim-todo-lists'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'kamykn/spelunker.vim'
 " Plug 'janko/vim-test'

@@ -27,9 +27,6 @@ let g:gutentags_cache_dir = s:vim_tags
 " iamcco/markdown-preview.nvim
 let g:mkdp_command_for_global = 1
 
-" aserebryakov/vim-todo-lists
-let g:VimTodoListsMoveItems = 0
-
 " romainl/vim-qf
 let g:qf_mapping_ack_style = 1
 let g:qf_shorten_path = 0
@@ -41,3 +38,11 @@ let g:qf_shorten_path = 0
 let g:enable_spelunker_vim = 0
 let g:ctrlp_extensions = get(g:, 'ctrlp_extensions', [])
       \ + ['spelunker']
+
+" jceb/vim-orgmode
+let g:org_heading_shade_leading_stars = 1
+let g:org_indent = 1
+let g:org_aggressive_conceal = 1
+
+" 
+let g:utl_cfg_hdl_scm_http_system = 1
