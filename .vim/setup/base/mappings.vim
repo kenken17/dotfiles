@@ -3,6 +3,7 @@
 
 " leader is comma
 let mapleader=","
+let maplocalleader=','
 nnoremap \ ,
 
 command W w
