@@ -242,3 +242,6 @@ pacman -S freerdp remmina
 pacman -Sy
 pacman -S steam
 yay -S steam-fonts
+
+# For ebooks
+pacman -S foliate
