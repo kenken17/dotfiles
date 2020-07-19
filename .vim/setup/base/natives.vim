@@ -67,9 +67,14 @@ endif
 
 " Change the folder text
 function! MyFoldText()
+  let w = winwidth(0) - &foldcolumn - (&number ? 8 : 0)
+
+  let startLine = getline(v:foldstart)
   let endLine = getline(v:foldend)
   let end = substitute(endLine, '\s', '', 'g')
-  return getline(v:foldstart) .' ... ' .end
+  let lineNo = v:foldend - v:foldstart - 1
+  let expansionString = repeat(" ", w - strwidth(startLine . ' ... ' .end ." -" .lineNo . "-"))
+
+  return startLine .' ... ' .end .expansionString ." -" .lineNo ."-"
 endfunction
 set foldtext=MyFoldText()
-
