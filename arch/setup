@@ -245,3 +245,6 @@ yay -S steam-fonts
 
 # For ebooks
 pacman -S foliate
+
+# Add tree cmd
+pacman -S tree

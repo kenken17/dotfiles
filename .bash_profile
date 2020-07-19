@@ -38,6 +38,7 @@ alias vdir='vdir --color'
 alias grep='grep --color'
 alias fgrep='fgrep --color'
 alias egrep='egrep --color'
+alias tree='tree -C'
 
 # Workflow
 alias xit='exit'
