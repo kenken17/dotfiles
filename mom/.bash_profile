@@ -95,6 +95,7 @@ complete -F _d_re_completions d_bash
 s_start () {
   npm run theo
   gulp
+  npm run init
   npm run build:system
   npm start
 }
