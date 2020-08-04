@@ -248,3 +248,7 @@ pacman -S foliate
 
 # Add in some command line tool
 pacman -S tree htop
+
+# AWS cli
+# Downllaod the installer for linux, unzip then run ./install, aws should be avail on /usr/local/bin/aws
+complete -C aws_completer aws
