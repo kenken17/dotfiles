@@ -42,31 +42,37 @@ Plug 'tpope/vim-speeddating'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
+
+" For OrgMode
+"------------
 Plug 'vim-scripts/SyntaxRange'
 Plug 'mattn/calendar-vim'
 Plug 'vim-scripts/utl.vim'
 Plug 'jceb/vim-orgmode'
 
+" For Workflow
+"-------------
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'cohama/agit.vim'
+Plug 'lambdalisue/gina.vim'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'romainl/vim-qf'
+
 " For Coding & Syntaxing
 "-----------------------
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'doums/coBra'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
-Plug 'cohama/agit.vim'
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
-Plug 'lambdalisue/gina.vim'
-Plug 'ludovicchabant/vim-gutentags'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
-Plug 'romainl/vim-qf'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'kamykn/spelunker.vim'
 " Plug 'janko/vim-test'
 " Plug 'puremourning/vimspector'
 " Plug 'tweekmonster/startuptime.vim'
 
-" Coc
+" For Coc
 "----
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
