@@ -8,6 +8,7 @@ augroup hugefile
     \ if (size > g:trigger_size) || (size == -2) |
     \   echohl WarningMsg | echomsg 'WARNING: altering options for this huge file!' | echohl None |
     \   exec 'CocDisable' |
+    \   syntax off |
     \ else |
     \   exec 'CocEnable' |
     \ endif |
