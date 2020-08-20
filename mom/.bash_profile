@@ -74,6 +74,7 @@ _d_re_completions()
   SERVICE[23]="wins_rabbitmq"
   SERVICE[24]="wins_redis"
   SERVICE[25]="wins_selenium_box"
+  SERVICE[26]="sonarqube"
 
   COMPREPLY=($(compgen -W '${SERVICE[@]}' "${COMP_WORDS[1]}"))
 }
