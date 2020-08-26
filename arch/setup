@@ -194,14 +194,16 @@ sudo vim /etc/clamav/detected.sh
                          /usr/bin/notify-send -i dialog-warning "clamAV" "$alert"
   done
 
-# Install the WIFI adaptor driver
+# Install the WIFI adaptor driver, looks like cilynx solve the latest disconnect issue
 yay -S rtl88x2bu-dkms-git
+yay -S rtl88x2bu-cilynx-dkms-git
 
 # For backup
 pacman -S cron
 systemctl start cronie
 systemctl enable cronie
 yay -S timeshift
+yay -S timeshift-autosnap
 
 # For email
 yay -S mailspring
@@ -250,5 +252,5 @@ pacman -S foliate
 pacman -S tree htop
 
 # AWS cli
-# Downllaod the installer for linux, unzip then run ./install, aws should be avail on /usr/local/bin/aws
+# Download the installer for linux, unzip then run ./install, aws should be avail on /usr/local/bin/aws
 complete -C aws_completer aws
