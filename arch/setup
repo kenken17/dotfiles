@@ -198,6 +198,30 @@ sudo vim /etc/clamav/detected.sh
 yay -S rtl88x2bu-dkms-git
 yay -S rtl88x2bu-cilynx-dkms-git
 
+# For brostrend looks like below working fine
+cd $(mktemp -d)
+# Get the .deb
+wget https://deb.trendtechcn.com/rtl88x2bu-dkms.deb
+# Uncompress the .deb
+ar x rtl88x2bu-dkms.deb
+tar xf data.tar.gz .
+# Move the source code to /usr/src/rtl88*
+sudo mv usr/src/rtl88* /usr/src/
+# Go to the driver source code directory
+cd /usr/src/rtl88*
+# For distributions that do not have dkms, the following commands need to be run manually after each kernel update:
+
+make
+sudo make install
+# If you did install dkms, run the following instructions instead:
+
+# We're in the /usr/src/rtl88* directory
+sudo dkms add .
+# See that dkms lists the driver name and version
+dkms status
+# Use the correct name/version in this command
+sudo dkms install rtl88x2bu/5.6.1.5.35370.20191021
+
 # For backup
 pacman -S cron
 systemctl start cronie
