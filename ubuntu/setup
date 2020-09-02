@@ -2,9 +2,72 @@
 sudo apt update && sudo apt upgrade
 
 # Install essentials
-sudo apt install curl git nodejs npm vim-gtk tmux silversearcher-ag jq
+sudo apt install curl git nodejs npm vim-gtk tmux silversearcher-ag jq clamav clamav-daemon steam htop
 
-# For sudo issue
+# anti virus
+systemctl start clamav-daemon
+system enable clamav-daemon
+
+# Set the on access scan
+sudo vim /etc/clamav/clamd.conf
+
+# Add in:
+  # Enables on-access scan, requires clamav-daemon.service running
+  ScanOnAccess yes
+
+  # Set the mount point where to recursively perform the scan,
+  # this could be every path or multiple path (one line for path)
+  OnAccessMountPath /usr
+  OnAccessMountPath /home/
+  OnAccessExcludePath /var/log/
+
+  # Flag fanotify to block any events on monitored files to perform the scan
+  OnAccessPrevention no
+
+  # Perform scans on newly created, moved, or renamed files
+  OnAccessExtraScanning yes
+
+  # Check the UID from the event of fanotify
+  OnAccessExcludeUID 0
+
+  # Specify an action to perform when clamav detects a malicious file
+  # it is possible to specify an inline command too
+  VirusEvent /etc/clamav/detected.sh
+
+  # WARNING: clamd should run as root
+  User root
+
+# For the detect script
+sudo vim /etc/clamav/detected.sh
+
+# Add in:
+  #!/bin/bash
+  PATH=/usr/bin
+  alert="Signature detected: $CLAM_VIRUSEVENT_VIRUSNAME in $CLAM_VIRUSEVENT_FILENAME"
+
+  # Send the alert to systemd logger if exist, othewise to /var/log
+  if [[ -z $(command -v systemd-cat) ]]; then
+    echo "$(date) - $alert" >> /var/log/clamav/detections.log
+  else
+    # This could cause your DE to show a visual alert. Happens in Plasma, but the next visual alert is much nicer.
+    echo "$alert" | /usr/bin/systemd-cat -t clamav -p emerg
+  fi
+
+  # Send an alert to all graphical users.
+  XUSERS=($(who|awk '{print $1$NF}'|sort -u))
+
+  for XUSER in $XUSERS; do
+    NAME=(${XUSER/(/ })
+    DISPLAY=${NAME[1]/)/}
+    DBUS_ADDRESS=unix:path=/run/user/$(id -u ${NAME[0]})/bus
+    echo "run $NAME - $DISPLAY - $DBUS_ADDRESS -" >> /tmp/testlog 
+    /usr/bin/sudo -u ${NAME[0]} DISPLAY=${DISPLAY} \
+      DBUS_SESSION_BUS_ADDRESS=${DBUS_ADDRESS} \
+      PATH=${PATH} \
+      /usr/bin/notify-send -i dialog-warning "clamAV" "$alert"
+  done
+
+# For sudo issue on npm
 mkdir ~/.npm-global
 
 # Configure npm to use the new directory path:
@@ -30,7 +93,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 # mailspring
-sudo snap install mailspring
+snap install mailspring
 
 # for wifi
 # Look for cilynx/rtl88x2bu
@@ -46,3 +109,5 @@ sudo modprobe 88x2bu
 cd && git clone git@github.com:ryanoasis/nerd-fonts.git
 ./install.sh <FontName>
 
+# Install ebook reader
+snap install foliate
