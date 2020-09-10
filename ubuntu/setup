@@ -111,3 +111,9 @@ cd && git clone git@github.com:ryanoasis/nerd-fonts.git
 
 # Install ebook reader
 snap install foliate
+
+# VLC
+snap install vlc
+
+# Zoom
+snap install zoom-client
