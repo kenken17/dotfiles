@@ -54,8 +54,8 @@ d_stop_payment () {
 
 d_start_payment () {
   d_restart wins_ep_payment
-  d_restart stop wins_ep_payment_braintree
-  d_restart stop wins_ep_payment_report
+  d_restart wins_ep_payment_braintree
+  d_restart wins_ep_payment_report
 }
 
 _d_re_completions()
