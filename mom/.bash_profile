@@ -46,6 +46,18 @@ d_stop_shit () {
   docker stop wins_selenium_box
 }
 
+d_stop_payment () {
+  docker stop wins_ep_payment
+  docker stop wins_ep_payment_braintree
+  docker stop wins_ep_payment_report
+}
+
+d_start_payment () {
+  d_restart wins_ep_payment
+  d_restart stop wins_ep_payment_braintree
+  d_restart stop wins_ep_payment_report
+}
+
 _d_re_completions()
 {
   SERVICE[0]="wins_common_document"
