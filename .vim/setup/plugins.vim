@@ -15,7 +15,7 @@ let g:agit_max_log_lines = 10000
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
 
 " sheerun/vim-polyglot
-let g:polyglot_disabled = ['markdown']
+" let g:polyglot_disabled = ['markdown']
 " let g:polyglot_disabled = ['coffee-script', 'pug', 'haml']
 
 " lambdalisue/gina.vim
