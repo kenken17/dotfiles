@@ -136,3 +136,9 @@ g_track () {
     git co $1
   fi
 }
+
+act () {
+  npmrc default
+  vim +PlugUpdate +1sleep +CocUpdate
+  npmrc gcc
+}
