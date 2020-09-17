@@ -117,3 +117,6 @@ snap install vlc
 
 # Zoom
 snap install zoom-client
+
+# docker
+snap install docker
