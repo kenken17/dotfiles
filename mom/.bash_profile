@@ -142,3 +142,7 @@ act () {
   vim +PlugUpdate +1sleep +CocUpdate
   npmrc gcc
 }
+
+git config --global diff.tool nvim
+git config --global difftool.path nvim
+git config --global difftool.nvim.cmd 'nvim -f -c "Gdiffsplit!" "$MERGED"'

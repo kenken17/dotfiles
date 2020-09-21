@@ -31,12 +31,16 @@ git config --global alias.gr "grep -Ii"
 git config --global alias.p "git fetch --prune origin '+refs/tags/*:refs/tags/*'"
 
 
-# For splice.vim merge
+# For merge
 git config --global merge.tool diffconflicts
+git config --global mergetool.prompt true
+git config --global mergetool.keepBackup false
 git config --global mergetool.diffconflicts.cmd 'vim -c DiffConflicts "$MERGED" "$BASE" "$LOCAL" "$REMOTE"'
 git config --global mergetool.diffconflicts.trustExitCode true
-git config --global mergetool.keepBackup false
+
+# For diff
 git config --global diff.tool vimdiff
+git config --global difftool.prompt true
 
 # Always use rebase for pulling
 git config --global pull.rebase true
