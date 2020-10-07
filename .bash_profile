@@ -39,6 +39,7 @@ alias grep='grep --color'
 alias fgrep='fgrep --color'
 alias egrep='egrep --color'
 alias tree='tree -C'
+alias pull='git pull'
 
 # Workflow
 alias xit='exit'
