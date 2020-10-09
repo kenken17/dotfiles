@@ -64,7 +64,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 "-----------------------
 Plug 'doums/coBra'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'sheerun/vim-polyglot'
+Plug 'sheerun/vim-polyglot', { 'tag': 'v4.13.1' }
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
