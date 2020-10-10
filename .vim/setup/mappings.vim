@@ -5,6 +5,10 @@
 nnoremap p p'[V']=
 nnoremap P P'[V']=
 
+" Move selected lines
+vnoremap <c-j> :m '>+1<CR>gv=gv
+vnoremap <c-k> :m '<-2<CR>gv=gv
+
 " For navigate on local list
 nnoremap [l :lprevious<Cr>
 nnoremap ]l :lnext<Cr>
