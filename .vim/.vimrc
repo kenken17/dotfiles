@@ -58,18 +58,22 @@ Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'romainl/vim-qf'
 Plug 'whiteinge/diffconflicts'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " For Coding & Syntaxing
 "-----------------------
 Plug 'doums/coBra'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot', { 'tag': 'v4.13.1' }
-Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+" Tools & Utilities
+"-----------------------
+Plug 'godlygeek/tabular'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'kamykn/spelunker.vim'
+Plug 'scrooloose/vim-slumlord'
 " Plug 'janko/vim-test'
 " Plug 'puremourning/vimspector'
 " Plug 'tweekmonster/startuptime.vim'
