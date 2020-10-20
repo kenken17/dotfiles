@@ -12,6 +12,7 @@ iabbr lenght length
 iabbr legnth length
 iabbr shoudl should
 iabbr cosnt const
+iabbr reutrn return
 
 nnoremap cie ciw
 
