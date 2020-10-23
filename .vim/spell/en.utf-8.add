@@ -51,3 +51,4 @@ pacman
 systemd
 systemctl
 journalctl
+sysdate
