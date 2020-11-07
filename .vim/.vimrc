@@ -84,7 +84,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Inline install
 " --------------
-" coc-css coc-db coc-docker coc-eslint coc-html coc-java coc-json coc-lists coc-prettier coc-sh coc-snippets coc-sql coc-stylelint coc-tsserver coc-vetur coc-webpack coc-yaml
+" coc-css coc-db coc-docker coc-eslint coc-html coc-java coc-json coc-lists coc-prettier coc-sh coc-snippets coc-sql coc-stylelint coc-tsserver coc-vetur coc-webpack coc-yaml coc-python
 
 call plug#end()
 
