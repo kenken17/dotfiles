@@ -238,6 +238,13 @@ call s:hi("cssIdentifier", s:color_highlight, s:color_none)
 call s:hi("cssTagName", s:color_lvl_3, s:color_none)
 call s:hi("cssProp", s:color_lvl_2, s:color_none)
 
+" Python
+call s:hi("pythonStatement", s:color_highlight, s:color_none)
+call s:hi("pythonFunction", s:color_lvl_5, s:color_none)
+call s:hi("pythonDecoratorName", s:color_lvl_5, s:color_none)
+call s:hi("pythonNumber", s:color_lvl_4, s:color_none)
+call s:hi("pythonOperator", s:color_lvl_4, s:color_none)
+
 "SCSS/SASS
 call s:hi("scssComment", s:color_comment, s:color_none)
 call s:hi("scssVariable", s:color_highlight, s:color_none)
