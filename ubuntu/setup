@@ -120,3 +120,6 @@ snap install zoom-client
 
 # docker
 snap install docker
+
+# flameshot for screen shot
+snap install flameshot
