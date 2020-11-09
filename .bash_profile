@@ -78,3 +78,11 @@ d_bash () {
 d_prune_shit () {
   docker system prune --volumes -f
 }
+
+d_pause () {
+  docker pause $(docker ps -a -q)
+}
+
+d_unpause () {
+  docker unpause $(docker ps -a -q)
+}
