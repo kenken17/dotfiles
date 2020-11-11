@@ -132,8 +132,8 @@ g_track () {
   if [ -z $1 ]; then
     echo "No branch?"
   else
-    git br --track $1 origin/$1
-    git co $1
+    git co -b $1 --track origin/$1
+    git pull
   fi
 }
 
