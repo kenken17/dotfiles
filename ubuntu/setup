@@ -123,3 +123,6 @@ snap install docker
 
 # flameshot for screen shot
 snap install flameshot
+
+# kraken
+snap install gitkraken

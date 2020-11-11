@@ -128,8 +128,6 @@ s_pack () {
 
 alias ssh_automation='ssh wins@172.16.12.200'
 
-alias upd='wdt repos-upd'
-
 g_track () {
   if [ -z $1 ]; then
     echo "No branch?"
@@ -143,6 +141,20 @@ act () {
   npmrc default
   vim +PlugUpdate +1sleep +CocUpdate
   npmrc gcc
+}
+
+mr () {
+  echo -e "\nOpen MR: "
+  wdt mr-by-me
+
+  echo -e "\nPending Review:"
+  wdt mr-for-me
+}
+
+upd () {
+  wdt repos-upd
+
+  mr
 }
 
 git config --global diff.tool nvim
