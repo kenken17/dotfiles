@@ -157,6 +157,15 @@ upd () {
   mr
 }
 
+build_form () {
+  if [ -z "$1" ]
+  then
+    wdt repos-rep 'npm run build:production' --type=form
+  else
+    wdt repos-rep 'npm run build:production' --type=form --only="$1"
+  fi
+}
+
 git config --global diff.tool nvim
 git config --global difftool.path nvim
 git config --global difftool.nvim.cmd 'nvim -f -c "Gdiffsplit!" "$MERGED"'
