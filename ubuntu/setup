@@ -2,7 +2,7 @@
 sudo apt update && sudo apt upgrade
 
 # Install essentials
-sudo apt install curl git nodejs npm vim-gtk tmux silversearcher-ag jq clamav clamav-daemon steam htop timeshift
+sudo apt install curl git nodejs npm vim-gtk tmux silversearcher-ag jq clamav clamav-daemon steam htop timeshift pyhton3-pip
 
 # anti virus
 systemctl start clamav-daemon
