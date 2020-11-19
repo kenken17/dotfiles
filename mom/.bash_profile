@@ -1,10 +1,10 @@
 ###### VIM ######
-export EDITOR='nvim'
+export EDITOR='vim'
 
-alias vim="nvim"
-alias vi="nvim"
-alias im='nvim'
-alias cim='nvim'
+alias vim="vim"
+alias vi="vim"
+alias im='vim'
+alias cim='vim'
 
 # Npm
 alias unit='npm run test'
@@ -166,6 +166,6 @@ build_form () {
   fi
 }
 
-git config --global diff.tool nvim
-git config --global difftool.path nvim
-git config --global difftool.nvim.cmd 'nvim -f -c "Gdiffsplit!" "$MERGED"'
+git config --global diff.tool vim
+git config --global difftool.path vim
+git config --global difftool.vim.cmd 'vim -f -c "Gdiffsplit!" "$MERGED"'
