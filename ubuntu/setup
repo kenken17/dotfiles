@@ -4,6 +4,9 @@ sudo apt update && sudo apt upgrade
 # Install essentials
 sudo apt install curl git nodejs npm vim-gtk tmux silversearcher-ag jq clamav clamav-daemon steam htop timeshift pyhton3-pip
 
+# For Hacking/Dev work
+sudo apt install vagrant packer
+
 # anti virus
 systemctl start clamav-daemon
 system enable clamav-daemon
