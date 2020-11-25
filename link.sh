@@ -99,100 +99,68 @@ ln -v -s $(pwd)/.tmux.conf.local ~/.tmux.conf.local
 
 
 
+# echo
+# echo ">>> Link init.vim to ~/.config/nvim/init.vim ..."
+#
+# if [[ -f ~/.config/nvim/init.vim && $OVERWRITE -eq 0 ]]
+# then
+#   echo ">>> Found ~/.config/nvim/init.vim, replace with ~/.config/nvmim/init.vim_backup"
+#   echo
+#   mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim_backup
+# else
+#   rm ~/.config/nvim/init.vim
+# fi
+#
+# ln -v -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
+
+
+
 echo
-echo ">>> Link init.vim to ~/.config/nvim/init.vim ..."
+echo ">>> Link coc-settings.json to ~/.config/vim/coc-settings.json ..."
 
-if [[ -f ~/.config/nvim/init.vim && $OVERWRITE -eq 0 ]]
+mkdir -p ~/.config/vim
+
+if [[ -f ~/.config/vim/coc-settings.json && $OVERWRITE -eq 0 ]]
 then
-  echo ">>> Found ~/.config/nvim/init.vim, replace with ~/.config/nvmim/init.vim_backup"
-  echo
-  mv ~/.config/nvim/init.vim ~/.config/nvim/init.vim_backup
-else
-  rm ~/.config/nvim/init.vim
-fi
-
-ln -v -s $(pwd)/.vim/init.vim ~/.config/nvim/init.vim
-
-
-
-echo
-echo ">>> Link coc-settings.json to ~/.config/nvim/coc-settings.json ..."
-
-if [[ -f ~/.config/nvim/coc-settings.json && $OVERWRITE -eq 0 ]]
-then
-    echo ">>> Found ~/.config/nvim/coc-settings.json, replace with ~/.config/nvmim/coc-settings.json_backup"
+    echo ">>> Found ~/.config/vim/coc-settings.json, replace with ~/.config/vim/coc-settings.json_backup"
     echo
-    mv ~/.config/nvim/coc-settings.json ~/.config/nvim/coc-settings.json_backup
+    mv ~/.config/vim/coc-settings.json ~/.config/vim/coc-settings.json_backup
 else
-    rm ~/.config/nvim/coc-settings.json
+    rm ~/.config/vim/coc-settings.json
 fi
 
-ln -v -s $(pwd)/.vim/coc-settings.json ~/.config/nvim/coc-settings.json
-
-
-
-echo
-echo ">>> Link .bash_prompt to ~/.bash_prompt ..."
-
-if [[ -f ~/.bash_profile && $OVERWRITE -eq 0 ]]
-then
-  echo ">>> Found ~/.bash_prompt, replace with ~/.bash_prompt_backup"
-  echo
-  mv ~/.bash_prompt ~/.bash_prompt_backup
-else
-  rm ~/.bash_prompt
-fi
-
-ln -v -s $(pwd)/.bash_prompt ~/.bash_prompt
-
-
-
-echo
-echo ">>> Link .bash_profile to ~/.bash_profile ..."
-
-if [[ -f ~/.bash_profile && $OVERWRITE -eq 0 ]]
-then
-  echo ">>> Found ~/.bash_profile, replace with ~/.bash_profile_backup"
-  echo
-  mv ~/.bash_profile ~/.bash_profile_backup
-else
-  rm ~/.bash_profile
-fi
-
-ln -v -s $(pwd)/.bash_profile ~/.bash_profile
-
-
+ln -v -s $(pwd)/.vim/coc-settings.json ~/.config/vim/coc-settings.json
 
 
 
 # echo
-# echo ">>> Link .config/neomutt to ~/.config/neomutt ..."
+# echo ">>> Link .bash_prompt to ~/.bash_prompt ..."
 #
-# if [[ -d ~/.config/neomutt && $OVERWRITE -eq 0 ]]
+# if [[ -f ~/.bash_profile && $OVERWRITE -eq 0 ]]
 # then
-#   echo ">>> Found ~/.config/neomutt, replace with ~/.config/neomutt_backup"
+#   echo ">>> Found ~/.bash_prompt, replace with ~/.bash_prompt_backup"
 #   echo
-#   mv ~/.config/neomutt ~/.config/neomutt_backup
+#   mv ~/.bash_prompt ~/.bash_prompt_backup
 # else
-#   rm ~/.config/neomutt
+#   rm ~/.bash_prompt
 # fi
 #
-# ln -v -s $(pwd)/.config/neomutt ~/.config/neomutt
-
-
-
-
+# ln -v -s $(pwd)/.bash_prompt ~/.bash_prompt
+#
+#
+#
 # echo
-# echo ">>> Link .alacritty.yml to ~/.alacritty.yml ..."
+# echo ">>> Link .bash_profile to ~/.bash_profile ..."
 #
-# if [[ -f ~/.alacritty.yml && $OVERWRITE -eq 0 ]]
+# if [[ -f ~/.bash_profile && $OVERWRITE -eq 0 ]]
 # then
-#   echo ">>> Found ~/.alacritty.yml, replace with ~/.alacritty.yml_backup"
+#   echo ">>> Found ~/.bash_profile, replace with ~/.bash_profile_backup"
 #   echo
-#   mv ~/.alacritty.yml ~/.alacritty.yml_backup
+#   mv ~/.bash_profile ~/.bash_profile_backup
 # else
-#   rm ~/.alacritty.yml
+#   rm ~/.bash_profile
 # fi
 #
-# ln -v -s $(pwd)/termimal/.alacritty.yml ~/.alacritty.yml
-#
+# ln -v -s $(pwd)/.bash_profile ~/.bash_profile
+
+
