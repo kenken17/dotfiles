@@ -63,7 +63,7 @@ Plug 'whiteinge/diffconflicts'
 "-----------------------
 Plug 'doums/coBra'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'sheerun/vim-polyglot', { 'tag': 'v4.13.1' }
+Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
