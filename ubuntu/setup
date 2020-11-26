@@ -79,6 +79,9 @@ npm config set prefix '~/.npm-global'
 # open /.bashrc file and add this line:
 export PATH=~/.npm-global/bin:$PATH
 
+# Git mob
+npm i -g git-mob
+
 # For tmux plugin
 cd && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 

@@ -41,6 +41,8 @@ alias egrep='egrep --color'
 alias tree='tree -C'
 alias pull='git pull'
 alias push='git push'
+alias solo='git solo'
+alias pair='git mob'
 
 # Workflow
 alias xit='exit'
