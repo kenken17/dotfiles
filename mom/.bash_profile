@@ -42,7 +42,6 @@ d_rebuild () {
 }
 
 d_stop_shit () {
-  docker stop wins_data_lookup_sync
   docker stop wins_selenium_box
 }
 
