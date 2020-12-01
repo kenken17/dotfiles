@@ -30,6 +30,7 @@ Plug 'scrooloose/nerdtree'
 " For Coding & Syntaxing
 "-----------------------
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Jorengarenar/vim-SQL-UPPER'
 
 call plug#end()
 

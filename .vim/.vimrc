@@ -65,8 +65,10 @@ Plug 'doums/coBra'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tomtom/tcomment_vim'
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+" Plug 'AndrewRadev/splitjoin.vim'
+Plug 'mg979/vim-visual-multi'
+Plug 'Jorengarenar/vim-SQL-UPPER'
+" Plug 'chrisbra/csv.vim'
 
 " Tools & Utilities
 "-----------------------
