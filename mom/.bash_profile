@@ -46,13 +46,13 @@ d_stop_shit () {
 }
 
 d_stop_payment () {
-  docker stop wins_ep_payment
+  # docker stop wins_ep_payment
   docker stop wins_ep_payment_braintree
   docker stop wins_ep_payment_report
 }
 
 d_start_payment () {
-  d_restart wins_ep_payment
+  # d_restart wins_ep_payment
   d_restart wins_ep_payment_braintree
   d_restart wins_ep_payment_report
 }
@@ -92,15 +92,6 @@ _d_re_completions()
   COMPREPLY=($(compgen -W '${SERVICE[@]}' "${COMP_WORDS[1]}"))
 }
 
-alias _rebuild=d_rebuild
-alias _restart=d_restart
-alias _log=d_log
-alias _bash=d_bash
-
-complete -F _d_re_completions _rebuild
-complete -F _d_re_completions _restart
-complete -F _d_re_completions _log
-complete -F _d_re_completions _bash
 complete -F _d_re_completions d_rebuild
 complete -F _d_re_completions d_restart
 complete -F _d_re_completions d_log
@@ -168,3 +159,5 @@ build_form () {
 git config --global diff.tool vim
 git config --global difftool.path vim
 git config --global difftool.vim.cmd 'vim -f -c "Gdiffsplit!" "$MERGED"'
+
+source ~/dotfiles/mom/windows.sh
