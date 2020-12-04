@@ -6,6 +6,18 @@ c_online () {
   tmux send-keys -t '_online' 'vim' c-m
 }
 
+c_foreigner () {
+  tmux new-window -n '_foreigner'
+  tmux send-keys -t '_foreigner' 'cd ~/Projects/wins-common-foreigner' c-m
+  tmux send-keys -t '_foreigner' 'vim' c-m
+}
+
+c_company () {
+  tmux new-window -n '_company'
+  tmux send-keys -t '_company' 'cd ~/Projects/wins-ep-company' c-m
+  tmux send-keys -t '_company' 'vim' c-m
+}
+
 c_document () {
   tmux new-window -n '_document'
   tmux send-keys -t '_document' 'cd ~/Projects/wins-common-document' c-m
