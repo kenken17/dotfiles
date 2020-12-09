@@ -10,10 +10,13 @@ elif infocmp xterm-256color >/dev/null 2>&1; then
 fi;
 
 git_mob_initials() {
-  local initials=$(git mob-print --initials)
-  if [[ -n "${initials}" ]]; then
-    echo ",${initials}"
-  fi
+    if command -v 'git mob-print' &> /dev/null
+    then
+        local initials=$(git mob-print --initials)
+        if [[ -n "${initials}" ]]; then
+            echo ",${initials}"
+        fi
+    fi
 }
 
 prompt_git() {
