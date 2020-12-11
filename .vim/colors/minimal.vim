@@ -21,6 +21,7 @@ let s:none              = 'NONE'
 
 let s:color_bg          = ['#000000', 0]
 let s:color_fg          = ['#949494', 246]
+let s:color_column      = ['#121212', 233]
 let s:color_lvl_0       = ['#3a3a3a', 237]
 let s:color_lvl_1       = ['#808080', 244]
 let s:color_lvl_2       = ['#a8a8a8', 248]
@@ -69,7 +70,7 @@ endfunction
 
 " vim interface
 call s:hi("newadded", s:color_fg, s:color_lvl_0)
-call s:hi("ColorColumn", s:color_lvl_4, s:color_error)
+call s:hi("ColorColumn", s:color_none, s:color_column)
 " call s:hi("Conceal", s:color_fg, s:color_none)
 call s:hi("Cursor", s:color_highlight, s:color_none)
 " call s:hi("CursorIM", s:color_fg, s:color_none)
