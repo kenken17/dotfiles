@@ -17,6 +17,7 @@ alias mom='tmux a -t mom || tmux new -s mom'
 alias ep_dev="cd ~/Projects/wins-ep-dev"
 alias build='npm run build:production'
 alias dev='npm run dev'
+alias pub='wdt repo-pub'
 
 d_log () {
   if [ -z $1 ]
@@ -145,10 +146,6 @@ upd () {
   wdt repos-upd
 
   mr
-}
-
-pub () {
-  wdt repo-pub
 }
 
 build_form () {
