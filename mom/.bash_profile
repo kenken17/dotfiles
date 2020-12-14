@@ -147,6 +147,10 @@ upd () {
   mr
 }
 
+pub () {
+  wdt repo-pub
+}
+
 build_form () {
   if [ -z "$1" ]
   then
