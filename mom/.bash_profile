@@ -18,6 +18,7 @@ alias ep_dev="cd ~/Projects/wins-ep-dev"
 alias build='npm run build:production'
 alias dev='npm run dev'
 alias pub='wdt repo-pub'
+alias mr_new='wdt mr-new -r'
 
 d_log () {
   if [ -z $1 ]
