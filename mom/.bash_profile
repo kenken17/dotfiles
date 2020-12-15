@@ -129,6 +129,15 @@ g_track () {
   fi
 }
 
+g_feature () {
+  if [ -z $1 ]; then
+    echo "No branch?"
+  else
+    git co -b $1
+    git push --set-upstream origin $1
+  fi
+}
+
 act () {
   npmrc default
   vim +PlugUpdate +1sleep +CocUpdate
