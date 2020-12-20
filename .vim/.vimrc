@@ -73,6 +73,7 @@ Plug 'Jorengarenar/vim-SQL-UPPER'
 " Tools & Utilities
 "-----------------------
 Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'kamykn/spelunker.vim'
 Plug 'scrooloose/vim-slumlord'
