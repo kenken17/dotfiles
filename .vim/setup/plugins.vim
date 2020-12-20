@@ -38,11 +38,3 @@ let g:qf_shorten_path = 0
 let g:enable_spelunker_vim = 0
 let g:ctrlp_extensions = get(g:, 'ctrlp_extensions', [])
       \ + ['spelunker']
-
-" jceb/vim-orgmode
-let g:org_heading_shade_leading_stars = 1
-let g:org_indent = 1
-let g:org_aggressive_conceal = 1
-
-" 
-let g:utl_cfg_hdl_scm_http_system = 1

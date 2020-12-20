@@ -43,13 +43,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
 
-" For OrgMode
-"------------
-Plug 'vim-scripts/SyntaxRange'
-Plug 'mattn/calendar-vim'
-Plug 'vim-scripts/utl.vim'
-Plug 'jceb/vim-orgmode'
-
 " For Workflow
 "-------------
 Plug 'ctrlpvim/ctrlp.vim'
