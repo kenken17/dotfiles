@@ -289,3 +289,10 @@ call s:hi("plugName", s:color_lvl_4, s:color_none)
 call s:hi("plugInstall", s:color_highlight, s:color_none)
 call s:hi("plugUpdate", s:color_highlight, s:color_none)
 call s:hi("plugDeleted", s:color_lvl_4, s:color_none)
+
+" plasticboy/vim-markdown
+call s:hi("mkdLink", s:color_highlight, s:color_none)
+call s:hi("mkdURL", s:color_highlight, s:color_none)
+call s:hi("mkdInlineURL", s:color_highlight, s:color_none)
+call s:hi("mkdListItem", s:color_highlight, s:color_none)
+call s:hi("mkdBlockquote", s:color_lvl_5, s:color_none)
