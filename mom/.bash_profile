@@ -20,6 +20,8 @@ alias dev='npm run dev'
 alias pub='wdt repo-pub'
 alias mr_new='wdt mr-new -r'
 
+gsettings set org.gnome.desktop.peripherals.keyboard delay 240
+
 d_log () {
   if [ -z $1 ]
   then
