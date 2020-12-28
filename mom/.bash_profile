@@ -21,6 +21,7 @@ alias pub='wdt repo-pub'
 alias mr_new='wdt mr-new -r'
 
 gsettings set org.gnome.desktop.peripherals.keyboard delay 240
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 
 d_log () {
   if [ -z $1 ]
@@ -53,6 +54,16 @@ d_stop_payment () {
   # docker stop wins_ep_payment
   docker stop wins_ep_payment_braintree
   docker stop wins_ep_payment_report
+}
+
+d_stop_oracle () {
+  docker stop wins_ep_oracle
+  docker system prune --volumes --force
+  ep_dev
+  cd oracle/mv-dump && curl -o WINIDEVAV2_TESTMV_dmp.zip http://toolsvm.wins.momdev.gcc.gov.sg/winsdev/WINIDEVAV2_TESTMV_dmp.zip
+  ep_dev
+  d_rebuild wins_ep_oracle
+  d_log wins_ep_oracle
 }
 
 d_start_payment () {
@@ -168,6 +179,7 @@ build_form () {
     wdt repos-rep 'npm run build:production' --type=form --only="$1"
   fi
 }
+
 
 git config --global diff.tool vim
 git config --global difftool.path vim
