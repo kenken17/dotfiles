@@ -257,6 +257,16 @@ call s:hi("sassComment", s:color_comment, s:color_none)
 " JSON
 call s:hi("jsonKeyword", s:color_highlight, s:color_none)
 
+" Java
+call s:hi("javaTop", s:color_error, s:color_none)
+call s:hi("javaTypedef", s:color_lvl_3, s:color_none)
+call s:hi("javaScopeDecl", s:color_highlight, s:color_none)
+call s:hi("javaOperator", s:color_lvl_4, s:color_none)
+call s:hi("javaMethodDecl", s:color_highlight, s:color_none)
+call s:hi("javaType", s:color_lvl_4, s:color_none)
+call s:hi("javaParen1", s:color_lvl_3, s:color_none)
+call s:hi("javaParen2", s:color_lvl_1, s:color_none)
+
 " COC
 call s:hi("CocHighlightText", s:color_highlight, s:color_lvl_1)
 call s:hi("CocFloating", s:color_lvl_4, s:color_float)
