@@ -70,7 +70,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'kamykn/spelunker.vim'
 Plug 'scrooloose/vim-slumlord'
-" Plug 'janko/vim-test'
+Plug 'janko/vim-test'
+Plug 'benmills/vimux'
 " Plug 'puremourning/vimspector'
 " Plug 'tweekmonster/startuptime.vim'
 
@@ -80,7 +81,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Inline install
 " --------------
-" coc-css coc-db coc-docker coc-eslint coc-html coc-java coc-json coc-lists coc-prettier coc-sh coc-snippets coc-sql coc-stylelint coc-tsserver coc-vetur coc-webpack coc-yaml coc-python
+" coc-css coc-db coc-docker coc-eslint coc-html coc-java coc-java-debug coc-json coc-lists coc-prettier coc-sh coc-snippets coc-sql coc-stylelint coc-tsserver coc-vetur coc-webpack coc-yaml coc-python
 
 call plug#end()
 

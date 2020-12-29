@@ -32,7 +32,7 @@ let g:qf_mapping_ack_style = 1
 let g:qf_shorten_path = 0
 
 " janko/vim-test
-" let test#strategy = "dispatch"
+let test#strategy = "vimux"
 
 " kamykn/spelunker.vim
 let g:enable_spelunker_vim = 0
