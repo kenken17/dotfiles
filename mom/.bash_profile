@@ -23,6 +23,10 @@ alias mr_new='wdt mr-new -r'
 gsettings set org.gnome.desktop.peripherals.keyboard delay 240
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
 
+#==============================================================================
+# Docker Functions
+#==============================================================================
+
 d_log () {
   if [ -z $1 ]
   then
@@ -103,6 +107,7 @@ _d_re_completions()
   SERVICE[26]="sonarqube"
   SERVICE[27]="wins_ep_stvp"
   SERVICE[28]="cancellation_mock"
+  SERVICE[28]="wins_common_uam"
 
   COMPREPLY=($(compgen -W '${SERVICE[@]}' "${COMP_WORDS[1]}"))
 }
@@ -112,6 +117,10 @@ complete -F _d_re_completions d_restart
 complete -F _d_re_completions d_log
 complete -F _d_re_completions d_bash
 
+#==============================================================================
+# UI Functions
+#==============================================================================
+
 s_start () {
   npm run theo
   gulp
@@ -120,18 +129,27 @@ s_start () {
   npm start
 }
 
-vpn_gcc () {
-  cat ~/.passwd/host | sudo -S ifmetric wlp1s0 1 2> /dev/null
-  nmcli con mod gcc-dev vpn.secrets "password=$(cat ~/.passwd/vpn-gcc-dev)"
-  nmcli con up gcc-dev -a
-}
-
 s_pack () {
   npm run build:system
   npm pack
 }
 
-alias ssh_automation='ssh wins@172.16.12.200'
+build_form () {
+  if [ -z "$1" ]
+  then
+    wdt repos-rep 'npm run build:production' --type=form
+  else
+    wdt repos-rep 'npm run build:production' --type=form --only="$1"
+  fi
+}
+
+#==============================================================================
+# Git Functions
+#==============================================================================
+
+git config --global diff.tool vim
+git config --global difftool.path vim
+git config --global difftool.vim.cmd 'vim -f -c "Gdiffsplit!" "$MERGED"'
 
 g_track () {
   if [ -z $1 ]; then
@@ -150,6 +168,10 @@ g_feature () {
     git push --set-upstream origin $1
   fi
 }
+
+#==============================================================================
+# Workflow Functions
+#==============================================================================
 
 act () {
   npmrc default
@@ -171,18 +193,17 @@ upd () {
   mr
 }
 
-build_form () {
-  if [ -z "$1" ]
-  then
-    wdt repos-rep 'npm run build:production' --type=form
-  else
-    wdt repos-rep 'npm run build:production' --type=form --only="$1"
-  fi
+vpn_gcc () {
+  cat ~/.passwd/host | sudo -S ifmetric wlp1s0 1 2> /dev/null
+  nmcli con mod gcc-dev vpn.secrets "password=$(cat ~/.passwd/vpn-gcc-dev)"
+  nmcli con up gcc-dev -a
 }
 
-
-git config --global diff.tool vim
-git config --global difftool.path vim
-git config --global difftool.vim.cmd 'vim -f -c "Gdiffsplit!" "$MERGED"'
+start_the_day () {
+  act
+  upd
+  d_rebuild all-no-db
+  d_stop_oracle
+}
 
 source ~/dotfiles/mom/windows.sh
