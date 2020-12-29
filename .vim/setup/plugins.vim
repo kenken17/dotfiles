@@ -33,6 +33,7 @@ let g:qf_shorten_path = 0
 
 " janko/vim-test
 let test#strategy = "vimux"
+let g:test#javascript#runner = 'jest'
 
 " kamykn/spelunker.vim
 let g:enable_spelunker_vim = 0

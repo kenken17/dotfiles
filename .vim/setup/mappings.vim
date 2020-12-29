@@ -37,8 +37,9 @@ nnoremap <F8> ]czz
 nnoremap <F12> :Agit<Cr>
 nnoremap <Leader><F12> :AgitFile<Cr>
 
-" For opening respective spec file
-nnoremap <Leader>T :vsplit %:h/__tests__/%:t:r.spec.js<CR>
+" For setting js test runner
+" nnoremap <Leader>T :vsplit %:h/__tests__/%:t:r.spec.js<CR>
+nnoremap <Leader>T :let g:test#javascript#runner='jest'<Left> 
 
 " kamykn/spelunker.vim
 nnoremap <Leader>s :CtrlPSpell<CR>
