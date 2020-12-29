@@ -24,7 +24,7 @@ nmap <Leader>t :Tabularize /\|<Cr>
 " lambdalisue/gina.vim  (git)
 nnoremap <F9> :Gstatus<Cr>
 nnoremap <Leader><F9> :Gina blame --width=100<Cr>
-nnoremap <F10> :Gina compare<Cr>
+nnoremap <F10> :Gdiffsplit<Space> 
 nnoremap <Leader><F10> :Gina patch<Cr>
 nnoremap <F11> :Gina pull<Cr>
 nnoremap <Leader><F11> :Gina push<Cr>
