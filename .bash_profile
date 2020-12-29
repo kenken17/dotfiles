@@ -71,7 +71,7 @@ kill_p () {
 }
 
 # Docker
-alias d_ps='docker ps --format "table {{.ID}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}"'
+alias d_ps="docker ps --format \"table {{.ID}}\t| {{.Status}}\t| {{.Ports}}\t| {{.Names}}\" |  LC_ALL=C sort -t$'|' -k4,4"
 
 d_bash () {
   docker exec -it $1 bash
