@@ -39,3 +39,7 @@ let g:test#javascript#runner = 'jest'
 let g:enable_spelunker_vim = 0
 let g:ctrlp_extensions = get(g:, 'ctrlp_extensions', [])
       \ + ['spelunker']
+
+" junegunn/gv.vim
+let g:twiggy_local_branch_sort = 'mru'
+let g:twiggy_remote_branch_sort = 'date'"
