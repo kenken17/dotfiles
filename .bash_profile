@@ -88,3 +88,7 @@ d_pause () {
 d_unpause () {
   docker unpause $(docker ps -a -q)
 }
+
+# Leisure
+alias h_connect="echo -e 'connect 94:DB:56:98:13:44' | bluetoothctl"
+alias h_disconnect="echo -e 'disconnect 94:DB:56:98:13:44' | bluetoothctl"
