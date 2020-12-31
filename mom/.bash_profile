@@ -18,7 +18,6 @@ alias ep_dev="cd ~/Projects/wins-ep-dev"
 alias build='npm run build:production'
 alias dev='npm run dev'
 alias pub='wdt repo-pub'
-alias mr_new='wdt mr-new -r'
 
 gsettings set org.gnome.desktop.peripherals.keyboard delay 240
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
