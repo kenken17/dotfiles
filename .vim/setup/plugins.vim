@@ -42,4 +42,5 @@ let g:ctrlp_extensions = get(g:, 'ctrlp_extensions', [])
 
 " junegunn/gv.vim
 let g:twiggy_local_branch_sort = 'mru'
-let g:twiggy_remote_branch_sort = 'date'"
+let g:twiggy_remote_branch_sort = 'date'
+
