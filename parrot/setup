@@ -1,0 +1,131 @@
+# Update to the latest
+sudo apt update && sudo apt full-upgrade
+
+# Unzip rockyou
+cd /usr/share/wordlists && gzip -d rockyou.txt.gz
+
+# Get Albert Launcher
+https://albertlauncher.github.io/
+
+# Remove shits
+sudo apt remove termit xterm git-cola neovim xboard cheese brasero
+
+# Install shits
+sudo apt install vim-gtk npm silversearcher-ag jq telegram-desktop
+
+# TODO: Setup all usual keyboard shortcuts
+
+# For oh my tmux and plugin
+cd && git clone https://github.com/gpakosz/.tmux.git && ln -s -f .tmux/.tmux.conf && cp .tmux/.tmux.conf.local .
+cd && git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# For sudo issue on npm
+mkdir ~/.npm-global
+
+# Configure npm to use the new directory path:
+npm config set prefix '~/.npm-global'
+
+# open /.bashrc file and add this line:
+export PATH=~/.npm-global/bin:$PATH
+
+# for wifi
+# Look for cilynx/rtl88x2bu
+cd rtl88x2bu
+VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
+sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+sudo dkms add -m rtl88x2bu -v ${VER}
+sudo dkms build -m rtl88x2bu -v ${VER}
+sudo dkms install -m rtl88x2bu -v ${VER}
+sudo modprobe 88x2bu
+
+# Git mob
+npm i -g git-mob
+
+# For nerd font
+cd && git clone git@github.com:ryanoasis/nerd-fonts.git
+./install.sh <FontName>
+
+# Install snap
+sudo snap
+
+# Snap mailspring
+snap install mailspring
+
+# Snap kraken - need --classic
+snap install gitkraken
+
+# docker
+snap install docker
+
+# flameshot for screen shot
+snap install flameshot
+
+
+
+
+# Install essentials
+sudo apt install curl nodejs npm tmux silversearcher-ag jq clamav clamav-daemon steam htop timeshift pyhton3-pip
+
+
+# anti virus
+systemctl start clamav-daemon
+system enable clamav-daemon
+
+# Set the on access scan
+sudo vim /etc/clamav/clamd.conf
+
+# Add in:
+  # Enables on-access scan, requires clamav-daemon.service running
+  ScanOnAccess yes
+
+  # Set the mount point where to recursively perform the scan,
+  # this could be every path or multiple path (one line for path)
+  OnAccessMountPath /usr
+  OnAccessMountPath /home/
+  OnAccessExcludePath /var/log/
+
+  # Flag fanotify to block any events on monitored files to perform the scan
+  OnAccessPrevention no
+
+  # Perform scans on newly created, moved, or renamed files
+  OnAccessExtraScanning yes
+
+  # Check the UID from the event of fanotify
+  OnAccessExcludeUID 0
+
+  # Specify an action to perform when clamav detects a malicious file
+  # it is possible to specify an inline command too
+  VirusEvent /etc/clamav/detected.sh
+
+  # WARNING: clamd should run as root
+  User root
+
+# For the detect script
+sudo vim /etc/clamav/detected.sh
+
+# Add in:
+  #!/bin/bash
+  PATH=/usr/bin
+  alert="Signature detected: $CLAM_VIRUSEVENT_VIRUSNAME in $CLAM_VIRUSEVENT_FILENAME"
+
+  # Send the alert to systemd logger if exist, othewise to /var/log
+  if [[ -z $(command -v systemd-cat) ]]; then
+    echo "$(date) - $alert" >> /var/log/clamav/detections.log
+  else
+    # This could cause your DE to show a visual alert. Happens in Plasma, but the next visual alert is much nicer.
+    echo "$alert" | /usr/bin/systemd-cat -t clamav -p emerg
+  fi
+
+  # Send an alert to all graphical users.
+  XUSERS=($(who|awk '{print $1$NF}'|sort -u))
+
+  for XUSER in $XUSERS; do
+    NAME=(${XUSER/(/ })
+    DISPLAY=${NAME[1]/)/}
+    DBUS_ADDRESS=unix:path=/run/user/$(id -u ${NAME[0]})/bus
+    echo "run $NAME - $DISPLAY - $DBUS_ADDRESS -" >> /tmp/testlog 
+    /usr/bin/sudo -u ${NAME[0]} DISPLAY=${DISPLAY} \
+      DBUS_SESSION_BUS_ADDRESS=${DBUS_ADDRESS} \
+      PATH=${PATH} \
+      /usr/bin/notify-send -i dialog-warning "clamAV" "$alert"
+  done
