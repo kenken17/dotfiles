@@ -120,7 +120,7 @@ PS1="\[\033]0;\w\007\]";
 
 # PS1+="\[${bold}\]\n"; # newline
 
-PS1+="\[${userStyle}\]\u\$(git_mob_initials) "; # username
+PS1+="\[${userStyle}\]\u\$(git_mob_initials)\[${white}\]@"; # username
 # PS1+="\[${white}\]@";
 # PS1+="\[${hostStyle}\]\h"; # host
 
