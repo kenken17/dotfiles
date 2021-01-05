@@ -55,6 +55,9 @@ snap install mailspring
 snap install gitkraken
 
 # docker
+sudo addgroup --system docker
+sudo adduser $USER docker
+newgrp docker
 snap install docker
 
 # flameshot for screen shot
