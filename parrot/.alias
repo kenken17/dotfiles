@@ -1,0 +1,1 @@
+alias thm_vpn='sudo openvpn ~/.ovpn/kenken17-THM.ovpn'
