@@ -1,4 +1,4 @@
 export W_ROCK=/usr/share/wordlists/rockyou.txt
 export W_COMMON=/usr/share/wordlists/dirb/common.txt
 
-alias thm_vpn='sudo openvpn ~/.ovpn/kenken17-THM.ovpn'
+alias vpn_thm='sudo openvpn ~/.ovpn/kenken17-THM.ovpn'
