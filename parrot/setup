@@ -1,5 +1,5 @@
 # Update to the latest
-sudo apt update && sudo apt full-upgrade
+sudo parrot-upgrade
 
 # Unzip rockyou
 cd /usr/share/wordlists && gzip -d rockyou.txt.gz
