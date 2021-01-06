@@ -63,6 +63,11 @@ snap install docker
 # flameshot for screen shot
 snap install flameshot
 
+# For Chinese input
+sudo apt install fcitx-googlepinyin # restart
+
+
+
 
 
 
