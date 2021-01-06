@@ -6,7 +6,8 @@
     "vue": ["javascript"]
   },
   "tsserver.formatOnType": false,
-  "eslint.filetypes": [
+  "stylelint.autoFixOnSave": true,
+  "eslint.validate": [
     "vue",
     "javascript",
     "javascriptreact",
