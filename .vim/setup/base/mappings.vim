@@ -23,6 +23,9 @@ vnoremap <Leader>Y "*y
 " Send the paste item to clipboard
 vnoremap <Leader>y "+y
 
+nnoremap <Leader>p "0p
+nnoremap <Leader>P "0P
+
 " Work flow
 nnoremap <Leader>` :redraw!
 nnoremap <Leader>1 :set foldmethod=syntax
