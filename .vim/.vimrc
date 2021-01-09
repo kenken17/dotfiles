@@ -69,7 +69,7 @@ Plug 'tommcdo/vim-exchange'
 "-----------------------
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'kamykn/spelunker.vim'
 Plug 'scrooloose/vim-slumlord'
 Plug 'janko/vim-test'
