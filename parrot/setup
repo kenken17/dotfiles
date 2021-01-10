@@ -8,7 +8,10 @@ cd /usr/share/wordlists && gzip -d rockyou.txt.gz
 https://albertlauncher.github.io/
 
 # Remove shits
-sudo apt remove termit xterm git-cola neovim xboard cheese brasero
+sudo apt remove termit xterm git-cola neovim xboard cheese brasero redshift-gtk
+
+# Incase redshift come back again
+pkill -USR1 redshift
 
 # Install shits
 sudo apt install vim-gtk npm silversearcher-ag jq telegram-desktop
