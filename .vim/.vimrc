@@ -52,6 +52,7 @@ Plug 'lambdalisue/gina.vim'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'romainl/vim-qf'
 Plug 'whiteinge/diffconflicts'
+Plug 'dyng/ctrlsf.vim'
 
 " For Coding & Syntaxing
 "-----------------------

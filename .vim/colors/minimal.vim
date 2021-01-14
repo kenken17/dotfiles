@@ -306,3 +306,10 @@ call s:hi("mkdURL", s:color_highlight, s:color_none)
 call s:hi("mkdInlineURL", s:color_highlight, s:color_none)
 call s:hi("mkdListItem", s:color_highlight, s:color_none)
 call s:hi("mkdBlockquote", s:color_lvl_5, s:color_none)
+
+" dyng/ctrlsf.vim
+call s:hi("ctrlsfMatch", s:color_lvl_0, s:color_selection)
+call s:hi("ctrlsfFilename", s:color_highlight, s:color_none)
+call s:hi("ctrlsfLnumMatch", s:color_highlight, s:color_none)
+call s:hi("ctrlsfSearchDone", s:color_highlight, s:color_none)
+

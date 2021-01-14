@@ -45,3 +45,5 @@ nnoremap <Leader>T :let g:test#javascript#runner='jest'<Left>
 nnoremap <Leader>s :CtrlPSpell<CR>
 nnoremap <Leader>S :SpelunkerAddAll
 
+" dyng/ctrlsf.vim
+nnoremap <Leader>F :CtrlSF <C-r><C-w>

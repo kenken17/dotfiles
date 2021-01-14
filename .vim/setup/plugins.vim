@@ -44,3 +44,20 @@ let g:ctrlp_extensions = get(g:, 'ctrlp_extensions', [])
 let g:twiggy_local_branch_sort = 'mru'
 let g:twiggy_remote_branch_sort = 'date'
 
+" dyng/ctrlsf.vim
+let g:ctrlsf_winsize = '40%'
+let g:ctrlsf_regex_pattern = 1
+let g:ctrlsf_auto_close = {
+    \ "normal" : 0,
+    \ "compact": 0
+    \}
+let g:ctrlsf_mapping = {
+    \ "split": "i",
+    \ "vsplit": "s",
+    \ "next": "n",
+    \ "prev": "N",
+    \ }
+let g:ctrlsf_auto_focus = {
+    \ "at": "start"
+    \ }
+let g:ctrlsf_default_root = "project"
