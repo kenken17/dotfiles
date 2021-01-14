@@ -46,4 +46,4 @@ nnoremap <Leader>s :CtrlPSpell<CR>
 nnoremap <Leader>S :SpelunkerAddAll
 
 " dyng/ctrlsf.vim
-nnoremap <Leader>F :CtrlSF <C-r><C-w>
+nnoremap <Leader>F :CtrlSF<Space>
