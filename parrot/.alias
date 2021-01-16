@@ -4,3 +4,4 @@ export W_EXT_COMMON=/usr/share/wordlists/dirb/extensions_common.txt
 
 alias vpn_thm='sudo openvpn ~/.ovpn/kenken17-THM.ovpn'
 alias vpn_htb='sudo openvpn ~/.ovpn/kenken17-HTB.ovpn'
+alias vpn_htb_starting='sudo openvpn ~/.ovpn/kenken17-HTB-startingpoint.ovpn'
