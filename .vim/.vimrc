@@ -63,7 +63,6 @@ Plug 'tomtom/tcomment_vim'
 " Plug 'AndrewRadev/splitjoin.vim'
 Plug 'mg979/vim-visual-multi'
 Plug 'Jorengarenar/vim-SQL-UPPER'
-Plug 'tommcdo/vim-exchange'
 " Plug 'chrisbra/csv.vim'
 
 " Tools & Utilities
