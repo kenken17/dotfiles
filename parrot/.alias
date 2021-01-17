@@ -1,5 +1,6 @@
 export W_ROCK=/usr/share/wordlists/rockyou.txt
 export W_COMMON=/usr/share/wordlists/dirb/common.txt
+export W_BIG=/usr/share/wordlists/dirb/big.txt
 export W_EXT_COMMON=/usr/share/wordlists/dirb/extensions_common.txt
 
 alias vpn_thm='sudo openvpn ~/.ovpn/kenken17-THM.ovpn'
