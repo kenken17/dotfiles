@@ -1,4 +1,4 @@
-export W_ROCK=/usr/share/wordlists/rockyou.txt
+export W_ROCK=~/Tools/SecLists/Passwords/Leaked-Databases/rockyou.txt
 export W_COMMON=/usr/share/wordlists/dirb/common.txt
 export W_BIG=/usr/share/wordlists/dirb/big.txt
 export W_EXT_COMMON=/usr/share/wordlists/dirb/extensions_common.txt
