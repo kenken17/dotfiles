@@ -1,5 +1,5 @@
 export W_ROCK=~/Tools/SecLists/Passwords/Leaked-Databases/rockyou.txt
-export W_USERNAME=~/Tools/SecLists/Usernames/top-usernames-shortlist.txt
+export W_USERNAME=~/Tools/SecLists/Usernames/Names/names.txt
 export W_PASSWORD=~/Tools/SecLists/Passwords/Leaked-Databases/rockyou.txt
 export W_COMMON=/usr/share/wordlists/dirb/common.txt
 export W_BIG=/usr/share/wordlists/dirb/big.txt
