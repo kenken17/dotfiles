@@ -1,5 +1,5 @@
 # Setup the prompt
-source ~/.bash_prompt
+# source ~/.bash_prompt
 
 # Alias for sourcing
 alias so='source ~/.bashrc'
