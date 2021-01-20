@@ -47,6 +47,7 @@ alias pair='git mob'
 # typo
 alias sduo=sudo
 alias sodu=sudo
+alias suod=sudo
 
 # Workflow
 alias xit='exit'
