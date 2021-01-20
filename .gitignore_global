@@ -68,3 +68,6 @@ swagger-ui-*.*
 *.un~
 .vimrc
 Session.vim
+
+# Hacking #
+hydra.restore
