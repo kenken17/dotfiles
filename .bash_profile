@@ -44,6 +44,10 @@ alias push='git push'
 alias solo='git solo'
 alias pair='git mob'
 
+# typo
+alias sduo=sudo
+alias sodu=sudo
+
 # Workflow
 alias xit='exit'
 alias open='xdg-open'
