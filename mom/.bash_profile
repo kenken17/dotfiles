@@ -182,6 +182,7 @@ mr () {
   echo -e "\nOpen MR: "
   wdt mr-by-me
 
+  echo -e "\n==============================================================================="
   echo -e "\nPending Review:"
   wdt mr-for-me
 }
