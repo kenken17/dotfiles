@@ -10,3 +10,5 @@ export W_DIR_2_3_MEDIUM=/usr/share/wordlists/dirbuster/directory-list-2.3-medium
 alias vpn_thm='sudo openvpn ~/.ovpn/kenken17-THM.ovpn'
 alias vpn_htb='sudo openvpn ~/.ovpn/kenken17-HTB.ovpn'
 alias vpn_htb_starting='sudo openvpn ~/.ovpn/kenken17-HTB-startingpoint.ovpn'
+
+alias searchsploit='searchsploit --color'
