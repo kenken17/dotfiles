@@ -14,22 +14,3 @@ augroup hugefile
     \ endif |
     \ unlet size
 augroup END
-
-function! LoadSession()
-  if argc() == 0 && !exists("s:std_in")
-    let b:sessiondir = $HOME . "/.vim/sessions/" . fnamemodify(getcwd(), ':t')
-    let b:sessionfile = b:sessiondir . "/Session.vim"
-
-    if (filereadable(b:sessionfile))
-      exe 'silent! source ' b:sessionfile
-    else
-      exe 'silent! !mkdir -p ' b:sessiondir
-      exe 'silent! Obsession ' b:sessiondir
-    endif
-  else
-    NERDTree
-  endif
-endfunction
-
-au StdinReadPre * let s:std_in=1
-au VimEnter * nested :call LoadSession()

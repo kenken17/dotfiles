@@ -6,17 +6,13 @@ let g:airline_exclude_preview=1
 let g:airline_section_a = '' " do not show the mode
 let g:airline_section_z = '%l/%L:%3v'
 let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
-let g:airline_extensions = ['branch', 'coc', 'ctrlp', 'fugitiveline', 'gina', 'gutentags', 'obsession']
+let g:airline_extensions = ['branch', 'coc', 'ctrlp', 'fugitiveline', 'gina', 'gutentags']
 
 " cohama/agit.vim
 let g:agit_max_log_lines = 10000
 
 " editorconfig/editorconfig-vim
 let g:EditorConfig_exclude_patterns = ['fugitive://.*']
-
-" sheerun/vim-polyglot
-" let g:polyglot_disabled = ['markdown']
-" let g:polyglot_disabled = ['coffee-script', 'pug', 'haml']
 
 " lambdalisue/gina.vim
 let g:gina#command#blame#formatter#format = "%su%=on %ti %ma%in - %au"
@@ -60,4 +56,14 @@ let g:ctrlsf_mapping = {
 let g:ctrlsf_auto_focus = {
     \ "at": "start"
     \ }
-let g:ctrlsf_default_root = "project"
+
+" mhinz/vim-startify
+let g:startify_lists = [
+            \ { 'type': 'dir',       'header': ['   MRU '. getcwd()] },
+  \ { 'type': 'sessions',  'header': ['   Sessions']       },
+  \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+  \ { 'type': 'commands',  'header': ['   Commands']       },
+  \ ]
+let g:startify_enable_special = 0
+let g:startify_change_to_dir = 0
+

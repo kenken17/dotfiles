@@ -34,8 +34,6 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-obsession'
-Plug 'tpope/vim-speeddating'
 
 " For IDE
 "--------
@@ -67,6 +65,7 @@ Plug 'Jorengarenar/vim-SQL-UPPER'
 
 " Tools & Utilities
 "-----------------------
+Plug 'mhinz/vim-startify'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}

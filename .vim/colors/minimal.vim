@@ -313,3 +313,5 @@ call s:hi("ctrlsfFilename", s:color_highlight, s:color_none)
 call s:hi("ctrlsfLnumMatch", s:color_highlight, s:color_none)
 call s:hi("ctrlsfSearchDone", s:color_highlight, s:color_none)
 
+" mhinz/vim-startify
+call s:hi("startifySection", s:color_highlight, s:color_none)
