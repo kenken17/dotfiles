@@ -22,7 +22,7 @@ nnoremap <Leader><Del> :! git checkout HEAD -- %<Cr>
 nmap <Leader>t :Tabularize /\|<Cr>
 
 " lambdalisue/gina.vim  (git)
-nnoremap <F9> :Gstatus<Cr>
+nnoremap <F9> :Gstatus<Cr>:15wincmd_<Cr>
 nnoremap <Leader><F9> :Gina blame --width=100<Cr>
 nnoremap <F10> :Gdiffsplit<Space> 
 nnoremap <Leader><F10> :Gina patch<Cr>
