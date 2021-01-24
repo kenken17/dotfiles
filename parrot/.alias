@@ -5,6 +5,7 @@ export W_COMMON=/usr/share/wordlists/dirb/common.txt
 export W_BIG=/usr/share/wordlists/dirb/big.txt
 export W_EXT_COMMON=/usr/share/wordlists/dirb/extensions_common.txt
 export W_DIR_2_3_MEDIUM=/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+export W_USER_AGENT=~/Tools/SecLists/Fuzzing/User-Agents/user-agents-whatismybrowserdotcom-large.txt
 
 
 alias vpn_thm='sudo openvpn ~/.ovpn/kenken17-THM.ovpn'

@@ -71,9 +71,10 @@ sudo apt install fcitx-googlepinyin # restart
 
 
 # Replace caja with nautilus (files)
-suod apt install nautilus
+sudo apt install nautilus
 
-
+# Ctags
+snap install universal-ctags
 
 
 
