@@ -29,8 +29,13 @@ let g:qf_shorten_path = 0
 
 " janko/vim-test
 let test#strategy = "vimux"
-let g:test#javascript#runner = 'jest'
-
+let test#javascript#runner = 'jest'
+let test#javascript#jest#options = {
+  \ 'all':   '--watch',
+  \ 'file': '--watch',
+  \ 'suite': '--watch',
+  \ 'last': '--watch',
+\}
 " kamykn/spelunker.vim
 let g:enable_spelunker_vim = 0
 let g:ctrlp_extensions = get(g:, 'ctrlp_extensions', [])
