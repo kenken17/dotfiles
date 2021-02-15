@@ -315,3 +315,13 @@ call s:hi("ctrlsfSearchDone", s:color_highlight, s:color_none)
 
 " mhinz/vim-startify
 call s:hi("startifySection", s:color_highlight, s:color_none)
+
+" 
+call s:hi("cucumberTags", s:color_highlight, s:color_none)
+call s:hi("cucumberFeature", s:color_lvl_3, s:color_none)
+call s:hi("cucumberScenario", s:color_lvl_3, s:color_none)
+call s:hi("cucumberScenarioOutline", s:color_lvl_3, s:color_none)
+call s:hi("cucumberExamples", s:color_highlight, s:color_none)
+call s:hi("cucumberGiven", s:color_lvl_4, s:color_none)
+call s:hi("cucumberWhen", s:color_lvl_4, s:color_none)
+call s:hi("cucumberThen", s:color_lvl_4, s:color_none)
