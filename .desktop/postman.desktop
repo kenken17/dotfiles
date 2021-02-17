@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Postman
+StartupWMClass=Postman
+Comment=Postman Client (snap)
+Exec=/snap/bin/postman
+Type=Application
