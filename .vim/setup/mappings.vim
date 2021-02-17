@@ -26,8 +26,8 @@ nnoremap <F9> :Gstatus<Cr>:15wincmd_<Cr>
 nnoremap <Leader><F9> :Gina blame --width=100<Cr>
 nnoremap <F10> :Gdiffsplit<Space> 
 nnoremap <Leader><F10> :Gina patch<Cr>
-nnoremap <F11> :Gpull<Cr>
-nnoremap <Leader><F11> :Gpush<Cr>
+nnoremap <F11> :Git pull<Cr>
+nnoremap <Leader><F11> :Git push<Cr>
 
 " tpope/vim-unimpaired
 nnoremap <F7> [czz
