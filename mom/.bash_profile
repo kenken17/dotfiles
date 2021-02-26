@@ -19,8 +19,7 @@ alias build='npm run build:production'
 alias dev='npm run dev'
 alias pub='wdt repo-pub'
 
-gsettings set org.gnome.desktop.peripherals.keyboard delay 240
-gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 10
+alias jauto='mvn clean install -DsuiteXmlFile=testng_EP.xml -Dtestname=smoketest'
 
 #==============================================================================
 # Docker Functions
