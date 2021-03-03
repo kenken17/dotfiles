@@ -19,7 +19,17 @@ alias build='npm run build:production'
 alias dev='npm run dev'
 alias pub='wdt repo-pub'
 
-alias jauto='mvn clean install -DsuiteXmlFile=testng_EP.xml -Dtestname=smoketest'
+jauto() {
+  if [ -z $1 ]; then
+    mvn clean install -DsuiteXmlFile=testng_EP.xml -Dtestname=smoketest -Dtest.ubuntu=true -Dtest.auto.driver.chrome.headless=true -Dcucumber.filter.tags=@ken
+  else
+    if [ -z $2 ]; then
+      mvn clean install -DsuiteXmlFile=testng_EP.xml -Dtestname=smoketest -Dtest.ubuntu=true -Dtest.auto.driver.chrome.headless=true -Dcucumber.filter.tags=$1
+    else
+      mvn clean install -DsuiteXmlFile=testng_EP.xml -Dtestname=smoketest -Dtest.ubuntu=true -Dtest.auto.driver.chrome.headless=$2 -Dcucumber.filter.tags=$1
+    fi
+  fi
+}
 
 #==============================================================================
 # Docker Functions
