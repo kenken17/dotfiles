@@ -177,22 +177,22 @@ call s:hi("NERDTreeDir", s:color_lvl_3, s:color_none)
 call s:hi("NERDTreeDirSlash", s:color_highlight, s:color_none)
 call s:hi("NERDTreeOpenable", s:color_lvl_5, s:color_none)
 call s:hi("NERDTreeClosable", s:color_lvl_5, s:color_none)
-call s:hi("NERDTreeExecFile", s:color_highlight, s:color_none)
+
+" PhilRunninger/nerdtree-buffer-ops
+call s:hi("NERDTreeOpenBuffer", s:color_highlight, s:color_none)
 
 "ALE
-call s:hi("ALEErrorSign", s:color_error, s:color_none)
-call s:hi("ALEWarningSign", s:color_lvl_4, s:color_none)
-call s:hi("SignColumn", s:color_none, s:color_none)
+" call s:hi("ALEErrorSign", s:color_error, s:color_none)
+" call s:hi("ALEWarningSign", s:color_lvl_4, s:color_none)
+" call s:hi("SignColumn", s:color_none, s:color_none)
 
 " Agit
 call s:hi("agitStatAdded", s:color_highlight, s:color_none)
 call s:hi("agitStatRemoved", s:color_error, s:color_none)
-
 call s:hi("agitDiffAdd", s:color_highlight, s:color_none)
 call s:hi("agitDiffRemove", s:color_error, s:color_none)
 call s:hi("agitDiffHeader", s:color_lvl_0, s:color_selection)
 call s:hi("agitDiffFileName", s:color_lvl_4, s:color_none)
-
 call s:hi("agitHead", s:color_error, s:color_lvl_5)
 call s:hi("agitRemote", s:color_lvl_4, s:color_none)
 call s:hi("agitTag", s:color_lvl_4, s:color_none)
@@ -316,7 +316,7 @@ call s:hi("ctrlsfSearchDone", s:color_highlight, s:color_none)
 " mhinz/vim-startify
 call s:hi("startifySection", s:color_highlight, s:color_none)
 
-" 
+" Cucumber
 call s:hi("cucumberTags", s:color_highlight, s:color_none)
 call s:hi("cucumberFeature", s:color_lvl_3, s:color_none)
 call s:hi("cucumberScenario", s:color_lvl_3, s:color_none)
@@ -325,3 +325,4 @@ call s:hi("cucumberExamples", s:color_highlight, s:color_none)
 call s:hi("cucumberGiven", s:color_lvl_4, s:color_none)
 call s:hi("cucumberWhen", s:color_lvl_4, s:color_none)
 call s:hi("cucumberThen", s:color_lvl_4, s:color_none)
+
