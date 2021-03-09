@@ -91,7 +91,7 @@ d_start_rabbit () {
 }
 
 d_stop_auto () {
-  docker pause wins_selenium_box
+  docker stop wins_selenium_box
 }
 
 d_stop_shit () {
