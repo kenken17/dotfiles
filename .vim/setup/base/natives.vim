@@ -1,7 +1,7 @@
 " For native settings/options
 "----------------------------
 set cursorline
-set colorcolumn=80
+set colorcolumn=
 set diffopt+=vertical,internal,algorithm:minimal,context:3
 set expandtab
 set exrc
