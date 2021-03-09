@@ -86,11 +86,11 @@ d_prune_shit () {
   docker system prune --volumes -f
 }
 
-d_pause () {
+d_pause_all () {
   docker pause $(docker ps -a -q)
 }
 
-d_unpause () {
+d_unpause_all () {
   docker unpause $(docker ps -a -q)
 }
 

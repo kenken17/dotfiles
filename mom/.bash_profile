@@ -63,38 +63,48 @@ d_redis () {
 }
 
 d_stop_payment () {
-  docker stop wins_ep_payment_braintree
-  docker stop wins_ep_payment_report
+  docker pause wins_ep_payment_braintree
+  docker pause wins_ep_payment_report
 }
 
 d_start_payment () {
-  d_restart wins_ep_payment_braintree
-  d_restart wins_ep_payment_report
+  docker unpause wins_ep_payment_braintree
+  docker unpause wins_ep_payment_report
 }
 
 d_stop_r3 () {
-  docker stop wins_ep_stvp
-  docker stop cancellation_mock
+  docker pause wins_ep_stvp
+  docker pause cancellation_mock
 }
 
 d_start_r3 () {
-  d_restart wins_ep_stvp
-  d_restart cancellation_mock
+  docker unpause wins_ep_stvp
+  docker unpause cancellation_mock
+}
+
+d_stop_rabbit () {
+  docker pause wins_rabbitmq
+}
+
+d_start_rabbit () {
+  docker unpause wins_rabbitmq
 }
 
 d_stop_auto () {
-  docker stop wins_selenium_box
+  docker pause wins_selenium_box
 }
 
 d_stop_shit () {
   d_stop_auto
   d_stop_r3
   d_stop_payment
+  d_stop_rabbit
 }
 
 d_start_shit () {
   d_start_r3
   d_start_payment
+  d_stop_rabbit
 }
 
 d_stop_oracle () {
