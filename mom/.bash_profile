@@ -62,14 +62,39 @@ d_redis () {
   docker exec -it wins_redis bash -c "redis-cli -a 721aa1f3823493996b828dd82ff31403b4"
 }
 
-d_stop_shit () {
+d_stop_payment () {
+  docker stop wins_ep_payment_braintree
+  docker stop wins_ep_payment_report
+}
+
+d_start_payment () {
+  d_restart wins_ep_payment_braintree
+  d_restart wins_ep_payment_report
+}
+
+d_stop_r3 () {
+  docker stop wins_ep_stvp
+  docker stop cancellation_mock
+}
+
+d_start_r3 () {
+  d_restart wins_ep_stvp
+  d_restart cancellation_mock
+}
+
+d_stop_selenium () {
   docker stop wins_selenium_box
 }
 
-d_stop_payment () {
-  # docker stop wins_ep_payment
-  docker stop wins_ep_payment_braintree
-  docker stop wins_ep_payment_report
+d_stop_shit () {
+  d_stop_selenium
+  d_stop_r3
+  d_stop_payment
+}
+
+d_start_shit () {
+  d_start_r3
+  d_start_payment
 }
 
 d_stop_oracle () {
@@ -80,12 +105,6 @@ d_stop_oracle () {
   ep_dev
   d_rebuild wins_ep_oracle
   d_log wins_ep_oracle
-}
-
-d_start_payment () {
-  # d_restart wins_ep_payment
-  d_restart wins_ep_payment_braintree
-  d_restart wins_ep_payment_report
 }
 
 _d_re_completions()
