@@ -58,6 +58,10 @@ d_rebuild () {
   cd -
 }
 
+d_redis () {
+  docker exec -it wins_redis bash -c "redis-cli -a 721aa1f3823493996b828dd82ff31403b4"
+}
+
 d_stop_shit () {
   docker stop wins_selenium_box
 }
