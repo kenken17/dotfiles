@@ -177,14 +177,16 @@ call s:hi("NERDTreeDir", s:color_lvl_3, s:color_none)
 call s:hi("NERDTreeDirSlash", s:color_highlight, s:color_none)
 call s:hi("NERDTreeOpenable", s:color_lvl_5, s:color_none)
 call s:hi("NERDTreeClosable", s:color_lvl_5, s:color_none)
+call s:hi("NERDTreeLinkFile", s:color_lvl_5, s:color_none)
+call s:hi("NERDTreeLinkDir", s:color_lvl_5, s:color_none)
 
 " PhilRunninger/nerdtree-buffer-ops
 call s:hi("NERDTreeOpenBuffer", s:color_highlight, s:color_none)
 
 "ALE
-" call s:hi("ALEErrorSign", s:color_error, s:color_none)
-" call s:hi("ALEWarningSign", s:color_lvl_4, s:color_none)
-" call s:hi("SignColumn", s:color_none, s:color_none)
+call s:hi("ALEErrorSign", s:color_error, s:color_none)
+call s:hi("ALEWarningSign", s:color_lvl_4, s:color_none)
+call s:hi("SignColumn", s:color_none, s:color_none)
 
 " Agit
 call s:hi("agitStatAdded", s:color_highlight, s:color_none)
