@@ -90,6 +90,14 @@ d_start_rabbit () {
   docker unpause wins_rabbitmq
 }
 
+d_stop_lookup () {
+  docker pause wins_data_lookup_sync
+}
+
+d_start_lookup () {
+  docker unpause wins_data_lookup_sync
+}
+
 d_stop_auto () {
   docker stop wins_selenium_box
 }
@@ -99,12 +107,14 @@ d_stop_shit () {
   d_stop_r3
   d_stop_payment
   d_stop_rabbit
+  d_stop_lookup
 }
 
 d_start_shit () {
   d_start_r3
   d_start_payment
-  d_stop_rabbit
+  d_start_rabbit
+  d_start_lookup
 }
 
 d_stop_oracle () {
