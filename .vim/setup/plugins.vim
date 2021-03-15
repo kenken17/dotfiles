@@ -31,10 +31,10 @@ let g:qf_shorten_path = 0
 let test#strategy = "vimux"
 let test#javascript#runner = 'jest'
 let test#javascript#jest#options = {
-  \ 'all':   '--watch',
-  \ 'file': '--watch',
-  \ 'suite': '--watch',
-  \ 'last': '--watch',
+  \ 'all':   '--coverage --watch',
+  \ 'file': '--coverage --watch',
+  \ 'suite': '--coverage --watch',
+  \ 'last': '--coverage --watch',
 \}
 " kamykn/spelunker.vim
 let g:enable_spelunker_vim = 0
