@@ -118,14 +118,12 @@ d_stop_shit () {
   d_stop_auto
   d_stop_r3
   d_stop_payment
-  d_stop_rabbit
   d_stop_lookup
 }
 
 d_start_shit () {
   d_start_r3
   d_start_payment
-  d_start_rabbit
   d_start_lookup
 }
 
