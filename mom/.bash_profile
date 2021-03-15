@@ -36,16 +36,25 @@ jauto() {
 #==============================================================================
 
 d_log () {
-  if [ -z $1 ]
-  then
+  if [ -z $1 ]; then
     file=$(git rev-parse --show-toplevel)
     service=$(cat $file/package.json | grep -oP "\"service\":\s\"\S*\"" | cut -d'"' -f4)
 
-    docker logs $service --follow --since=10h --tail 50
+    if [ -z $service ]; then
+      ep_dev
+      docker-compose logs --follow --tail 30
+      cd -
+    else
+      docker logs $service --follow --since=10h --tail 50
+    fi
   else
-    ep_dev
-    docker-compose logs -f --tail 20
-    cd -
+    if [ "$1" = "all" ]; then
+      ep_dev
+      docker-compose logs --follow --tail 30
+      cd -
+    else
+      docker logs $1 --follow --since=10h --tail 50
+    fi
   fi
 }
 
