@@ -38,11 +38,14 @@ jauto() {
 d_log () {
   if [ -z $1 ]
   then
-    ep_dev
-    docker-compose logs -f --tail 10
-    cd -
+    file=$(git rev-parse --show-toplevel)
+    service=$(cat $file/package.json | grep -oP "\"service\":\s\"\S*\"" | cut -d'"' -f4)
+
+    docker logs $service --follow --since=10h --tail 50
   else
-    docker logs $1 --follow --details --since=10h --tail 50
+    ep_dev
+    docker-compose logs -f --tail 20
+    cd -
   fi
 }
 

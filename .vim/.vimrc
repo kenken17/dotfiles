@@ -38,7 +38,6 @@ Plug 'tpope/vim-fugitive'
 " For IDE
 "--------
 Plug 'scrooloose/nerdtree'
-Plug 'PhilRunninger/nerdtree-buffer-ops'
 Plug 'vim-airline/vim-airline'
 Plug 'christoomey/vim-tmux-navigator'
 
