@@ -324,7 +324,22 @@ call s:hi("cucumberFeature", s:color_lvl_3, s:color_none)
 call s:hi("cucumberScenario", s:color_lvl_3, s:color_none)
 call s:hi("cucumberScenarioOutline", s:color_lvl_3, s:color_none)
 call s:hi("cucumberExamples", s:color_highlight, s:color_none)
-call s:hi("cucumberGiven", s:color_lvl_4, s:color_none)
-call s:hi("cucumberWhen", s:color_lvl_4, s:color_none)
+call s:hi("cucumberGiven", s:color_lvl_4, s:color_error)
+call s:hi("cucumberWhen", s:color_lvl_3, s:color_none)
 call s:hi("cucumberThen", s:color_lvl_4, s:color_none)
+
+" tpope/vim-fugitive
+call s:hi("fugitiveHelpTag", s:color_fg, s:color_none)
+call s:hi("fugitiveSymbolicRef", s:color_highlight, s:color_none)
+call s:hi("fugitiveUnstagedModifier", s:color_lvl_3, s:color_none)
+call s:hi("fugitiveUntrackedModifier", s:color_lvl_3, s:color_none)
+call s:hi("fugitiveStagedModifier", s:color_lvl_3, s:color_none)
+call s:hi("fugitiveUntrackedHeading", s:color_error, s:color_none)
+call s:hi("fugitiveUnstagedHeading", s:color_error, s:color_none)
+call s:hi("fugitiveHash", s:color_lvl_4, s:color_none)
+
+" syntax/diff.vim
+call s:hi("diffRemoved", s:color_error, s:color_none)
+call s:hi("diffAdded", s:color_highlight, s:color_none)
+call s:hi("diffChanged", s:color_lvl_4, s:color_none)
 

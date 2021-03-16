@@ -269,6 +269,7 @@ start_the_day () {
   act
   upd
   d_rebuild all-no-db
+  build_form
   d_stop_oracle
 }
 
